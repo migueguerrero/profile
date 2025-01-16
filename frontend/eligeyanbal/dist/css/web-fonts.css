@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'ProximaNovaA-Thin';
+  src: url('ProximaNovaA-Thin.woff') format('woff'),
+       url('ProximaNovaA-Thin.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+

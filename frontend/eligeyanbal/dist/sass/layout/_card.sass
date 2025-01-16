@@ -1,0 +1,745 @@
+// Card
+.card-item
+    font-size: 1rem
+    border: 0px
+    margin-bottom: 0px
+    +transform(translate(0, 10px))
+    .referencial
+        position: absolute
+        padding: 5px 10px
+        bottom: 0px
+        color: #ffffff
+        font-size: 11px
+// Card : Info
+.card-body
+    padding: 10px 0px 0px
+    margin-bottom: 20px
+.card-title
+    @extend %headingfour
+    color: $Dark
+    margin-bottom: 10px
+    max-height: 35px
+    overflow: hidden
+    .h-link
+        color: $Dark
+.card-subtitle
+    font-family: $Light
+    @extend %headingtwo
+    color: $Dark
+    margin-top: 0px
+    margin-bottom: 5px
+    vertical-align: middle
+    i
+        vertical-align: middle
+        font-size: $sz20
+    &.tag
+        text-transform: uppercase
+        color: $Orange
+// Video : Preview 
+.video-yanbal100
+    .card-item
+        background: transparent !important
+        .card-title
+            font-size: $sz27
+            line-height: $sz30
+            margin-bottom: 0px
+            max-height: none
+        .card-subtitle
+            margin-top: 15px
+            @extend %headingfour
+.section-full
+    position: relative
+    // background: yellow
+.navigation-video
+    position: absolute
+    top: 40%
+    margin-top: -15px
+    font-size: 16px
+    .col
+        a
+            font-size: $sz10
+            // color: $Dark50
+            i
+                font-size: $sz36
+    @media (max-width: 992px)
+        position: relative
+        top: 0px
+        margin-top: 0px
+.video-suggestions
+    .card-title
+        font-family: $Medium
+// Card : Button
+.card-button
+    position: relative
+    .title
+        font-size: $sz24
+        color: $Wh
+        font-family: $Bold
+        +Position(absolute,inheret,inheret,23%,inheret)
+        width: 100%
+        z-index: 22
+        text-align: center
+        padding: 0px 20px
+        text-transform: uppercase
+    .description
+        font-size: $sz16
+        line-height: 1.3em
+        color: $Wh
+        font-family: $Medium
+        position: absolute
+        z-index: 22
+        bottom: 11%
+        width: 100%
+        text-align: center
+        padding: 0px 30px
+    .image
+        height: auto
+        vertical-align: middle
+    .call-to-action
+        width: fit-content
+        z-index: 24
+        position: absolute
+        left: 50%
+        top: 50%
+        transform: translate(-50%, -50%)
+        opacity: 0
+        transition: opacity .35s ease
+    .overlay
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background: rgba(0, 0, 0, 0)
+        transition: background 0.5s ease
+    &:hover
+        .call-to-action
+            opacity: 1
+        .overlay
+            display: block
+            background: rgba(0, 0, 0, .3)
+    .heading
+        font-family: $Bold
+        font-size: $sz24
+        color: $Wh
+        text-align: center
+        width: 100%
+        top: 68%
+        position: absolute
+        padding: 0px 15px
+    .heading-add
+        font-family: $Bold
+        font-size: $sz26
+        color: $Wh
+        text-align: center
+        width: 100%
+        top: 72%
+        position: absolute
+        padding: 0px 15px
+    .heading-big
+        font-family: $Bold
+        font-size: $sz28
+        color: $Wh
+        text-align: center
+        width: 100%
+        top: 68%
+        position: absolute
+        padding: 0px 15px
+        @media (max-width: 920px)
+            font-size: $sz22
+    .heading-mob
+        font-family: $Bold
+        font-size: $sz32
+        color: $Wh
+        text-align: center
+        width: 100%
+        bottom: 22%
+        position: absolute
+        padding: 0 20px
+    .heading-mob-big
+        font-family: $Bold
+        font-size: $sz32
+        color: $Wh
+        text-align: center
+        width: 100%
+        bottom: 22%
+        position: absolute
+        padding: 0 20px
+        @media (max-width: 767px)
+            font-size: $sz38
+        @media (max-width: 420px)
+            font-size: $sz32
+    .sumilla
+        font-family: $Light
+        font-size: $sz14
+        color: $Wh
+        text-align: center
+        padding: 0 10px
+        width: 100%
+        top: 80%
+        position: absolute
+    .sumilla-add
+        top: 87%
+    .sumilla-big
+        font-family: $Light
+        font-size: $sz18
+        color: $Wh
+        text-align: center
+        padding: 0 10px
+        width: 100%
+        top: 80%
+        position: absolute
+        @media (max-width: 920px)
+            font-size: $sz14
+    .sumilla-mob
+        font-family: $Light
+        font-size: 1.2rem
+        color: $Wh
+        text-align: center
+        padding: 0 10px
+        width: 100%
+        bottom: 13%
+        position: absolute
+        text-decoration: underline
+    .sumilla-mob-big
+        font-family: $Light
+        font-size: $sz18
+        color: $Wh
+        text-align: center
+        padding: 0 10px
+        width: 100%
+        bottom: 13%
+        position: absolute
+        text-decoration: underline
+        @media (max-width: 767px)
+            font-size: $sz24
+        @media (max-width: 420px)
+            font-size: $sz18
+
+// Card : Info
+.card-info
+    display: block
+    text-align: center
+    padding: 20px 0px
+    .icon
+        margin: 0 auto
+        width: 27%
+        height: 27%
+    .title
+        color: $Orange
+        text-align: center
+        font-family: $Medium
+        text-transform: uppercase
+        padding: 20px 0px 5px 0px
+        line-height: 18px
+    .description
+        text-align: center
+        font-family: $Medium
+        font-size: $sz14
+        color: $Dark
+        line-height: 1.3em
+    @media (max-width: 767px)   
+        position: relative
+        background: url(../images/icons/border-9x.png) bottom left repeat-x
+        padding-left: 92px
+        padding-top: 40px
+        padding-bottom: 40px
+        &.none
+            background: none
+        .icon
+            position: absolute
+            left: 0px
+            width: 75px
+            height: 75px
+        .title
+            padding-top: 0px
+            font-size: $sz20
+            text-align: left
+            line-height: $sz28
+        .description
+            text-align: left
+            font-size: $sz16
+    @media (max-width: 420px)
+        padding: 30px 0 30px 70px
+        margin: 0 0
+        .icon
+            width: 60px
+            height: 60px
+            left: 0
+        .title
+            font-size: $sz14
+            line-height: $sz22
+        .description
+            font-size: $sz14
+// Card : Beneficios
+.card-beneficios
+    display: block
+    text-align: center
+    padding: 15px 30px 40px 30px
+    background-color: #fbf1ef
+    min-height: 344px
+    .imagen
+        margin: 0 auto
+        width: 20%
+        height: 20%
+        padding: 10px 0px
+    .title
+        color: $Orange
+        text-align: center
+        font-family: $Bold
+        font-size: $sz28
+        padding: 10px 0px 30px 0px
+        line-height: 28px
+    .description
+        text-align: center
+        font-family: $Medium
+        font-size: $sz14
+        color: $Dark
+        line-height: 1.3em
+    @media (max-width: 767px)
+        margin-bottom: 1.5em
+        min-height: auto
+    @media (max-width: 420px)
+        margin-bottom: 1.5em
+        min-height: auto
+        .image
+            margin: 0 auto
+            width: 80px
+            height: 80px
+// Card : Ganancias
+.card-ganancias
+    display: block
+    margin-right: -15px
+    margin-left: -15px
+    .banner
+        height: auto
+        position: relative
+        .info
+            background-color: white 
+            width: 380px
+            padding: 25px 30px
+            position: absolute
+            margin: 35px
+            &::after
+                content: ''
+                position: absolute
+                bottom: 0
+                left: 0
+                width: 0
+                height: 0
+                border: 25px solid transparent
+                border-top-color: #ffffff
+                border-bottom: 0
+                border-left: 0
+                margin-left: 0px
+                margin-bottom: -25px
+            h3
+                color: $Orange
+                text-align: left
+                padding: 0px 0px 10px 0px
+            .list
+                display: inline-block
+                margin: 10px 0px
+                img 
+                    width: 25%
+                    height: auto
+                    float: left
+                    padding-right: 20px
+                .content
+                    float: left
+                    width: 75%
+                    line-height: $sz18
+                    font-size: $sz14
+                    .titulo
+                        text-transform: uppercase
+                        color: $Orange
+                        padding: 0px
+                        display: block
+                    .descripcion
+                        display: block
+                        color: $Dark
+    .imagen
+        display: block
+    .note
+        font-family: $Medium
+        font-size: $sz12
+        display: block
+    .info
+        h3 
+            color: $Orange
+            text-align: center
+            padding: 20px 0px 30px 0px
+        .list
+            display: inline-block
+            img 
+                width: 18%
+                height: auto
+                float: left
+                padding-right: 20px
+            .content
+                float: left
+                width: 82%
+                line-height: $sz20
+                font-size: $sz14
+                .titulo
+                    text-transform: uppercase
+                    color: $Orange
+                    padding: 0px 0px 6px 0px
+                    display: block
+                .descripcion
+                    display: block
+                    color: $Dark
+    .linea
+        background: url(../images/icons/border-9x.png) center left repeat-x
+        height:1px
+        width: 100%
+        padding: 30px 0px
+        clear: both
+@media (max-width: 767px)
+@media (max-width: 420px)
+    .info
+        h3
+            color: $Orange
+        .list
+            img 
+                width: 30%!important
+            .content
+                width: 70%!important
+// Card : Modelo de Negocio
+.card-modelo-negocio
+    font-size: $sz14
+    padding-left: 20px
+    padding-bottom: 20px
+    background: url(../images/bull-more.png) top left no-repeat
+    line-height: 22px
+    color: $Dark
+    span
+        font-family: $Bold
+// Card : Como empezar
+.card-como-empezar
+    padding: 30px
+    width: 100%
+    div
+        .col-mob
+            .title
+                font-family: $Medium
+                font-size: $sz16
+                color:$Orange
+                text-transform: uppercase
+                padding-bottom: 14px
+            .title-kit
+                color: $Orange
+                position: absolute
+                top: 0
+                right: 0
+                padding-right: 15px
+                text-transform: uppercase
+                font-size: $sz16
+            .sumilla
+                font-family: $Light
+                font-size: $sz20
+                color: $Orange
+                margin: 8px 0px
+                line-height: 24px
+            .subtitle
+                font-size: $sz14
+                color: $Dark 
+                font-family: $Bold
+                padding: 12px 0px 6px 0px
+                line-height: 20px     
+            p
+                font-size: $sz14
+                line-height: 18px
+                color: $Dark
+                line-height: 20px
+        @media (max-width: 767px)
+            .col-mob
+                .title
+                    padding-top: 25px
+.card-como-empezar-img
+    padding: 0px 30px 30px 30px
+    margin-left: -15px
+    //background-color: green
+    @media (max-width: 767px)
+        margin-left: 0px
+        //background-color: red
+    @media (max-width: 420px)
+        margin-left: 0px
+        //background-color: blue
+// Overlay Play
+.prev-min
+    position: relative
+    img
+        vertical-align: middle
+.overlay
+    +Position(absolute, 0, inherit, inherit,0)
+    @extend %flexCenter
+    +transition(all .35s)
+    width: 100%
+    height: 100%
+    &:hover
+        background: rgba($Bk, .1)
+    &--video
+        @extend .overlay
+        &:before
+            +content("", 100%, 100%)
+            background: url("../images/icons/play-video-100.png") no-repeat center center
+            background-size: 58px
+            opacity: .75
+            +transition( .3s ease-in-out)
+        &:after
+            +content("", 0, 0)
+            position: absolute
+            @extend %triangle-l
+            margin-left: 3px
+            margin-top: 1px
+            opacity: .3
+            +transition(all .3s)
+        &:hover
+            background: rgba($Bk, .1)
+            &:before
+                +transform(scale(1.20, 1.20))
+                opacity: 1
+            &:after
+                +transform(scale(1.12))
+                opacity: 1
+.float-info
+    +Position(absolute, inherit, inherit, 8px, 8px)
+    +radius(4px)
+    padding: 5px 5px
+    font-size: $sz12
+    color: $Dark
+    background: #fef6f4
+// Card Product
+.block-product
+    display: block
+    padding: 30px
+    cursor: pointer
+    border-radius: 4px
+    background-color: $Wh
+    +shadow( 0 2px 4px 0 rgba($Bk, .04))
+    img
+        display: block
+        margin-bottom: 10px
+    &:hover
+        +transition(all 1s)
+        +shadow( 0 2px 4px 0 rgba($Bk, .08) !important)
+.heading-item
+    font-family: $Medium
+    @extend %headingfour
+    color: $Dark50
+    text-align: center
+// Card testimonio
+.card-testimonio
+    .quote1
+        font-size: $sz20
+        font-family: $Light
+        color: $Dark50
+        border-top: solid #fce5dd 8px 
+        border-left: solid #fce5dd 8px
+        border-right: solid #fce5dd 8px
+        display: block
+        line-height: $sz26
+        text-align: right
+        padding: 20px 20px 70px 20px
+    .quote1-bt
+        background: url("../images/quote-inferior-right.png") no-repeat bottom right
+        display: block
+        height: 17px
+    .autor1
+        font-family: $Bold
+        text-align: right
+        color: $Dark
+        font-size: $sz14
+        margin-top: 10px
+        line-height: $sz18
+        span
+            color: $Orange
+            font-size: $sz24
+    .quote2
+        font-size: $sz20
+        font-family: $Light
+        color: $Dark50
+        border-top: solid #fce5dd 8px 
+        border-left: solid #fce5dd 8px
+        border-right: solid #fce5dd 8px
+        display: block
+        line-height: $sz26
+        text-align: left
+        padding: 20px 20px 70px 20px
+    .quote2-bt
+        background: url("../images/quote-inferior-left.png") no-repeat bottom left
+        display: block
+        height: 17px
+    .autor2
+        font-family: $Bold
+        text-align: left
+        color: $Dark
+        font-size: $sz14
+        margin-top: 10px
+        line-height: $sz18
+        span
+            color: $Orange
+            font-size: $sz24
+.card-testimonio-video
+    position: relative
+    height: 100%
+    a
+        .ver
+            color: $Wh
+            text-transform: uppercase
+            width: fit-content
+            position: absolute
+            left: 50%
+            top: 50%
+            transform: translate(-50%, -50%)
+            transition: opacity 0.35s ease
+            i 
+                font-size: 120px
+                opacity: 0.5 
+            span
+                display: block
+                text-align: center
+                position: relative
+                top: -10px
+    a:hover 
+        .ver 
+            i
+                opacity: 1
+.line-mobile
+    background: none
+    height: 1px
+    margin: 30px 0px 30px 0px
+    width: 100%
+    text-align: center
+// Card : Free
+.card-free
+    padding: 30px
+    width: 100%
+    div
+        .col-mob
+            .title
+                font-size: $sz24
+                color: $Orange
+            .sumilla
+                font-family: $Light
+                font-size: $sz20
+                color: $Orange
+                margin: 8px 0px
+                line-height: 24px
+            .subtitle
+                font-size: $sz14
+                color: $Dark 
+                font-family: $Bold
+                padding: 12px 0px 6px 0px
+                line-height: 20px     
+            p
+                font-size: $sz14
+                line-height: 18px
+                color: $Dark
+                line-height: 20px
+.card-free-p
+// Card : Ellas te lo cuentan
+.ellas-dsk
+    height: 387px
+    margin-top: 40px
+    .datos
+        background-color: #fdefec
+        width: 47%
+        padding: 25px
+        height: auto
+        text-align: center
+        img 
+            display: block
+            margin: 0 auto 10px auto
+        a 
+            margin: 0 auto
+            width: auto
+        div 
+            font-family: $Light
+            font-size: $sz16
+            color: $Dark50
+            font-style: italic
+            margin: 15px auto 10px auto
+            width: 80%
+            line-height: $sz20
+    .imagen
+        margin: 45px 0px
+        width: 55%
+        position: absolute
+        right: 15px
+        img 
+            width: 100%
+.ellas-mob
+    display: block
+    background-color: #fdefec
+    text-align: center
+    padding: 25px 25px 10px 25px
+    img 
+        display: block
+        margin: 0 auto 10px auto
+    div 
+        font-family: $Light
+        font-size: $sz20
+        color: $Dark50
+        font-style: italic
+        margin: 15px auto 20px auto
+        width: 80%
+        line-height: $sz26
+    .btn-testimonios
+        font-family: $Medium
+        position: relative
+        bottom: 30px
+        font-style: normal
+        margin: 0px auto
+        width: auto
+// Card : Estamos aquí
+.card-estamos-aqui
+    padding: 0px
+    width: 100%
+    .title
+        font-size: $sz28
+        color: $Orange
+        padding-bottom: 25px
+        display: block
+        clear: both
+    div
+        .col-mob
+            .sumilla
+                font-family: $Light
+                font-size: $sz20
+                color: $Orange
+                margin: 8px 0px
+                line-height: 24px
+            .subtitle
+                font-size: 1rem
+                color: $Orange
+                text-transform: uppercase
+                font-family: $Medium
+                padding: 20px 0px 10px 0px
+                line-height: 20px
+            p
+                font-size: $sz14
+                line-height: 18px
+                color: $Dark
+                line-height: 20px
+            .caja
+                background-color: #f4f4f4
+                padding: 20px
+                p
+                    font-size: $sz14
+                    line-height: 18px
+                    color: $Dark
+                    line-height: 20px
+                    span
+                        font-family: $Medium
+                        padding-top: 10px
+                        color: $Orange
+                        font-size: $sz20
+                        display: block
+    @media (max-width: 767px)
+        .title
+            text-align: center
+    @media (max-width: 420px)
+        .title
+            text-align: center

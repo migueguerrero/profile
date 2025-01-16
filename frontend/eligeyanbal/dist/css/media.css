@@ -1,0 +1,293 @@
+@media only screen and (max-width: 360px) {
+    .p-sticky-80 {
+        padding-top: 80px!important;
+    }
+    h1 {
+        text-align: center
+    }
+    .banner-principal .banner-mensaje {
+        top: auto;
+        bottom: 4%;
+        width: 100%;
+        left: auto;
+        text-align: center;
+        font-size: 14px;
+    }
+    .card-button {
+        margin-bottom: 1.5rem
+    }
+    .card-button .title {
+        bottom: 25%;
+        font-size: 14px;
+    }
+    .main-header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 99;
+    }
+    .p-sticky-65 {
+        padding-top: 65px!important;
+    }
+    .social-shared .social-list .social-list-item .icon-whatsapp {
+        display: block;
+    }
+    .text-center-mob {
+        text-align: center;
+    }
+    .card-free div .col-mob {
+        text-align: center;
+    }
+    .card-free div .col-mob .sumilla {
+        padding-bottom: 18px;
+    }
+    .card-free div .col-mob .subtitle {
+        padding-top: 20px;
+    }
+    .float-call-to-action .btn {
+        width: 100%;
+    }
+    .navigation-middle {
+        height: 63px!important;
+    }
+    .brand-back a {
+        top: 16px!important;
+    }
+    /* .brand-name {
+        margin-top: 12px!important;
+        background-color: orange;
+    } */
+    /* .brand-name img {
+        width: 170px!important;
+    } */
+    .sect-footer-end {
+        margin-bottom: 100px
+    }
+    .card-testimonio {
+        margin-bottom: 20px
+    }
+    .card-testimonio .quote1 {
+        text-align: left;
+        padding: 20px 20px 40px 20px;
+    }
+    .card-testimonio .quote2 {
+        text-align: left;
+        padding: 20px 20px 40px 20px;
+    }
+    .card-testimonio .autor1 {
+        text-align: left;
+    }
+    .line-mobile {
+        background: url(../images/icons/border-9x.png) center center repeat-x;
+    }
+    .modal-lg {
+        max-width: 100%
+    }
+    .card-button .heading-mob {
+        font-size: 1.5rem
+    }
+    .card-button .sumilla-mob {
+        font-size: 1rem
+    }
+}
+
+@media (min-width: 361px) and (max-width: 768px) {
+    .main-header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 99;
+    }
+    .p-sticky-80 {
+        padding-top: 80px!important;
+    }
+    .p-sticky-65 {
+        padding-top: 65px!important;
+    }
+    h1 {
+        text-align: center
+    }
+    .banner-principal .banner-mensaje {
+        top: auto;
+        bottom: 5%;
+        width: 100%;
+        left: auto;
+        text-align: center;
+        font-size: 16px;
+    }
+    .card-button {
+        margin-bottom: 1.5rem
+    }
+    .card-button .title {
+        bottom: 18%;
+        font-size: 28px;
+    }
+    .card-button .description {
+        bottom: 7%;
+        font-size: 18px;
+    }
+    .social-shared .social-list .social-list-item .icon-whatsapp {
+        display: block;
+    }
+    .text-center-mob {
+        text-align: center;
+    }
+    .card-free div .col-mob {
+        text-align: center;
+    }
+    .card-free div .col-mob .sumilla {
+        padding-bottom: 18px;
+    }
+    .card-free div .col-mob .subtitle {
+        padding-top: 20px;
+    }
+    .float-call-to-action .btn {
+        width: 100%;
+    }
+    .navigation-middle {
+        height: 63px!important;
+    }
+    .brand-back a {
+        top: 16px!important;
+    }
+    /* .brand-name {
+        margin-top: 12px!important;
+        background-color: blue;
+    } */
+    /* .brand-name img {
+        width: 170px!important;
+    } */
+    .sect-footer-end {
+        margin-bottom: 90px
+    }
+    .card-testimonio {
+        margin-bottom: 20px
+    }
+    .card-testimonio .quote1 {
+        text-align: left;
+        padding: 20px 20px 40px 20px;
+    }
+    .card-testimonio .quote2 {
+        text-align: left;
+        padding: 20px 20px 40px 20px;
+    }
+    .card-testimonio .autor1 {
+        text-align: left;
+    }
+    .card-testimonio .quote1-bt {
+        background: url(../images/quote-inferior-left.png) no-repeat bottom left;
+    }
+    .line-mobile {
+        background: url(../images/icons/border-9x.png) center center repeat-x;
+    }
+    .modal-lg {
+        max-width: 100%
+    }
+    .card-button .heading-mob {
+        font-size: 2rem;
+        padding: 0 10px;
+    }
+    .card-button .sumilla-mob {
+        font-size: 1.2rem;
+        bottom: 14%;
+    }
+    .card-button .heading-add {
+        font-size: 18px;
+        top: 70%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 991px) {
+    .main-header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 99;
+    }
+    .p-sticky-80 {
+        padding-top: 80px!important;
+    }
+    .p-sticky-65 {
+        padding-top: 65px!important;
+    }
+    h1 {
+        text-align: center
+    }
+    .banner-principal .banner-mensaje {
+        top: 9%;
+    }
+    .banner-principal .banner-call-to-action {
+        bottom: -4%;
+    }
+    .card-button .title {
+        bottom: 30%;
+    }
+    .card-button .description {
+        bottom: 5%;
+    }
+    .social-shared .social-list .social-list-item .icon-whatsapp {
+        display: block;
+    }
+    .text-center-mob {
+        text-align: center;
+    }
+    .card-button .call-to-action {
+        opacity: 1;
+    }
+    .card-button .overlay {
+        background: rgba(0, 0, 0, .2);
+    }
+    .navigation-middle {
+        height: 63px!important;
+    }
+    .brand-back a {
+        top: 16px!important;
+    }
+    /* .brand-name {
+        margin-top: 12px!important;
+        background-color: yellow;
+    } */
+    /* .brand-name img {
+        width: 170px!important;
+    } */
+    .sect-footer-end {
+        margin-bottom: 90px
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .banner-principal .banner-mensaje {
+        top: 13%;
+    }
+    .banner-principal .banner-call-to-action {
+        bottom: 3%;
+    }
+}
+
+
+/* IPAD */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .card-button .heading {
+        font-size: 18px;
+        bottom: 25%;
+    }
+    .card-button .heading-add {
+        font-size: 18px;
+        top: 70%;
+    }
+    .card-button .sumilla {
+        font-size: 12px;
+        bottom: 8%;
+        height: 28px;
+    }
+    .card-button .overlay {
+        background: rgba(0, 0, 0, .05);
+    }
+    .card-button .call-to-action {
+        opacity: 1;
+    }
+    .social-shared .social-list .social-list-item .icon-whatsapp {
+        display: none;
+    }
+}

@@ -1,0 +1,169 @@
+.main-header
+    border-bottom: 2px solid $Nude
+    z-index: 99999
+
+.idioma
+    float: right
+    color: $Wh
+    font-size: 11px
+    padding-top: 4px
+    &:hover
+        color: $Wh
+
+.idioma-mob
+    position: absolute
+    display: none
+    z-index: 11
+    top: 0px
+    right: 15px
+    @media (max-width: 992px)
+        display: block
+        font-family: $Light
+        float: right
+        color: $Orange
+        font-size: 14px
+        padding-top: 24px
+    @media (max-width: 767px)
+        display: block
+        font-family: $Light
+        float: right
+        color: $Orange
+        font-size: 14px
+        padding-top: 24px
+    @media (max-width: 420px)
+        display: block
+        font-family: $Light
+        float: right
+        color: $Orange
+        font-size: 14px
+        padding-top: 24px
+    &:hover
+        color: $Orange
+  
+// Header Brand 
+.navigation-top
+    background-color: $Orange
+    .container
+        padding: 11px 12px
+        height: 40px
+        .incorporate
+            font-size: 11px
+            color: $Wh
+.navigation-middle
+    background-color: $Wh
+    position: relative
+    height: 82px
+.brand-back
+    position: absolute
+    z-index: 10
+    top: -6px
+    left: 14px
+    a
+        color: $Orange
+        position: absolute
+        font-size: 32px
+        -moz-transform: rotate(270deg)
+        -webkit-transform: rotate(270deg)
+        -o-transform: rotate(270deg)
+        -ms-transform: rotate(270deg)
+        transform: rotate(270deg)
+        .span
+            &::before
+                color: $Orange
+.brand-name
+    position: absolute
+    margin-top: 17px
+    width: 100%
+    text-align: center
+    margin-left: auto
+    margin-right: auto
+    left: 0
+    right: 0
+    @media (max-width: 992px)
+        margin-top: 12px
+    a
+        display: inline-block
+        img
+            width: 187px
+            @media (max-width: 992px)
+                width: 170px
+        .unique-es-yanbal
+            width: 180px
+            @media (max-width: 992px)
+                width: 130px
+    &--unique-es-yanbal
+        margin-top: 8px
+
+// Button style advisor
+.btn-text-orange
+    font-family: $Bold
+    font-size: $sz14
+    color: $Orange
+    padding: 5px 10px
+    &:hover
+        color: $Orange
+.line-login
+    position: relative
+    &:before
+        +content("", 1px, 12px)
+        +Position(absolute, 9px, inherit, inherit, -8px)
+        background: $Orange
+// Login : Register
+.sect-log
+    display: inline-block
+    text-align: left
+    font-size: 1rem
+    span
+        display: block
+        font-size: $sz10
+        margin-bottom: 5px
+// Button navigation top language
+.dropdown-language
+    color: white
+.btn-wh-trans
+    color: $Wh
+    font-size: $sz12
+    font-family: $Light
+    &:hover
+        color: $Wh
+.box-search
+    vertical-align: top
+.form-control-search
+    width: 100px !important
+    height: 28px
+    font-size: $sz14
+    border: 1px solid transparent
+    border-bottom: 1px solid $Orange
+    padding: 0px
+input::placeholder
+    color: $Orange !important
+.nav-item 
+    font-size: $sz12
+    padding-left: 10px
+    padding-right: 10px
+    &.active
+        font-family: $Bold
+    .nav-link
+        color: $Bk
+.line-nav
+    position: relative
+    &:before
+        +content("", 1px, 12px)
+        +Position(absolute, 6px, inherit, inherit, 0px)
+        background: $Orange
+.link-advisor
+    display: block
+    font-family: $Bold
+    font-size: $sz14
+    padding: 12px 0px
+    background: $Orange
+    color: $Wh
+    &:hover
+        color: $Wh
+.min-logo
+    width: 135px
+.header-m
+    .item
+        padding: 0px 2px
+    i
+        font-size: $sz36

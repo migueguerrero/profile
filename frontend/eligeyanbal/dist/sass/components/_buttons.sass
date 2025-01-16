@@ -1,0 +1,160 @@
+// Button degrade : orange and red
+.btn-primary
+    padding: 10px 20px
+    +gradient($Orange, $Red)
+    border-color: transparent !important
+    color: $Wh
+    text-transform: uppercase
+    &-small
+        @extend .btn-primary
+        font-size: $sz12
+    &-medium
+        @extend .btn-primary
+        font-size: $sz16
+    &-big
+        @extend .btn-primary
+        font-size: $sz18
+        padding: 15px 40px
+    &:hover
+        border-color: $Orange
+        +gradient($Orange, $Orange)
+        color: $Wh
+// Button outline orange
+.btn-outline-primary
+    border: none
+    color: $Orange
+    border-color: $Wh
+    outline: none
+    background: $Wh
+    text-transform: uppercase
+    transition: (none)
+    &-small
+        @extend .btn-outline-primary
+        font-size: $sz12
+    &-medium
+        @extend .btn-outline-primary
+        font-size: $sz14
+        padding: 12px 23px
+    &-big
+        @extend .btn-outline-primary
+        font-size: $sz18
+        padding: 15px 40px
+    &:hover, &:active, &:focus
+        border-color: $Orange
+        +gradient($Orange, $Orange)
+        color: $Wh!important
+.btn-gray
+    color: $Dark
+    background: $Gray50
+    font-family: $Medium    
+.btn-outline-primary:not(:disabled):not(.disabled)
+  &.active, &:active
+    background-color: $Wh
+    border-color: $Orange
+    color: $Orange
+    box-shadow: none !important
+// Icon button
+.btn-ico
+    display: block
+.ico-social
+    border: 1px solid $Dark50
+    +radius(50%)
+    font-size: $sz18 !important
+.btn-group 
+    .btn-outline-primary
+        font-size: $sz16
+        &.active,
+        &.active:focus,
+        &.active:active
+            @extend .btn-primary
+            color: $Wh !important
+            border-color: transparent !important
+            padding: 5px 15px
+            text-transform: none
+// Button ico + text
+.btn-back
+    font-size: $sz14
+    color: $Orange
+    text-transform: uppercase
+    display: inline-block
+    vertical-align: bottom
+    i
+        font-size: $sz20
+        vertical-align: middle
+    &:hover
+        color: $Bk
+    @media (max-width: 660px)
+        font-size: $sz18
+        i
+            font-size: $sz26
+.ico-nav
+    position: relative
+    padding-top: 65px
+    font-size: 12px !important
+    display: inline-block
+    i
+        display: block
+        position: absolute
+        font-size: 40px !important
+        color: $Wh
+        top:0px
+        left: 50%
+        margin-left: -24px
+        background: $Orange
+        +shadow(0px 0px 12px rgba($Bk, .03))
+        +radius(50%)
+        +transition(all .7s)
+        padding: 10px
+    span
+        opacity: 0
+    &:hover
+        i
+            background: $Bk
+            +transform(scale(1.15, 1.15))
+            +transition(all .2s linear .2s)
+            +shadow(0px 0px 12px rgba($Bk, .08))
+    @media (max-width: 992px)
+        background: $Orange
+        +gradient($Orange, $Red)
+        color: $Wh
+        +radius(4px)
+        color: $Orange
+        margin-top: 15px
+        &:hover
+            i
+                background: none
+        span
+            opacity: 1
+            color: $Wh
+            display: inline-block
+        i
+            background: none
+            color: $Wh
+            font-size: $sz20 !important
+            top: inherit
+            left: inherit
+            padding: 0px
+            margin-left: inherit
+            display: inline
+            margin-top: -10px
+        &.left-nav
+            padding: 15px 20px 15px 30px
+            i
+                top: 50%
+                left: 8px
+        &.right-nav
+            padding: 15px 30px 15px 20px
+            i
+                top: 50%
+                right: 8px
+// Bullets
+.swiper-container
+    .swiper-pagination-bullet
+        width: 12px
+        height: 12px
+// Link orange 
+.link-orange
+    color: $Orange
+    text-decoration: underline
+    &:hover
+        @extend .link-orange

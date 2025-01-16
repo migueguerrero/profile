@@ -1,0 +1,19 @@
+[data-toggle="collapse"] .fa:before {
+    font-family: "yanbal-icons";
+    font-size: 28px;
+    content: "\e905";
+    position: absolute;
+    right: -2px;
+    top: 5px;
+    color: #ff6900;
+}
+
+[data-toggle="collapse"].collapsed .fa:before {
+    font-family: "yanbal-icons";
+    font-size: 28px;
+    content: "\e902";
+    position: absolute;
+    right: -2px;
+    top: 5px;
+    color: #999999;
+}

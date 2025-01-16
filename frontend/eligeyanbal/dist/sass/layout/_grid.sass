@@ -1,0 +1,71 @@
+@media (min-width: 1200px)
+.container
+    max-width: 1200px
+// Video full section
+.sect-gray
+    padding-top: 60px
+    padding-bottom: 20px
+    background: rgba( $Dark50, .15 )
+    @media (max-width: 767px)
+        padding-top: 30px
+.sect-share
+    font-family: $Light
+    @extend %headingtwo
+    color: $Gray
+    margin-top: 30px
+    @media (max-width: 776px)
+        margin-top: 15px
+        font-size: $sz14
+    @media (max-width: 660px)
+        font-size: $sz20
+        .btn-ico
+            font-size: $sz24 !important
+        .ico-circle
+            font-size: $sz32 !important
+// List : Suite
+.list-suite
+    &.info
+        list-style: none
+        text-indent:-20px
+        margin-left:20px
+        li
+            background-color: transparent
+            padding: 15px 0px
+            border: 0px
+            color: $Dark
+            line-height: 18px
+            font-size: $sz14
+            &:before
+                display: inline-block
+                content: ''
+                -webkit-border-radius: 50%
+                border-radius: 50%
+                height: 8px
+                width: 8px
+                margin-right: 12px
+                background-color: $Orange
+// Lists red social
+.list-social
+    display: inline-block
+    margin-left: 15px
+    .list-social-item
+        display: inline-block
+        margin: 0px 5px
+        font-size: $sz28
+        vertical-align: middle
+        color: $Dark50
+        a
+            font-size: $sz24
+            color: $Dark50
+        &.list-mobile
+            display: none
+            @media (max-width: 776px)
+                display: inline-block
+/* Style visible in Hybris */
+.wrapper
+    iframe
+        .main-header,
+        .sect-footer,
+        .sect-catalog,
+        .sect-newsletter
+            display: none

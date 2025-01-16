@@ -1,0 +1,241 @@
+// Menu Flotante Desktop
+.vertical-nav-sticky
+    top: 40px
+.vertical-nav-float
+    background-color: $Wh
+    margin-top: 92px
+    border-right: 2px solid $Gray50
+    width: 190px
+.vertical-nav
+    font-family: $Medium
+    font-size: $sz14
+    .list-group-item
+        border: 0px
+        padding-left: 0px
+        padding-right: 20px
+        padding-top: 12px
+        padding-bottom: 12px
+        color: $Dark
+        line-height: 18px
+        &.active
+            color: $Orange
+            background-color: $Wh
+            &::before
+                content: '\e904'
+                font-family: 'yanbal-icons'
+                float: left
+                margin-left: 0em
+                padding-right: 0.3em
+                color: $Orange
+                height: 22px
+        &:hover
+            background-color: $Wh
+            color: $Orange
+    & a:nth-child(5)
+        //background-color: red!important
+.social-shared
+    .cuentalo
+        font-size: $sz12
+        color: $Dark50
+        padding-right: 12px
+        display: inline
+    .social-list
+        margin: 12px 0 0 0
+        display: inline-block
+        .social-list-item
+            display: inline-block
+            margin: 0px 10px 0px 0px
+            font-size: 1.75rem
+            vertical-align: middle
+            color: #9A9A9A
+            color: $Dark50
+            .ico-social
+                color: $Dark50
+                height: 28px
+                width: 28px
+                font-size: 26px!important
+            .icon-circle
+                font-size: 1.5rem
+                color: #9A9A9A
+            .icon-whatsapp
+                font-size: 36px!important
+                color: $Dark50
+                display: none
+.nav-title
+    display: none
+    li
+        padding-left: 0px
+        a
+            position: relative
+            h1
+                position: relative
+                margin: 0 5px auto 0px
+                padding: 0px 0px
+                font-size: 20px
+                span
+                    display: block
+                    color: $Orange
+                    font-size: 30px
+            &::after
+                position: absolute
+                right: 0.5%
+                vertical-align: middle
+                top: 50%
+        .dropdown-menu
+            transform: translate3d(0px, 82px, 0px)!important
+            padding: 0px 0px 15px 0px
+            border-radius: 0px
+            -moz-box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0)
+            -webkit-box-shadow: 0 4px 6px 0 black
+            -o-box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0)
+            -ms-box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0)
+            box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.1)
+            border: 0px
+            &::before
+                display: none
+            .dropdown-item
+                text-align: center
+                font-size: $sz27
+                color: $Orange
+                padding: 15px 0px
+                white-space: inherit
+.navigation-end
+    background: url(../images/icons/border-9x.png) top left repeat-x
+    padding: 50px 10px 0px 10px
+    margin-bottom: 50px
+    width: 100%
+    text-align: center
+    .btn
+        +radius(2px)
+        margin-bottom: 35px
+    .btn-gray
+        position: relative
+        text-align: left
+        i
+            color: $Orange
+            font-size: $sz28
+            position: absolute
+            top: 50%
+            right: 10px
+            margin-top: -14px
+    .dropdown
+        .dropdown-menu
+            width: 100%
+            margin-left: 0px
+            .dropdown-item
+                padding: 10px 15px
+.nav-menu
+    position: relative
+    .dropdown
+        .dropdown-menu
+            .dropdown-item
+                background-color: $Wh
+                &:hover
+                    background-color: #FAFAFA
+            &:before
+                display: none
+// Menu Flotante Mobile
+.nav-sticky
+    position: fixed
+    left: 0
+    top: 65px
+    width: 100%
+    z-index: 99999
+    background-color: $Wh
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5)
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5)
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5)
+    li
+        padding: 0px
+        a
+            position: relative
+            padding: 12px 15px!important
+            font-size: $sz18
+            text-transform: none
+            color: $Orange!important
+        &::after
+            position: absolute
+            right: 0.5%
+            vertical-align: middle
+            top: 50%
+        .dropdown-menu
+            transform: translate3d(0px, 34px, 0px) !important
+            padding: 0px 0px 10px 0px
+            border-radius: 0px
+            margin: 8px 0px 0px 0px
+            -moz-box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0)
+            -webkit-box-shadow: 0 4px 6px 0 black
+            -o-box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0)
+            -ms-box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0)
+            box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.1)
+            border: 0px
+            .dropdown-item
+                font-size: $sz16
+                color: $Bk!important
+                padding: 15px 0px
+                white-space: inherit
+                &:hover
+                    background-color: $Wh
+            &::before
+                display: none
+    .dropdown-masked
+        position: static
+        &.show > .dropdown-menu 
+            background: #ffffff
+            box-shadow: 0 100vh 0 100vh rgba(0,0,0,.5),0 5px 5px rgba(0,0,0,.5)
+            width: 100vw
+            border-width: 1px 0 0
+            border-radius: 0
+            margin-left: 0px // Negative offset for the .navbar left 1px border
+            // +transition(all 5s)
+.bottomMenu
+    position: fixed
+    width: 100%
+    z-index: 9999
+    transition: all 1s
+.oculta 
+    opacity:0
+    top:-100%
+.muestra
+    opacity:1
+    top:0
+
+.bottomMenu-inf
+    position: fixed
+    width: 100%
+    z-index: 9999
+    transition: all 1s
+.oculta-inf
+    opacity:0
+    top:-100%
+.muestra-inf
+    opacity:1
+    top:0
+
+.back-top-home 
+    left: calc(100% - 80px)
+    width: 47px
+    height: 47px
+    background: $Orange
+    border-radius: 50%
+    float: left
+    text-align: center
+    position: fixed
+    right: 40px
+    bottom: 40px
+    z-index: 99
+    transition: opacity .15s ease
+    border: 0
+    outline: 0
+    padding: 0
+    cursor: pointer
+    .icon-arrow-top
+        color: #fff
+        position: relative
+        top: -10px
+        font-size: 13px
+        bottom: 0px
+        &::before
+            font-size: 30px
+            position: relative
+            bottom: -12px

@@ -1,0 +1,63 @@
+// Carousel : PHOTOS | TESTIMONIAL
+.section-testimonial,
+.section-slider,
+.section-kit
+    margin-bottom: 40px
+    .swiper-button-next,
+    .swiper-button-prev
+        width: 12px
+        height: 24px
+        background-size: 100%
+        @media (max-width: 767px)
+            width: 14px
+            height: 44px
+.section-kit
+    img
+        display: block
+.back-torange,
+.back-twhite
+    @media (max-width: 767px)
+        margin-left: -15px
+        margin-right: -15px
+.back-torange-add
+    background: rgba(234, 190, 176, 0.25)
+    @media (max-width: 767px)
+        margin-left: 0px
+        margin-right: 0px
+.swiper-slide
+    img
+        width: 100%
+.swiper-slide
+    @media (max-width: 767px)
+        .heading-light
+            font-size: $sz30
+            strong
+                display: block
+                font-size: $sz30
+            margin-bottom: 10px
+        .card-item
+            margin-bottom: 20px
+.item-carousel
+    padding: 30px 30px 40px
+.box-detail
+    padding-left: 15px
+    padding-right: 15px
+    @media (max-width: 768px)
+        padding-left: 0
+        padding-right: 0
+        .d-flex
+            display: block !important
+            width: 100%
+.float-call-to-action
+    text-align: center
+    position: fixed
+    left: 0
+    bottom: 0
+    width: 100%
+    z-index: 1001
+    padding: 70px 15px 15px 15px
+    pointer-events: none
+    +gradientPos( rgba($Wh,.0), $Wh)
+    .btn
+        width: 60%
+        pointer-events: auto

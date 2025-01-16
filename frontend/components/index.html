@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<title>Story Book Components</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
+</head>
+
+<body>
+	<header>
+		<h1>Components</h1>
+	</header>
+	<!-- BUTTONS ////////////////////////////// -->
+	<section class="comp-buttons">
+		<h3>Buttons</h3>
+		<legend>Primary</legend>
+		<div class="component">
+			<a class="btn primary large" href="#" title="Large">Large</a>
+		</div>
+		<div class="component">
+			<a class="btn primary medium" href="#" title="Medium">Medium</a>
+		</div>
+		<div class="component">
+			<a class="btn primary small" href="#" title="Small">Small</a>
+		</div>
+		<div class="component">
+			<a class="btn primary small disabled" href="#" title="Disabled" tabindex="-1">Disabled</a>
+		</div>
+		<legend>Secondary</legend>
+		<div class="component">
+			<a class="btn secondary large" href="#" title="Large">Large</a>
+		</div>
+		<div class="component">
+			<a class="btn secondary medium" href="#" title="Medium">Medium</a>
+		</div>
+		<div class="component">
+			<a class="btn secondary small" href="#" title="Small">Small</a>
+		</div>
+		<div class="component">
+			<a class="btn secondary small disabled" href="#" title="Disabled" tabindex="-1">Disabled</a>
+		</div>
+		<legend>Terciary</legend>
+		<div class="component">
+			<a class="btn terciary large" href="#" title="Large">Large</a>
+		</div>
+		<div class="component">
+			<a class="btn terciary medium" href="#" title="BuMediu tton">Medium</a>
+		</div>
+		<div class="component">
+			<a class="btn terciary small" href="#" title="Small">Small</a>
+		</div>
+		<div class="component">
+			<a class="btn terciary small disabled" href="#" title="Disabled" tabindex="-1">Disabled</a>
+		</div>
+	</section>
+	<!-- INPUT ////////////////////////////// -->
+	<section class="comp-input">
+		<h3>Input</h3>
+		<legend>Default</legend>
+		<!-- Input Simple -->
+		<div class="component">
+			<div class="input-control">
+				<input type="text" id="text1" name="name" value="" required="">
+				<label class="placeholder" for="text1">Escribe tu nombre</label>
+			</div>
+		</div>
+		<!-- Input Simple Disabled -->
+		<div class="component">
+			<div class="input-control disabled">
+				<input class="disabled" type="text" id="disabled1" name="name" value="" required="">
+				<label class="placeholder" for="disabled1">Escribe tu nombre</label>
+			</div>
+		</div>
+		<!-- Input Simple Content -->
+		<div class="component">
+			<div class="input-control">
+				<input type="text" id="text2" name="name" value="John Wick" required="">
+				<label class="placeholder" for="text2">Escribe tu nombre</label>
+			</div>
+		</div>
+		<!-- Input Simple Disabled Content -->
+		<div class="component">
+			<div class="input-control disabled">
+				<input class="disabled" type="text" id="disabled2" name="name" value="John Wick" required="">
+				<label class="placeholder" for="disabled2">Escribe tu nombre</label>
+			</div>
+		</div>
+		<!-- Input Password -->
+		<div class="component">
+			<div class="input-control toggle-pwd">
+				<input type="password" id="password" name="password" value="" required="">
+				<label class="placeholder" for="password">Contraseña</label>
+			</div>
+		</div>
+		<!-- Input Simple Success -->
+		<div class="component">
+			<div class="input-control success">
+				<input class="success" type="text" id="success" name="name" value="John Wick" required="">
+				<label class="placeholder" for="success">Escribe tu nombre</label>
+			</div>
+		</div>
+		<!-- Input Simple Wrong -->
+		<div class="component">
+			<div class="input-control wrong">
+				<input class="wrong" type="text" id="success" name="name" value="" required="">
+				<label class="placeholder" for="success">Escribe tu nombre</label>
+			</div>
+		</div>
+	</section>
+	<!-- SELECT ////////////////////////////// -->
+	<section class="comp-select">
+		<h3>Select</h3>
+		<legend>Default</legend>
+		<div class="component">
+			<div class="select-control">
+				<label class="field" id="img_category_label" for="img_category" data-value=""><span>Selecciona una opción
+					</span>
+					<div class="psuedo_select" id="img_category" name="img_category"><span class="selected"></span>
+						<ul class="options" id="img_category_options">
+							<li class="option" data-value="opt_1">Option 1</li>
+							<li class="option" data-value="opt_2">Option 2</li>
+							<li class="option" data-value="opt_3">Option 3</li>
+							<li class="option" data-value="opt_4">Option 4</li>
+						</ul>
+					</div>
+				</label>
+			</div>
+		</div>
+	</section>
+	<!-- CHECKBOX ////////////////////////////// -->
+	<section class="comp-checkbox">
+		<h3>Check Box</h3>
+		<legend>Default</legend>
+		<div class="checkbox">
+			<label>One</label>
+			<input type="checkbox">
+			<span class="checkmark"></span>
+		</div>
+		<legend>Default Disabled</legend>
+		<div class="checkbox">
+			<label>Two</label>
+			<input type="checkbox" disabled>
+			<span class="checkmark"></span>
+		</div>
+		<legend>Selected</legend>
+		<div class="checkbox">
+			<label>Three</label>
+			<input type="checkbox" checked="checked">
+			<span class="checkmark"></span>
+		</div>
+		<legend>Selected Disabled</legend>
+		<div class="checkbox checkbox_disabled">
+			<label>Four</label>
+			<input type="checkbox" checked="checked" disabled>
+			<span class="checkmark"></span>
+		</div>
+	</section>
+	<!-- RADIO ////////////////////////////// -->
+	<section class="comp-radio">
+		<h3>Radio</h3>
+		<legend>Default</legend>
+		<div class="radiobutton">
+			<label>One</label>
+			<input type="radio" name="radio">
+			<span class="checkmark"></span>
+		</div>
+		<legend>Default Disabled</legend>
+		<div class="radiobutton">
+			<label>Two</label>
+			<input type="radio" name="radio" disabled>
+			<span class="checkmark"></span>
+		</div>
+		<legend>Selected</legend>
+		<div class="radiobutton">
+			<label>Three</label>
+			<input type="radio" name="radio" checked="checked">
+			<span class="checkmark"></span>
+		</div>
+		<legend>Selected Disabled</legend>
+		<div class="radiobutton radiobutton_disabled">
+			<label>Four</label>
+			<input type="radio" name="radio2" checked="checked" disabled>
+			<span class="checkmark"></span>
+		</div>
+	</section>
+	<!-- TABS ////////////////////////////// -->
+	<section class="comp-tabs">
+		<h3>Tabs</h3>
+		<div class="wrapper">
+			<ul class="tabs clearfix" data-tabgroup="first-tab-group">
+				<li><a href="#tab1" class="active">Tab 1</a></li>
+				<li><a href="#tab2">Tab 2</a></li>
+				<li><a href="#tab3">Tab 3</a></li>
+				<li><a href="#tab4">Tab 4</a></li>
+			</ul>
+			<section id="first-tab-group" class="tabgroup">
+				<div id="tab1">
+					En Yanbal, apoyamos la independencia y libertad de las personas.
+					Este fue nuestro compromiso desde que se fundó la compañía, y hoy, sigue vigente, inspirando y motivando a
+					cada una de
+					las personas que trabajan y colaboran.
+				</div>
+				<div id="tab2">
+					Estamos orgullosos de ser Latinos. Disfrutamos de la diversidad de esta región, del carácter de su gente, del
+					color que
+					le dan a la vida y la pasión que los caracteriza. Compartimos esa valentía, superación y optimismo.
+				</div>
+				<div id="tab3">
+					Contamos con centros de innovación de ingredientes e investigación y desarrollo en cosméticos en Europa y
+					Estados
+					Unidos; además de Centros de innovación y diseño de bijouterie también en Estados Unidos con expertos.
+				</div>
+				<div id="tab4">
+					La esencia de nuestros procesos y productos está en cuidar el medio ambiente y sus recursos naturales. Además,
+					el centro
+					de nuestras decisiones siempre serán las personas, la ética y la transparencia.
+				</div>
+			</section>
+		</div>
+	</section>
+	<!-- SEGMENT ////////////////////////////// -->
+	<section class="comp-segment">
+		<h3>Segmented</h3>
+		<ul class="segment clearfix" data-tabgroup="first-tab-group">
+			<li><a href="#segmented1" class="active">Segmented 1</a></li>
+			<li><a href="#segmented2">Segmented 2</a></li>
+			<li><a href="#segmented3">Segmented 3</a></li>
+			<li><a href="#segmented4">Segmented 4</a></li>
+		</ul>
+	</section>
+	<!-- STEPPER ////////////////////////////// -->
+	<section class="comp-stepper">
+		<h3>Stepper</h3>
+		<ul class="stepper">
+			<li class="stepper__item is-complete "><span class="stepper__number">1</span><span
+					class="stepper__text">Identificación</span></li>
+			<li class="stepper__item is-complete"><span class="stepper__number">2</span><span class="stepper__text">Datos
+					Personales</span></li>
+			<li class="stepper__item is-complete"><span class="stepper__number">3</span><span
+					class="stepper__text">Dirección</span>
+			</li>
+			<li class="stepper__item is-active"><span class="stepper__number">4</span><span
+					class="stepper__text">Recomendante</span>
+			</li>
+			<li class="stepper__item"><span class="stepper__number">5</span><span class="stepper__text">Finalizar</span></li>
+			<!-- 	<div class="bar"></div>-->
+			<div class="bar" style="left: 100px; width: 300px;"></div>
+		</ul>
+	</section>
+	<!-- SWITCH ////////////////////////////// -->
+	<section class="comp-switch">
+		<h3>Switch</h3>
+		<div class="switch-button">
+			<!-- Checkbox -->
+			<input type="checkbox" name="switch-button" id="switch-label" class="switch-button__checkbox">
+			<!-- Botón -->
+			<label for="switch-label" class="switch-button__label"></label>
+		</div>
+	</section>
+	<!-- BREADCRUMB ////////////////////////////// -->
+	<section class="comp-breadcrumb">
+		<h3>Breadcrumb</h3>
+		<ol class="breadcrumb">
+			<li><a href="#">Inicio</a></li>
+			<li><a href="#">Internal Page</a></li>
+			<li class="active"><span>Internal Page</span></li>
+		</ol>
+	</section>
+	<!-- PAGINATION ////////////////////////////// -->
+	<section class="comp-pagination">
+		<h3>Pagination</h3>
+		<div class="pagination">
+			<a href="#" class="disabled" title="anterior"><i class="icon-arrow-left"></i></a>
+			<a href="#" title="1">1</a>
+			<a href="#" class="active" title="2">2</a>
+			<a href="#" title="3">3</a>
+			<a href="#" title="4">4</a>
+			<a href="#" title="5">5</a>
+			<a href="#" title="6">6</a>
+			<a href="#" title="siguiente"><i class="icon-arrow-right"></i></a>
+		</div>
+	</section>
+	<aside></aside>
+	<footer></footer>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/extras.js"></script>
+</body>
+
+</html>

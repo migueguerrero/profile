@@ -1,0 +1,197 @@
+// slider
+.c-slider
+	position: relative
+	padding-left: 2em
+	padding-right: 2em
+	width: 100%
+	.swiper-container
+		@media (max-width: 767px)
+			padding-bottom: 45px
+		.swiper-wrapper
+			display: inline-block
+			width: 100%
+			@media (max-width: 767px)
+				display: flex
+				width: 100%
+			.swiper-slide
+				width: 33.3333333333%
+				float: left
+				@media (max-width: 992px)
+					width: 50%
+					float: left
+				@media (max-width: 420px)
+					width: 100%
+					float: left
+		.swiper-pagination-bullet
+			width: $sz10
+			height: $sz10
+			background-color: #E7E7E7
+			-webkit-transform: none
+			transform: none
+			opacity: 1
+			outline: none
+			//border: 2px solid blue!important
+			//left: 0px!important
+		.swiper-pagination-bullet-active
+			opacity: 1
+			background: $Orange
+	.swiper-button-prev,
+	.swiper-button-next
+		background: transparent
+		color: $Dark
+		outline: none
+		width: auto
+		height: auto
+		margin-top: -48px
+		transform: translateY(-50%)
+		background-image: none!important
+		i
+			font-size: 35px
+		.icon-arrow-left
+			position: relative
+			left: -6px
+		.icon-arrow-right
+			position: relative
+			right: -6px
+	.swiper-button-prev
+		left: 0
+		display: none
+		@media (max-width: 767px)
+			display: block
+	.swiper-button-next
+		right: 0
+		display: none
+		@media (max-width: 767px)
+			display: block
+	.swiper-button-disabled
+		opacity: 0
+		display: none
+		@media (max-width: 767px)
+			display: block
+	.swiper-pagination
+		display: none
+		//background-color: yellow
+		@media (max-width: 767px)
+			display: block
+	&__item
+		padding: 15px
+		padding-bottom: 96px
+		@media (max-width: 767px)
+			padding-bottom: 10px
+		@media (max-width: 420px)
+			padding: 0px 15px
+		@media (max-width: 320px)
+			padding: 0px 0px
+	&__categories
+		border: 1px solid $Dark
+		margin-bottom: $sz10
+	&__categories-item
+		display: block
+		padding: 9px
+		@media (max-width: 767px)
+			padding: 5px 8px
+		&:after
+			content: ''
+			display: block
+			clear: both
+		&:first-child
+			border-bottom: 1px solid $Dark
+	&__categories-label
+		color: $Dark
+		display: block
+		float: left
+		width: 33.33%
+		padding: 3px 0px
+		font-family: $Book
+		font-size: $sz14
+		@media (max-width: 767px)
+			font-size: 13px
+		@media (max-width: 420px)
+			font-size: $sz14
+		@media (max-width: 320px)
+			//background-color: gray
+			width: 34%
+	&__categories-text
+		width: 66.67%
+		display: block
+		float: left
+		padding: 3px 0px
+		font-family: $Demi
+		font-size: $sz14
+		text-transform: uppercase
+		@media (max-width: 767px)
+			font-size: 13px
+		@media (max-width: 420px)
+			font-size: $sz14
+		@media (max-width: 320px)
+			//background-color: yellow
+			width: 66%
+		span
+			float: left
+	&__image
+		@media (max-width: 320px)
+			padding: 0px 14px 0px 14px
+			//border: 1px solid red
+		img
+			display: block
+			width: 100%
+	&__content
+		padding-top: 20px
+		padding-bottom: 24px
+		text-align: center
+		@media (max-width: 767px)
+			padding-bottom: 10px
+			padding-top: 8px
+			//background-color: red
+	&__description
+		text-align: center
+		font-family: $Demi
+		font-size: $sz16
+		color: $Dark
+		height: 40px
+		line-height: 20px
+		display: -webkit-box
+		-webkit-line-clamp: 2
+		-webkit-box-orient: vertical
+		overflow: hidden
+		text-overflow: ellipsis
+	&__price
+		font-family: $Demi
+		font-size: $sz16
+		padding-top: 10px
+		height: 28px
+		@media (max-width: 767px)
+			padding-top: 8px
+		&--old
+			font-family: $Demi
+			text-decoration: line-through
+			margin-right: $sz10
+			color: $Gray50
+		&--new
+			font-family: $Demi
+			color: $Orange
+	&__button
+		display: flex
+		justify-content: center
+		.button
+			width: 100%
+			&--width
+				width: 80%
+				@media (max-width: 767px)
+					width: 90%
+				@media (max-width: 320px)
+					width: 100%
+		.swiper-pagination-bullet
+			width: $sz10
+			height: $sz10
+			background-color: #E7E7E7
+			transform: none
+			opacity: 1
+			outline: none
+		.swiper-pagination-bullet-active
+			opacity: 1
+			background: $Orange
+$OrangeBan: #ffb174
+.container-bp
+	background-color: $OrangeBan
+	display: block

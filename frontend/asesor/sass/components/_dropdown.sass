@@ -1,0 +1,11 @@
+.dropdown-menu
+	position: relative
+	border-color: transparent
+	+shadow( 0 2px 6px 0 rgba($Dark, .19))
+	&:before
+		top: -5px
+		right: 30px
+		position: absolute
+		+content( "", 0px, 0px )
+		@extend %triangle-b
+		border-bottom-color: $Wh

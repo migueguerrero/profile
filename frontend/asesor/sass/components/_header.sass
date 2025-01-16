@@ -1,0 +1,67 @@
+.main-header
+	border-bottom: 1px solid $Gray10
+	z-index: 99999
+.navigation-top
+	background-color: $Orange
+	@media (max-width: 992px)
+	.contenedor
+		padding: 0px 0px
+		max-width: 1170px
+		margin: 0 auto
+		.incorporate
+			font-family: $Demi
+			display: inline-block
+			padding: $sz10 0px
+			font-size: $sz12
+			color: $Wh
+			text-decoration: underline
+			&:hover, &:active, &:focus
+				text-decoration: none
+			@media (max-width: 1200px)
+				padding-left: 15px
+.navigation-middle
+	background-color: $Wh
+	position: relative
+	height: 82px
+	@media (max-width: 992px)
+		height: 63px
+.brand-back
+	position: absolute
+	z-index: 10
+	top: -6px
+	left: $sz14
+	display: none
+	@media (max-width: 992px)
+	a
+		color: $Orange
+		position: absolute
+		font-size: 32px
+		-moz-transform: rotate(270deg)
+		-webkit-transform: rotate(270deg)
+		-o-transform: rotate(270deg)
+		-ms-transform: rotate(270deg)
+		transform: rotate(270deg)
+	@media (max-width: 992px)
+		top: $sz10
+		.span
+			&::before
+				color: $Orange
+.brand-name
+	position: absolute
+	margin-top: 17px
+	width: 100%
+	text-align: center
+	margin-left: auto
+	margin-right: auto
+	left: 0
+	right: 0
+	@media (max-width: 992px)
+		margin-top: $sz12
+	@media (max-width: 768px)
+		margin-top: 17px
+	img
+		width: 187px
+		@media (max-width: 992px)
+			width: 170px
+		@media (max-width: 768px)
+			width: 130px

@@ -1,0 +1,25 @@
+.menu-mobile
+	width: 30px
+	height: 26px
+	position: relative
+	display: none
+	cursor: pointer
+	background: transparent
+	border: 0px
+	@media (max-width: 1024px)
+		display: block
+		top: 10px
+		background: transparent
+		border: 0px
+	&__bar
+		background-color: $Orange
+		position: absolute
+		left: 0
+		width: 100%
+		height: 2px
+		&--top
+			top: 0
+		&--middle
+			top: 10px
+		&--bottom
+			top: $sz20

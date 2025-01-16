@@ -1,0 +1,141 @@
+.footer
+	padding-top: 80px
+	border-top: 1px solid $Orange
+	margin-top: 32px
+	@media (max-width: 992px)
+		padding-top: 32px
+	&__top
+		max-width: 1170px
+		width: 100%
+		margin: 0 auto
+		@media (max-width: 992px)
+		.espacios
+			margin-left: -15px
+			margin-right: -15px
+			@media (max-width: 1170px)
+				margin-left: 5px
+				margin-right: 5px
+	&__col
+		@media (max-width: 992px)
+			border-bottom: 1px solid $Beige
+		h4
+			font-family: $Demi
+			font-size: $sz14
+			color: $Dark
+			text-align: left
+			margin-bottom: $sz10
+			margin-top: $sz10
+			display: inline-block
+			width: 100%
+			a
+				color: $Dark
+				text-decoration: none
+				&:hover
+					text-decoration: underline
+			a.activo
+				text-decoration: underline
+		&--space
+			@media (max-width: 992px)
+				padding: 15px 0
+		.centrado
+			@media (max-width: 992px)
+				text-align: center
+		.paises
+			padding-bottom: 6px
+			@media (max-width: 992px)
+				text-align: center
+	&__links
+		font-family: $Book
+		color: $Dark
+		font-size: $sz14
+		padding: $sz10 0
+		display: block
+		&:hover, &:active, &:focus
+			text-decoration: underline
+			color: $Dark
+		&--bold
+			font-weight: bold
+	&__text
+		font-family: $Demi
+		color: $Dark
+		font-size: $sz14
+	&__bottom
+		margin-top: 42px
+		padding-top: 24px
+		padding-bottom: 24px
+		background-color: $Orange
+		@media (max-width: 992px)
+			border: none
+	&__inner
+		max-width: 1170px
+		width: 100%
+		margin: 0 auto
+		.espacios
+			margin-left: -15px
+			margin-right: -15px
+			@media (max-width: 992px)
+				margin-left: 0px
+				margin-right: 0px
+	&__social
+		.social-buttons
+			margin-top: 10px
+			@media (max-width: 992px)
+				margin-top: 0px
+				text-align: center
+			&__item
+				float: left
+				margin-right: 8px
+				a
+					color: $Dark
+					i
+						font-size: 24px
+						@media (max-width: 992px)
+							font-size: 32px
+					&:hover, &:active, &:focus
+						color: $Dark
+				@media (max-width: 992px)
+					float: none
+					display: inline-block
+					margin: $sz10
+
+	&__copyright
+		@media (max-width: 1200px)
+			margin-left: $sz16
+		@media (max-width: 992px)
+			text-align: center
+			margin-bottom: 24px
+	&__copyright-icon
+		display: inline-block
+		color: $Wh
+		font-size: 30px
+		vertical-align: middle
+		@media (max-width: 992px)
+			display: block
+	&__copyright-text
+		display: inline-block
+		color: $Wh
+		font-family: $Book
+		font-size: $sz14
+		vertical-align: middle
+	&__terms
+		text-align: right
+		@media (max-width: 992px)
+			text-align: center
+		li
+			display: inline-block
+			margin: 0 0 0 $sz16
+			@media (max-width: 1200px)
+				margin: 0 $sz16 0 0
+			@media (max-width: 992px)
+				margin: $sz10 0px $sz10 0px
+				display: block
+		a
+			font-family: $Book
+			font-size: $sz14
+			color: $Wh
+			padding: 8px 0px
+			display: block
+			&:hover, &:active, &:focus
+				text-decoration: underline
+	&-home
+		margin-top: 8px

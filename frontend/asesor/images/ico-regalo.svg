@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="55px" height="55px" viewBox="0 0 55 55" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>D57AF5CE-3E02-4116-B951-8626D1B6B27F</title>
+    <defs>
+        <polygon id="path-1" points="0 55 55 55 55 0 0 0"></polygon>
+    </defs>
+    <g id="test-fragancias-2021" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="paso-1" transform="translate(-773.000000, -363.000000)">
+            <g id="Group-8" transform="translate(773.000000, 363.000000)">
+                <line x1="26.999" y1="12" x2="27.001" y2="54" id="Stroke-1" stroke="#FFFFFF" stroke-width="1.3"></line>
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-4"></g>
+                <polygon id="Stroke-3" stroke="#FFFFFF" stroke-width="1.3" mask="url(#mask-2)" points="1 21 54 21 54 12 1 12"></polygon>
+                <polygon id="Stroke-5" stroke="#FFFFFF" stroke-width="1.3" mask="url(#mask-2)" points="6 54 49 54 49 21 6 21"></polygon>
+                <path d="M28,12 C28,12 31.9964225,0.169030928 39.3506175,1.04650362 C46.7033169,1.92397632 42.9581665,12 28,12 Z" id="Stroke-6" stroke="#FFFFFF" stroke-width="1.3" mask="url(#mask-2)"></path>
+                <path d="M27,12 C27,12 23.0035775,0.169030928 15.6493825,1.04650362 C8.29668309,1.92397632 12.0418335,12 27,12 Z" id="Stroke-7" stroke="#FFFFFF" stroke-width="1.3" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

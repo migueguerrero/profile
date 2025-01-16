@@ -1,0 +1,28 @@
+.container
+	max-width: 1200px
+
+// Lists red social
+.list-social
+	display: inline-block
+	margin-left: 15px
+	.list-social-item
+		display: inline-block
+		margin: 0px 5px
+		font-size: $sz28
+		vertical-align: middle
+		color: $Gray50
+		a
+			font-size: $sz24
+			color: $Gray50
+			&.list-mobile
+				display: none
+				@media (max-width: 776px)
+					display: inline-block
+/* Style visible in Hybris */
+.wrapper
+	iframe
+		.main-header,
+		.sect-footer,
+		.sect-catalog,
+		.sect-newsletter
+			display: none

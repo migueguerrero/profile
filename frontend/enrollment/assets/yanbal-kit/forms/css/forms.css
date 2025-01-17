@@ -1,0 +1,734 @@
+input{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: block;
+    border: 1px solid #A4A5A9;
+    border-radius: 2px;
+    background-color: #FFFFFF;
+    padding: 12px 16px;
+    width: 100%;
+    color: #1C1F28;
+    font-size: 16px;
+    line-height: 24px;
+    outline: none;
+    border-radius: 2px;
+}
+
+input.invalid{
+  border:1px solid #FF0000;
+}
+
+
+.form-field {
+    position: relative;
+    margin-bottom:0
+}
+.form-field span.characters {
+		position: absolute;
+    font-size: 12px;
+    color: #A4A5A9;
+    right: 0px;
+}
+
+.form-field input:focus, .form-field input {
+    display: block;
+    border: 1px solid #A4A5A9;
+    border-radius: 2px;
+    background-color: #FFFFFF;
+    padding: 20px 16px 4px 16px;
+    width: 100%;
+    color: #1C1F28;
+    font-size: 16px;
+    line-height: 24px;
+    outline: none;
+    height: initial;
+}
+
+.form-field input:focus{
+  box-shadow: 0 0 4px 0 #DC582A;
+  border: 1px solid #fff !important;
+}
+
+
+.form-field.error input {
+    border: 1px solid #E5554F;
+    border-radius: 2px;
+    background-color: #FFFFFF;
+}
+
+.form-field.ok input {
+  border: 1px solid #00BFA5;
+  border-radius: 2px;
+  background-color: #FFFFFF;
+}
+
+.form-field i.icon-validated{
+  display: none;
+}
+
+.form-field.error i.icon-validated {
+  display: block;
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  font-size: 24px;
+  color: #E5554F;
+}
+
+.form-field.ok i.icon-validated {
+  display: block;
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  font-size: 24px;
+  color: #00BFA5;
+}
+
+.form-field.icon i.icon-validated {
+  display: block;
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  font-size: 24px;
+  color: #A4A5A9;
+}
+
+.checkselect.error .checkmark {
+  border: 1px solid #E5554F;
+}
+
+.form-field.disabled input{
+    background-color: #E8E8E9;
+    border-color: #E8E8E9;
+}
+.form-field.toggle-pwd input {
+    padding-right: 48px;
+}
+.form-field.toggle-pwd i[class^="icon-eye"] {
+    cursor: pointer;
+    font-size: 24px;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+}
+.form-field.toggle-pwd2 input {
+    padding-right: 48px;
+}
+.form-field.toggle-pwd2 i {
+    cursor: pointer;
+    font-size: 24px;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+}
+.form-field.toggle-pwd3 input {
+    padding-right: 48px;
+}
+.form-field.toggle-pwd3 i {
+    cursor: pointer;
+    font-size: 24px;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+}
+.form-field label.placeholder {
+    font-size: 16px;
+    line-height: 24px;
+    position: absolute;
+    cursor: text;
+    top: 13px;
+    left: 16px;
+    color: #A4A5A9;
+    font-weight: 300;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    text-transform: none;
+}
+.form-field input:valid+label.placeholder, .form-field input:focus+label.placeholder {
+    font-size: 10px;
+    -webkit-transform: translate3d(0, -7px, 0);
+    transform: translate3d(0, -7px, 0);
+}
+.form-error-massage {
+    position: relative;
+    border: 1px solid #E5554F;
+    border-radius: 2px;
+    background-color: #FFFFFF;
+    padding: 16px 16px 16px 56px;
+    color: #E5554F;
+    text-align: left;
+    display:none;
+}
+.form-error-massage i {
+    font-size: 24px;
+    position: absolute;
+    top: 16px;
+    left: 16px;
+  
+}
+.form-help-text{
+color: #A4A5A9;
+font-size: 14px;
+font-weight: 300;
+letter-spacing: 0.2px;
+line-height: 20px;
+text-align: left ;
+margin-left: 16px;
+}
+
+.checkselect {
+	text-align: left;
+	margin-bottom: 24px;
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.checkselect input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  cursor: pointer;
+  height: 100%;
+  width: 30px;
+  z-index: 1;
+}
+.checkselect .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  border: solid 1px #A4A5A9;
+  border-radius: 3px;
+}
+.checkselect .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 7px;
+  top: 1px;
+  width: 7px;
+  height: 15px;
+  border: solid #DC582A;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.checkselect:hover input ~ .checkmark {
+  background-color: #ffffff;
+}
+.checkselect input:checked ~ .checkmark {
+  background-color: #ffffff;
+  border: solid 1px #A4A5A9;
+  border-radius: 3px;
+}
+.checkselect input:checked ~ .checkmark:after {
+  display: block;
+}
+.checkselect label{
+font-size: 14px;
+font-weight: 300;
+letter-spacing: 0;
+line-height: 21px;
+color:#444;
+}
+/*
+.select-form {
+  border: none;
+  position: relative;
+  margin-bottom: 32px;
+  display: block;
+  width: 100%;
+}
+.select-form label.field {
+  border-radius: 4px;
+  color: #A4A5A9;
+  display: block;
+  margin: 0px;
+
+  position: relative;
+  height: 50px;
+  transition-property: opacity;
+  border: solid 1px #A4A5A9;
+  width: 100%;
+  z-index: 1;
+  background-color: white;
+  top: 0;
+  left: 0;
+  border-radius: 2px;
+}
+.select-form label.field span {
+  color: inherit;
+  display: block;
+  font-size: 16px;
+  height: 20px;
+  line-height: 20px;
+  left: 11px;
+  pointer-events: none;
+  position: absolute;
+  top: 14px;
+  transform: scale(1) translateY(0);
+  transition-property: color, font-size, top;
+  z-index: 1;
+}
+.select-form label.field span.required::after {
+  color: inherit;
+  content: "*";
+  display: block;
+  height: 20px;
+  left: -20px;
+  line-height: 20px;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 20px;
+}
+.select-form .psuedo_select {
+  background: rgba(255, 255, 255, 0);
+  position: relative;
+  color: #1C1F28;
+  cursor: pointer;
+  font-size: 20px;
+  height: 24px;
+  line-height: 24px;
+  margin: 10px 0px 0 0;
+  min-width: 250px;
+  padding-top: 24px;
+  outline: 0;
+  z-index: 1;
+  display:none;
+}
+.select-form label.field .psuedo_select::after {
+  font-family: "yanbal-icons";
+  content: "";
+  font-size: 28px;
+  color: #A4A5A9;
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  transition-property: background;
+}
+.select-form label.field .psuedo_select .selected {
+  height: 24px;
+  left: 3px;
+  line-height: 24px;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  transform: translateY(24px);
+  transition-property: opacity, transform;
+  will-change: transform;
+  margin-left: 6px;
+  margin-top: 8px;
+}
+.select-form label.field .psuedo_select ul {
+	text-align: left;
+  background: #fff;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+  display: block;
+  height: 0;
+  list-style: none;
+  margin-top: 2px;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0px;
+  pointer-events: none;
+  transition-property: height, opacity;
+  width: 100%;
+  z-index: 2;
+  top: 38px;
+}
+.select-form label.field .psuedo_select ul li {
+  height: auto;
+  padding: 10px;
+  background-color: #FFFFFF;
+  font-size: 16px;
+  line-height: 24px;
+  border-bottom: 1px solid #EFEFEF;
+}
+.select-form label.field .psuedo_select ul li:hover {
+  background-color: #DC582A;
+  color: #FFFFFF;
+}
+.select-form label.field .deselect {
+  background-color: transparent;
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: -1;
+}
+.select-form label.field.focused {
+  color: #A4A5A9;
+  border: solid 1px #F1C9BC;
+  box-shadow: 0 0 3px 1px #FDEEE0;
+  z-index: 2;
+}
+.select-form label.field.focused .psuedo_select::after {
+  background: url("data:image/svg+xml;utf8,<svg fill='#007BED' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'> <path d='M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z'/> <path d='M0-.75h24v24H0z' fill='none'/> </svg>"), no-repeat;
+}
+.select-form label.field.focused .psuedo_select ul {
+  opacity: 1;
+  pointer-events: all;
+  position: absolute;
+}
+.select-form label.error {
+  border: 1px solid #E5554F;
+}
+
+select.form-control {
+  border: solid 1px #A4A5A9;
+  border-radius: 2px;
+  color: #A4A5A9;
+  font-size: 16px;
+  height: 50px;
+  line-height: 20px;
+  padding: 12px 12px;
+}*/
+
+.select {
+  position: relative;
+  font-family: Arial;
+}
+
+.select select {
+  display: none; /*hide original SELECT element:*/
+}
+
+.form-control {
+  background-color: DodgerBlue;
+}
+
+/*style the arrow inside the select element:*/
+.select:after {
+  position: absolute;
+  
+  top: 14px;
+  right: 40px;
+  width: 0;
+  height: 0;
+
+  content: "\e902";
+    font-family: "yanbal-icons";
+    border: 0;
+    font-size: 24px;
+
+}
+
+.select.select-arrow-active:after {
+  content: "\e905";
+}
+
+
+
+
+
+/*point the arrow upwards when the select box is open (active):*/
+.form-control.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div,.form-control {
+  
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+  user-select: none;
+}
+
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  background-color: #fff;
+  top: 50px;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  text-align: left;
+  max-height: 200px;
+  overflow: hidden;
+  overflow-y: auto;
+  border: 1px solid #D1D2D4;
+  box-shadow: 0 8px 12px 0 rgb(0 0 0 / 4%);
+
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.custom-field-date .select .select-items{
+  margin:0 7px;
+}
+
+
+.form-control:focus {
+  box-shadow: none;
+  border: 1px solid #A4A5A9;
+}
+
+.number {
+    border: 1px solid #A4A5A9;
+    padding: 8px 7px;
+    display: flex;
+    justify-content: space-between;
+}
+.number a.minus,
+.number a.plus {
+  cursor: pointer;
+}
+
+.number input {
+  display: inline-block;
+  width: 50px;
+  border: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  line-height: 24px;
+}
+
+.form-box-field {
+  border: 1px solid #A4A5A9;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+  margin-bottom: 16px;
+  padding: 16px;
+  display: flex;
+  text-align: left;
+  position: relative;
+}
+
+.form-box-field input[type="radio"] {
+  width: 24px;
+  border: 0;
+}
+.form-box-field .detail,
+.form-box-field .reference {
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 0.2px;
+  line-height: 16px;  
+}
+
+.form-box-field .detail{
+  margin-bottom: 16px;
+}
+
+
+
+.form-box-field .price {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  font-size: 12px;
+}
+
+.form-box-field .title{
+  font-family: 'MaisonNeue-Demi';
+}
+
+.form-box-field .info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-box-field .actions {
+  margin-top: 20px;
+  font-size: 12px;
+}
+
+.form-box-field .actions  a{
+  margin-right: 16px;
+}
+
+
+.form-box-field .footer {
+  font-size: 12px;
+  letter-spacing: 0.2px;
+  line-height: 16px;
+  background-color:rgba(232,232,233,0.3);
+  
+  margin-right: -16px;
+  margin-left: -16px;
+  margin-bottom: -16px;
+  padding: 16px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  padding-left: 48px;
+}
+
+.form-box-field  .footer i.icon-info {
+  font-size: 24px;
+  position: absolute;
+  left: 16px;
+}
+
+.custom-field-date {
+  display: flex;
+  margin-left: -7px;
+  margin-right: -7px;
+}
+.custom-field-date .form-field.select {
+  
+  padding:0 7px;
+}
+
+.custom-control {
+  position: relative;
+  z-index: 1;
+  display: block;
+  min-height: 1.5rem;
+  padding-left: 32px;
+  -webkit-print-color-adjust: exact;
+  color-adjust: exact;
+  text-align: left;
+}
+
+.custom-radio .custom-control-input:checked~.custom-control-label::after {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='-4 -4 8 8'%3E%3Ccircle r='3' fill='%23DC582A'/%3E%3C/svg%3E");
+}
+
+.custom-control-input:checked~.custom-control-label::before {
+  color: #fff;
+  border-color: #A4A5A9;
+  background-color: #fff;
+  width: 24px;
+  height: 24px;
+  left: -32px;
+}
+.custom-control-label{
+  position: relative;
+}
+.custom-control-label::after {
+  position: absolute;
+  top: 0px;
+  left: -32px;
+  display: block;
+  width: 24px;
+  height: 24px;
+  content: "";
+  background: 50% 50% no-repeat;
+
+}
+
+.custom-control-label::before {
+  position: absolute;
+  top: 0;
+  left: -32px;
+  display: block;
+  width: 24px;
+  height: 24px;
+  pointer-events: none;
+  content: "";
+  background-color: #fff;
+  border: #adb5bd solid 1px;
+  
+}
+
+.custom-radio .custom-control-label::before {
+  border-radius: 50%;
+}
+
+.custom-control-input {
+  position: absolute;
+  left: 0;
+  z-index: -1;
+  width: 24px;
+  height: 24px;
+  opacity: 0;
+}
+
+
+
+.password-requeriments .pwd-rq i.icon-check {
+  font-size: 24px;
+  margin-right: 8px;
+  vertical-align: bottom;
+  color: #C34E25;
+  position: absolute;
+  left: 16px;
+}
+
+.password-requeriments .pwd-rq{
+  margin-bottom: 16px;
+}
+
+
+.dropdown-toggle,
+.dropbtn {
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  padding-bottom: 15px;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown.show {
+  background-color: #C34E25;
+}
+
+.dropdown-toggle::after{
+  content: "\e902";
+  font-family: "yanbal-icons";
+  border: 0;
+  font-size: 24px;
+  color:#fff;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-menu a {
+  font-family: 'MaisonNeue-Book' !important;
+  color:#1C1F28 !important;
+  padding: 12px 16px;
+  text-decoration: none !important;
+  display: block;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.2px;
+  line-height: 24px;
+  
+}
+
+.dropdown-menu.show {
+  box-shadow: 0 5px 10px 0 rgb(0 0 0 / 10%);
+  border: 0;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-menu a:hover {background-color: rgba(232,232,233,0.3);}
+

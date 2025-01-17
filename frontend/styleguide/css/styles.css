@@ -1,0 +1,3129 @@
+@font-face {
+    font-family: 'Ogg';
+    src: url('./fonts/ogg/Ogg-Bold.eot');
+    src: local('☺'), url('./fonts/ogg/Ogg-Bold.woff') format('woff'), url('./fonts/ogg/Ogg-Bold.ttf') format('truetype');
+    font-style: Bold;
+}
+
+@font-face {
+    font-family: 'Maison Neue';
+    src: local('☺'), url('./fonts/maison-neue/MaisonNeue-Medium.woff') format('woff'), url('./fonts/maison-neue/MaisonNeue-Medium.woff2') format('woff');
+}
+
+@font-face {
+    font-family: 'Maison Neue Light';
+    src: local('☺'), url('./fonts/maison-neue/MaisonNeueWEB-Light.woff') format('woff'), url('./fonts/maison-neue/MaisonNeueWEB-Light.woff2') format('woff');
+}
+
+@font-face {
+    font-family: 'Maison Neue Demi';
+    src: local('☺'), url('./fonts/maison-neue/MaisonNeueWEB-Demi.woff') format('woff'), url('./fonts/maison-neue/MaisonNeueWEB-Demi.woff2') format('woff');
+}
+
+@font-face {
+    font-family: 'Maison Neue Book';
+    src: local('☺'), url('./fonts/maison-neue/MaisonNeueWEB-Book.woff') format('woff'), url('./fonts/maison-neue/MaisonNeueWEB-Book.woff2') format('woff');
+}
+
+:root {
+    --space: 1rem;
+    --border: 4px;
+    --page-width: 80ch;
+    --font-family: "Maison Neue Demi", sans-serif;
+    --color-link: black;
+    --color-active: #DC582A;
+    ;
+    --ease: cubic-bezier(0.23, 1, 0.32, 1);
+    --duration: 350ms;
+    --section-offset: 0;
+}
+
+* {
+    box-sizing: border-box;
+    outline-width: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Maison Neue";
+    color: #1C1F28;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0.2px;
+    line-height: 24px;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: Ogg;
+    margin: 8px 0;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 52px;
+    margin-bottom: 32px;
+}
+
+h2 {
+    font-family: Ogg;
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 0.2px;
+    line-height: 40px;
+}
+
+h3 {
+    font-size: 27px;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+
+
+h5 {
+    font-size: 20px;
+    line-height: 28px;
+}
+
+p, a, a:hover {
+    color: #1C1F28;
+    font-family: "Maison Neue", sans-serif;
+}
+
+.medium {
+    font-family: "Maison Neue Demi", sans-serif;
+}
+
+.light {
+    font-family: "Maison Neue Light", sans-serif;
+}
+
+.owl-carousel .owl-item img.desk, .desk {
+    display: block;
+}
+
+.owl-carousel .owl-item img.mob, .mob {
+    display: none;
+}
+
+.owl-carousel .owl-stage {
+    margin: auto;
+}
+
+.owl-nav.disabled {
+    display: none !important;
+}
+/*
+.size1 {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    line-height: 32px;
+}
+
+.size2 {
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0.2px;
+    line-height: 24px;
+}
+
+.size3 {
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 20px;
+}
+
+.size4 {
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 0.2px;
+    line-height: 16px;
+}
+
+.size5 {
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 0.2px;
+    line-height: 16px;
+}*/
+
+.m1_bottom {
+    margin-bottom: 64px;
+}
+
+.m2_bottom {
+    margin-bottom: 32px;
+}
+
+.m3_bottom {
+    margin-bottom: 16px;
+}
+
+.m4_bottom {
+    margin-bottom: 16px;
+}
+
+a {
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0.2px;
+    line-height: 24px;
+}
+
+label, p {
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0.2px;
+    line-height: 24px;
+}
+
+h2, p {
+    margin-bottom: 32px;
+}
+
+a {
+    text-decoration: underline;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    color: #DC582A;
+  
+}
+
+label {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin: 0;
+    padding: 0;
+    min-height: 3.5rem;
+}
+
+/* Hide the browser's default radio button */
+
+label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+
+.checkmark {
+    position: absolute;
+    bottom: -2rem;
+    left: 50%;
+    height: 25px;
+    width: 25px;
+    border: 1px solid #CFCFD0;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    transform: translate(-50%, 0%);
+    width: 27px;
+    height: 27px;
+}
+
+/* On mouse-over, add a grey background color */
+
+label:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+
+label input:checked~.checkmark {
+    background-color: #fff;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+    background-color: #DC582A;
+    width: 14px;
+    height: 14px;
+    margin: 5.5px;
+}
+
+/* Show the indicator (dot/circle) when checked */
+
+label input:checked~.checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+
+label .checkmark:after {
+    border-radius: 50%;
+    background-color: #DC582A;
+    width: 14px;
+    height: 14px;
+}
+
+.center {
+    margin: auto;
+}
+
+.bg-melon {
+    background-color: rgba(255,190,142,0.5);
+}
+
+.bg-arcilla {
+    background-color: #DC582A;
+}
+
+.bg-arcilla a {
+    color: #fff;
+}
+
+.bg-arcilla .bars h3 {
+    font-size: 45px;
+    font-weight: bold;
+    letter-spacing: 0.33px;
+    line-height: initial;
+    margin-bottom: 0;
+}
+
+.bg-arcilla .bars h3  span{
+    font-size: 58px;
+    font-weight: bold;
+    letter-spacing: 0.33px;
+    line-height: 88px;
+}
+
+.bg-arcilla .bar {
+    border: 2px solid #fff;
+    height: 17px;
+    
+}
+
+.bg-arcilla .btn.yanbal-btn-default {
+    border: 1px solid #FFFFFF;
+}
+
+.bg-arcilla .bar .nivel {
+    /* background-color: #fff; */
+    height: 13px;
+    transition: width 2s;
+    width: 0;
+}
+
+.bg-arcilla .bar:hover .nivel {
+    /* background-color: #fff; */
+    height: 13px;
+    background-color: #fff;
+}
+
+.bg-arcilla [class^="icon-"], .bg-arcilla [class*=" icon-"] {
+    color: #fff !important;
+}
+
+.bg-arcilla h1, .bg-arcilla h2, .bg-arcilla h3, .bg-arcillah4, .bg-arcilla h5, .bg-arcilla p {
+    color: #fff;
+}
+
+._h100 {
+    height: 100%;
+}
+
+button:focus {
+    outline: none;
+}
+
+/*OWL*/
+
+.owl-carousel.owl-theme button.owl-prev {
+    position: absolute;
+    margin-top: 0;
+    top: 50%;
+    left: -50px;
+    width: auto;
+    transform: translate(0%, -50%);
+}
+
+.owl-carousel.owl-theme button.owl-next {
+    position: absolute;
+    margin-top: 0;
+    top: 50%;
+    right: -50px;
+    width: auto;
+    transform: translate(0%, -50%);
+}
+
+
+.testimonio .owl-carousel.owl-theme button.owl-prev {
+
+    top: 38%;
+
+}
+
+.testimonio  .owl-carousel.owl-theme button.owl-next {
+
+     top: 38%;
+
+}
+
+.owl-carousel .owl-nav button span {
+    font-size: 35px;
+    background: transparent;
+}
+
+.owl-theme .owl-nav [class*=owl-] {
+    padding: 10px;
+}
+
+.owl-theme .owl-nav [class*=owl-] i {
+    font-size: 30px;
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+    background: transparent;
+    text-decoration: none;
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: #1C1F28;
+}
+
+.owl-theme .owl-dots {
+    text-align: center;
+    -webkit-tap-highlight-color: transparent;
+    margin: 32px 0;
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: #1C1F28;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    background: #fff;
+    border: 1px solid #1C1F28;
+}
+.owl-theme .owl-dots.disabled{
+    display: block;
+}
+
+.owl-theme .owl-dots.disabled .owl-dot span {
+    background: transparent;
+    border: 0;
+}
+
+/*TABS*/
+
+.nav-tabs {
+    display: flex;
+    border-bottom: 1px solid #CFCFD0;
+    position: relative;
+    width: 70%;
+    margin: auto;
+}
+
+.nav-tabs .nav-link {
+    font-family: "Maison Neue Light";
+    color: #1C1F28;
+    border: 1px solid transparent;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.2px;
+    line-height: 20px;
+    border-radius: 0;
+    padding: 10px;
+    white-space: nowrap;
+}
+
+.nav-tabs .nav-item {
+    margin-bottom: -1px;
+    width: 33.33%;
+    border: 0;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    background-color: #fff;
+    border-color: inherit;
+    border: 1px solid transparent;
+    color: #1C1F28;
+    font-family: "Maison Neue Demi";
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+    border-color: initial;
+    border: 1px solid transparent;
+}
+
+@media(hover: hover) and (pointer: fine) {
+    .nav-tabs .nav-link:hover {
+        background-color: rgba(255,190,142,0.2);
+    }
+
+
+    .nav-main ul.nav li.nav-item.active a, .nav-main ul.nav li.nav-item a:hover {
+        font-family: "Maison Neue Demi", sans-serif;
+        font-weight: 500;
+    }
+}
+
+.encuesta .item .icon .hover {
+    display: none;
+}
+
+.encuesta  .item:hover .icon img {
+    display: none;
+}
+
+.encuesta  .item:hover .icon .hover {
+    display: block;
+}
+*/
+.yanbal-tabs {
+    padding: 32px 64px 0 64px;
+}
+
+.yanbal-tabs .tab-content {
+    padding-top: 32px;
+    position: relative;
+}
+
+.yanbal-tabs .tab-content  .tab-pane p {
+   font-size: 14px;
+   line-height: 20px;
+}
+
+.yanbal-tabs .tab-pane .caption {
+    width: 370px;
+    margin: auto;
+}
+
+.yanbal-tabs .tab-pane .opciones {
+    padding-top: 40px;
+    margin: auto 136px;
+    /* margin-top: 8px; */
+}
+
+.yanbal-tabs .tab-pane .opciones img {
+    margin-bottom: 16px;
+    /* margin-top: 16px; */
+}
+
+.yanbal-tabs .tab-pane.capacitamos {
+    margin-top: 32px;
+    margin-bottom: -32px;
+}
+
+.bg-arcilla .nav-tabs {
+    background-color: #DC582A;
+}
+
+.bg-arcilla .nav-tabs .nav-item.show .nav-link, .bg-arcilla .nav-tabs .nav-link.active {
+    color: #fff;
+    background-color: transparent;
+    border-color: inherit;
+    border: 1px solid transparent;
+}
+
+.bg-arcilla ul.nav li.nav-item a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.bg-arcilla .active-tab {
+    background-color: #fff !important;
+}
+
+/*End OWL*/
+
+section .wrap, section {
+    padding: 32px 0;
+}
+
+section a, section a:hover {
+    color: #DC582A;
+}
+
+section .caption {
+    max-width: 100%;
+}
+
+.yanbal-btn-white {
+    border: 1px solid #DC582A;
+    border-radius: 2px;
+    background-color: #FFFFFF;
+    color: #DC582A;
+    font-family: "Maison Neue", sans-serif;
+    font-weight: bold;
+    letter-spacing: 0;
+    text-align: center;
+    margin: 32px 0;
+}
+
+a.btn {
+    text-decoration: none;
+}
+
+.btn {
+    font-family: "Maison Neue", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    line-height: 24px;
+    min-width: 204px;
+    text-align: center;
+    padding: 8px 8px;
+    max-width: 100%;
+    height: auto;
+    white-space: initial;
+}
+
+.btn.large {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    line-height: 32px;
+    padding: 8px 16px;
+    min-width: 240px;
+}
+
+.btn.medium {
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    line-height: 24px;
+    padding: 8px 16px;
+    min-width: 240px;
+}
+
+.btn.small {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    line-height: 24px;
+    padding: 4px 8px;
+    min-width: 120px;
+}
+
+.yanbal-btn-default {
+    border: 0;
+    border-radius: 2px;
+    background-color: #DC582A;
+    color: #FFFFFF;
+}
+
+.btn.yanbal-btn-default:hover {
+    background-color: #C34E25;
+    box-shadow: 0 0 3px 0 #FDEEE0;
+    color: #fff;
+}
+
+.btn.yanbal-btn-default:focus {
+    background-color: #DC582A;
+    box-shadow: 0 0 4px 0 #DC582A;
+    color: #fff;
+}
+
+.yanbal-btn-terciary {
+    border: 1px solid #1C1F28;
+    border-radius: 2px;
+    color: #1C1F28;
+    font-family: "Maison Neue";
+    text-align: center;
+    background-color: #fff;
+}
+
+.btn.yanbal-btn-terciary:hover {
+    background-color: #1C1F28;
+    color: #fff;
+}
+
+.btn.yanbal-btn-terciary:focus {
+    border: 1px solid #1C1F28;
+    border-radius: 2px;
+    box-shadow: 0 0 4px 0 rgba(220, 88, 42, 0.5);
+    background-color: #fff;
+    color: #1C1F28
+}
+
+.yanbal-btn-white {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 8px 40px;
+}
+
+.yanbal-btn-white:hover {
+    color: #212529;
+    text-decoration: none;
+    background-color: #DC582A;
+    color: #fff;
+}
+
+nav .yanbal-btn-white {
+    font-size: 14px;
+    line-height: 21px;
+    padding: 10px 40px;
+    margin: 0;
+}
+
+.caption [class^="icon-"], .cerca .caption [class*=" icon-"] {
+    padding-bottom: 16px;
+}
+
+.caption [class^="icon-"], .caption [class*=" icon-"] {
+    font-size: 24px;
+    display: block;
+    
+}
+
+
+.btn-sticky {
+    position: fixed;
+    bottom: 0;
+    z-index: 99;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: none;
+}
+
+ul.nav li.nav-item a {
+    text-decoration: none;
+}
+
+header .top-nav {
+    padding: 10px 0;
+}
+
+header .top-nav img.logo {
+    display: none
+}
+
+header .top-nav a {
+    text-decoration: none;
+}
+
+header .top-nav .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+header .logo {
+    display: table;
+    margin: 0 auto;
+    padding: 22px 0 12px 0;
+}
+
+nav.nav-main {
+    position: -webkit-sticky;
+    /* Safari */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 0;
+    background-color: #fff;
+    -webkit-transition: top 0.5s;
+    transition: top 0.5s;
+}
+
+.yanbal-tabs .active-tab, nav.nav-main .active-line {
+    position: absolute;
+    bottom: 0;
+    left: -10px;
+    height: 4px;
+    background-color: var(--color-active);
+    transition: width var(--ease) var(--duration), transform var(--ease) var(--duration);
+}
+
+.yanbal-tabs .active-tab {
+    left: 0px;
+}
+
+
+nav.nav-main .logo {
+    display: none;
+}
+
+nav.nav-main.sticky {
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+nav.nav-main.sticky .logo {
+    display: inline-block;
+    position: absolute;
+    top: 15px;
+    z-index: 10;
+}
+
+nav.nav-main .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    position: relative;
+}
+
+nav.nav-main a.page-title {
+    color: #1C1F28;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 24px;
+}
+
+nav.nav-main .link {
+    padding-left: 64px;
+    border-left: 1px solid #DC582A;
+    position: absolute;
+    right: 20px;
+    top: 19px;
+}
+
+
+
+nav.nav-main .link:hover {
+    font-family: "Maison Neue Demi", sans-serif;
+    font-weight: 500;
+}
+
+nav.nav-main .link.interna {
+    padding-left: 0;
+    border-left: 0;
+}
+
+nav.nav-main ul.nav {
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: none;
+    overscroll-behavior: none;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    margin: 0;
+    padding: 19px 0;
+    transform: translateZ(0);
+    transition: transform var(--ease) var(--duration);
+    -webkit-overflow-scrolling: touch;
+    width: 80%;
+    justify-content: space-between;
+}
+
+nav.nav-main ul.nav::-webkit-scrollbar {
+    width: 0 !important;
+    height: 0 !important;
+}
+
+nav.nav-main.sticky .link {
+    padding-left: 64px;
+}
+
+nav.nav-main.sticky ul.nav {
+    padding-left: 64px;
+}
+
+.nav-main ul.nav li.nav-item {
+    display: inline-flex;
+    align-items: center;
+}
+
+.nav-main ul.nav li.nav-item:first-child {
+    margin-left: 0;
+}
+
+.nav-main a {
+    text-decoration: none;
+    color: #DC582A;
+}
+
+.nav-main ul.nav li.nav-item a {
+    font-family: "Maison Neue Book", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.2px;
+    line-height: 24px;
+    color: #1C1F28;
+    margin-right: initial;
+    white-space: nowrap;
+}
+
+.nav-main ul.back li.nav-item a {
+    color: #DC582A;
+}
+/*
+.nav-main ul.nav li.nav-item.active a, .nav-main ul.nav li.nav-item a:hover {
+    font-family: "Maison Neue Demi", sans-serif;
+    font-weight: 500;
+}*/
+
+.nav-main ul.nav li.nav-item.active a {
+    font-family: "Maison Neue Demi", sans-serif;
+    font-weight: 500;
+}
+
+section .caption h2 {
+    margin-bottom: 8px;
+}
+
+.main-slider {
+    background-image: url(https://emprendimiento.yanbal.com/assets/images/background01.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 32px;
+}
+
+.main-slider .owl-dots {
+    position: absolute;
+    bottom: -110px;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, 0%);
+    margin: 0;
+}
+
+.main-slider .caption {
+    width: 510px;
+    padding-left: 30px;
+}
+
+.main-slider .caption button {
+    padding: 12px 16px;
+    min-width: 280px;
+    border: 0;
+}
+
+.main-slider .owl-theme .owl-dots, .main-slider .owl-theme .owl-nav {
+    margin: 0 !important;
+}
+
+ .owl-carousel.owl-theme button [class^="icon-"],  .owl-carousel.owl-theme button [class*=" icon-"] {
+    color: #1C1F28;
+   font-size: 48px;
+   background-color: rgba(255,255,255,0.5);
+    border-radius: 50%;
+    padding: 6px;
+}
+
+.caracteristicas .item {
+    min-height: 222px;
+    width: 270px;
+    margin: 0 auto 0 auto;
+    padding: 32px 55px;
+    border-radius: 2px;
+    background-color: #FFFFFF;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+}
+
+section  .item a,
+section  .item p{
+font-size: 14px;
+letter-spacing: 0;
+line-height: 20px;
+}
+
+.caracteristicas .item .icon {
+    width: 70px;
+    padding: 10px 15px;
+    margin: auto;
+    position: relative;
+}
+
+.caracteristicas .item:hover {
+    background-color: #FFFFFF;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.caracteristicas .item i {
+    bottom: -3px;
+    position: relative;
+}
+
+.caracteristicas .item p {
+    margin: 8px 0;
+}
+
+
+
+section.como-ganar .wrap .container {
+    background-color: #fff;
+    padding: 30px;
+}
+
+ .yanbal-tabs .tab-content p.size1 {
+    margin-bottom: 24px;
+}
+
+section.como-ganar .yanbal-tabs .como-ganar img {
+    width: 170px;
+    height: 300px;
+    margin-right: 28px;
+}
+
+.como-ganar .tab-content h3 {
+    margin: 32px 0;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 30px;
+    text-align: center;
+    font-family: "Maison Neue";
+    text-transform: uppercase;
+}
+
+.como-ganar .tab-pane {
+    min-height: 400px;
+}
+
+.como-ganar .yanbal-tabs .tab-pane.apoyamos .caption {
+    width: auto;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    padding: 0 84px 0 0;
+}
+
+.como-ganar .yanbal-tabs .tab-pane.capacitamos .item .icon {
+    display: table;
+    position: relative;
+    margin: 0 auto 16px auto;
+}
+
+.como-ganar .yanbal-tabs .tab-pane.capacitamos .item .icon img {
+    width: 50%;
+    margin: auto;
+}
+
+.beneficios {
+    margin-bottom: -32px;
+}
+
+.beneficios .caption {
+    margin: 0 auto 32px auto;
+}
+
+.beneficios .item {
+    margin-top: 32px;
+}
+
+.beneficios .item p.size2 {
+    margin: 32px 0 16px 0;
+}
+
+.beneficios .owl-carousel .owl-item img.desk, .beneficios .desk {
+    display: flex;
+}
+
+.beneficios .owl-carousel .owl-item img.mob, .beneficios .mob {
+    display: none;
+}
+
+.beneficios .owl-carousel.owl-theme button.owl-next, .beneficios .owl-carousel.owl-theme button.owl-prev {
+    top: 30%;
+}
+
+.beneficios .item .image {
+    display: table;
+    margin: auto;
+}
+
+.cerca .caption {
+    width: 325px;
+    margin: auto;
+}
+
+.cerca .caption [class^="icon-"], .cerca .caption [class*=" icon-"] {
+    color: #1C1F28;
+}
+
+.belleza .caption {
+    width: 432px;
+    margin: auto;
+}
+
+.belleza .caption h2 {
+    margin-bottom: 32px;
+}
+
+.belleza .image {
+    display: table;
+    margin: auto;
+    width: 370px;
+}
+
+section.emprender {
+    background-color: #d4d4d4;
+    background-image: url(https://emprendimiento.yanbal.com/assets/images/empreder-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 57px;
+}
+
+section.emprender .wrap {
+    padding-top: 0;
+}
+
+.emprender .wrap .btn {
+    margin-top: 64px;
+}
+
+section.emprender .wrap .container {
+    background-color: #fff;
+    padding: 32px;
+}
+
+section.emprender .yanbal-tabs .tab-content {
+    min-height: 449px;
+}
+
+section.emprender .yanbal-tabs .tab-content .content {
+    width: 330px;
+    margin: auto;
+}
+
+section.emprender .yanbal-tabs .tab-pane .caption {
+
+    width: auto;
+    padding: 0 64px;
+}
+
+section.emprender .yanbal-tabs #paso3.tab-pane .caption {
+
+    width: auto;
+}
+
+.comunidad .caption {
+    width: 582px;
+    margin: auto;
+}
+
+.comunidad .wrap .caption {
+    margin-bottom: 32px;
+    width: 496px
+}
+
+.comunidad .wrap .data {
+    padding: 32px 0;
+    color: #DC582A;
+}
+
+
+
+.comunidad .wrap .data .data-item {
+    margin-bottom: 24px;
+}
+
+
+.comunidad .wrap .data .desk .data-item {
+    width: auto;
+    padding: 32px 24px;
+    margin: auto;
+    text-align: center;
+  
+    height: 242px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.comunidad .wrap .data .desk .data-item.world {
+    background-color: #fff;
+    border: 1px solid transparent;
+    padding:0;
+}
+
+.comunidad .wrap .data .desk .data-item.world img {
+    width: 100%;
+    margin: auto;
+}
+
+.comunidad .wrap .data .desk .data-item .icon {
+    max-width: 60px;
+    margin: auto;
+    margin-bottom: 24px;
+}
+.comunidad .wrap .data  .data-item p{
+    margin:0;
+    color: #DC582A;
+}
+
+.comunidad .wrap .data .data-item h2 {
+    margin: 0;
+   
+}
+
+
+.testimonios {
+    display: flex;
+    padding-top: 24px;
+}
+
+.testimonios .item {
+    position: relative;
+    width: 234px !important;
+}
+
+.testimonios .item .caption {
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    /* margin: 16px; */
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.6) 100%);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 16px;
+}
+
+.testimonios .item .caption h5 {
+    margin: 0;
+    margin-bottom: 8px;
+}
+
+.testimonios .item .caption p {
+    color: #fff;
+    margin: 0;
+    font-family: Maison Neue Book ;
+}
+
+.testimonios.mob {
+    display: none;
+}
+
+.preguntas {
+    background-image: url(https://emprendimiento.yanbal.com/assets/images/faq-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 525px;
+}
+
+.preguntas .caption {
+    width: 426px;
+    margin: 65px 23px;
+    text-align: center;
+    float: right;
+}
+
+.preguntas .caption h2 {
+    margin-bottom: 32px;
+}
+
+.preguntas .caption [class^="icon-"], .preguntas .caption [class*=" icon-"] {
+    color: #000;
+}
+
+.preguntas .caption p {
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: 30px;
+}
+
+.actions .caption {
+    width: 500px;
+    margin: auto;
+}
+
+.actions .caption h3 {
+    font-size: 24px;
+    letter-spacing: 0.14px;
+    line-height: 40px;
+}
+
+.actions .caption button {
+    margin: 0;
+}
+
+.actions .social-media-icons {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+.actions .social-media-icons a {
+    text-decoration: none;
+    color: #000;
+}
+
+.actions .social-media-icons [class^="icon-"] {
+    margin: 0 7.5px;
+    color: #000;
+}
+
+.rectangle {
+    width: 100%;
+    background: linear-gradient(180.23deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
+    padding: 20px 20px 15px 20px;
+}
+
+.refer {
+    margin: 32px 0 0;
+}
+.refer p{
+    margin:0;
+}
+
+.rectangle .btn {
+    width: 100% !important;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 21px 0 31px 0;
+    font-family: "Maison Neue light", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 21px;
+    color: #fff;
+}
+
+footer .nav-footer ul li.nav-item {
+    margin-left: 20px;
+}
+
+@media (min-width: 1200px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 1170px;
+        padding: 0;
+    }
+}
+
+/*Page Kit*/
+
+
+
+.page-kit section.main {
+    background-image: url(https://emprendimiento.yanbal.com/assets/images/kit-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.page-kit.usa section.main {
+    background-image: url(https://emprendimiento.yanbal.com/assets/images/banner-empieza-tu-negocio-kit-bienvenida-us.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 531px;
+}
+
+.page-kit section.main .caption {
+    text-align: center;
+    width: 360px;
+    margin: 128px 132px;
+    height: 100%;
+}
+
+
+
+.page-kit section.video .play-video {
+    width: 970px;
+    position: relative;
+    margin: auto;
+}
+
+.page-kit section.beneficios {
+    background: url(https://emprendimiento.yanbal.com/assets/images/kit-beneficios-bg.png);
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.page-kit section.beneficios .desk {
+    display: block;
+}
+
+.page-kit .libertad .size1 {
+    font-size: 30px;
+}
+
+.page-kit .libertad p.size3 {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.page-kit section.productos .caption {
+    width: 566px;
+    margin: auto;
+}
+
+.page-kit section.productos button {
+    margin: 0;
+}
+
+.page-kit section.productos .header p {
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+.page-kit section.productos .kit-bienvenida {
+    padding: 32px 0;
+}
+
+.page-kit section.productos .kit-bienvenida:last-child {
+    padding-bottom: 0;
+}
+
+.page-kit section.productos .kit-bienvenida .producto {
+    text-align: center;
+}
+
+.page-kit section.productos .kit-bienvenida .producto p{
+    font-size:14px;
+    line-height: 20px;
+}
+
+
+.page-kit section.productos .kit-bienvenida .producto img {
+    height: 285px;
+}
+
+.page-kit section.productos .kit-bienvenida .owl-carousel.owl-theme .owl-nav {
+    position: absolute;
+    margin-top: 0;
+    top: 30%;
+    right: 0;
+    width: auto;
+    transform: none;
+    display: table;
+    margin: 0;
+    width: 100%;
+}
+
+.page-kit section.productos .kit-bienvenida .producto a {
+    text-decoration: none;
+}
+
+.page-kit section.productos .kit-bienvenida .producto a>p:nth-child(2) {
+    margin: 16px 0;
+}
+
+.page-kit section.productos .kit-bienvenida .producto a>p:nth-child(3) {
+    margin: 0;
+}
+
+.page-kit section.productos .kit-bienvenida .header {
+    border-bottom: 1px solid #929292;
+    margin-bottom: 32px;
+}
+
+.page-kit section.productos .kit-bienvenida .header p span {
+    color: #DC582A;
+}
+
+/*calculadora*/
+
+.page-calculadora .main {
+    background-image: url(https://emprendimiento.yanbal.com/assets/images/calculadora-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 525px;
+    padding: 0;
+}
+
+.page-calculadora .main .wrap {
+    padding: 0;
+}
+
+.page-calculadora .main .caption {
+    width: 426px;
+    margin: 140px 23px;
+    text-align: center;
+    float: right;
+}
+
+.page-calculadora .main .caption [class^="icon-"], .page-calculadora .main .caption [class*=" icon-"] {
+    color: #000;
+}
+
+
+.page-calculadora .yanbal-tabs {
+    padding: 0;
+}
+
+.page-calculadora .yanbal-tabs .tab-pane {
+    min-height: 402px;
+}
+
+.page-calculadora .yanbal-tabs .tab-pane .caption {
+    width: 370px;
+    margin: auto;
+}
+.page-calculadora .yanbal-tabs .tab-pane  .caption p:nth-child(1) {
+text-transform: uppercase;
+}
+
+.page-calculadora .yanbal-tabs .tab-pane .images {
+    
+    margin: 64px auto 0 auto;
+}
+
+.page-calculadora .caracteristicas .tab-content .tab-pane a {
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: 21px;
+    padding: 16px 0;
+    display: block;
+}
+
+.page-calculadora .caracteristicas  p.label-right {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translate(-50%,0);
+    padding-right: 25px;
+}
+
+.page-calculadora .caracteristicas  p.label-left {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translate(-50%,0);
+    padding-right: 25px;
+}
+
+
+.page-calculadora .crece .caption p {
+    width: 520px;
+    margin: 0 auto 64px auto;
+}
+.page-calculadora .crece .image{
+ position: relative;
+}
+
+.page-calculadora .crece .image .text {
+    position: absolute;
+    left: 50%;
+    bottom: 64px;
+    transform: translate(-50%, 0);
+    width: 350px;
+    
+}
+
+.page-calculadora .crece .image .text p{
+    color:#fff;
+    margin:0;
+}
+
+.page-calculadora .crece .image .text p:nth-child(1){
+    font-family: "Maison Neue Light", sans-serif;
+    font-size: 23px;
+    line-height: 2.2rem;
+    margin-bottom: 21px;
+
+}
+
+.page-calculadora .crece .image .text p:nth-child(2){
+    font-size: 30px;
+    line-height: 2.2rem;
+    
+}
+
+.caracteristicas .yanbal-tabs .tab-content {
+
+    min-height: 555px;
+}
+
+.page-calculadora ul.nav li.nav-item a {
+    white-space: normal;
+    text-align: center;
+}
+
+.page-calculadora .caracteristicas .bars {
+    padding: 0;
+    margin-bottom: 32px;
+}
+
+
+.page-calculadora .cuanto-ganar .caption {
+    width: 472px;
+    margin: auto;
+}
+
+.page-calculadora .cuanto-ganar .caption p {
+    margin-bottom: 24px;
+}
+
+.page-calculadora .cuanto-ganar button {
+    margin-bottom: 0px;
+    ;
+}
+
+.page-calculadora .encuesta {
+    min-height: 606px;
+}
+
+.page-calculadora .encuesta .container {
+    width: 870px;
+}
+
+.page-calculadora .encuesta .opciones p:nth-child(1) {
+    margin: 0;
+}
+
+.page-calculadora .encuesta .opciones>p:nth-child(2) {
+    color: #A4A5A9;
+}
+
+.page-calculadora .encuesta .opciones:first-child {
+    padding-top: 0;
+}
+
+.page-calculadora .encuesta .opciones .item {
+    width: 270px;
+    height: 216px;
+    border-radius: 2px;
+    background-color: #FFFFFF;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 32px 50px;
+    margin-bottom: 80px;
+}
+
+.page-calculadora .encuesta .opciones .item i {
+    color: #1C1F28;
+    font-size: 80px;
+    margin-bottom: 24px;
+}
+
+.page-calculadora .encuesta .opciones .item:hover {
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.page-calculadora .encuesta .opciones .item:hover i {
+    color: #DC582A;
+}
+
+.page-calculadora .encuesta .opciones .item .icon img {
+    max-width: 100%;
+}
+
+.page-calculadora .encuesta .opciones .item .icon {
+    max-width: 60px;
+    margin: auto;
+}
+
+.page-calculadora #pregunta1 {
+    transition: width var(--ease) var(--duration), transform var(--ease) var(--duration);
+    display: none;
+}
+
+.page-calculadora #respuesta, section#pregunta3, section#pregunta2 {
+    transform: translate(-100%, 0);
+}
+
+.page-calculadora #pregunta2 {
+    display: none;
+    transition: width var(--ease) var(--duration), transform var(--ease) var(--duration);
+}
+
+.page-calculadora #pregunta3 {
+    display: none;
+    transition: width var(--ease) var(--duration), transform var(--ease) var(--duration);
+}
+
+.page-calculadora #respuesta {
+    display: none;
+    transition: width var(--ease) var(--duration), transform var(--ease) var(--duration);
+}
+
+.page-calculadora .limite .caption {
+    width: 970px;
+    background-color: #FDEEE0;
+    margin: auto;
+}
+
+.page-calculadora .limite {
+    background-color: #929292;
+    background-image: url(https://emprendimiento.yanbal.com/assets/images/calculadora-result-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.page-calculadora .limite .caption {
+    margin-bottom: 32px;
+    padding: 32px 30px 32px 30px;
+}
+
+.page-calculadora .limite .caption h2 {
+    color: #DC582A;
+}
+
+.page-calculadora .limite .caption p {
+    color: #1C1F28;
+}
+
+.page-calculadora .limite .caption h2 {
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 0.2px;
+    line-height: 56px;
+}
+
+.page-calculadora .limite .caption .mensaje {
+    padding: 24px 32px 16px 32px;
+    border: 1px solid #1C1F28;
+}
+
+.page-calculadora .limite button {
+    margin-bottom: 0;
+}
+
+.page-calculadora .gana .caption {
+    width: 576px;
+    margin: auto;
+}
+
+.page-calculadora .gana img {
+    margin-top: 24px;
+}
+
+.page-calculadora .emprende .container {
+    width: 776px;
+    margin: auto;
+}
+
+.page-calculadora .emprende .container .caption h2 {
+    width: 560px;
+    margin: auto auto 32px auto;
+}
+
+.page-calculadora .emprende .container .caption p:nth-child(4) {
+    width: 370px;
+    margin: auto auto 32px auto;
+}
+
+.page-calculadora .emprende .item {
+    margin: 32px 0;
+}
+.page-calculadora  section.emprende p {
+    font-size: 14px;
+}
+
+.page-calculadora .emprende .container .item .icon {
+    display: table;
+    position: relative;
+    margin: 0 auto 18px auto;
+}
+
+.page-calculadora .emprende .container .item .icon img {
+    width: 50%;
+    margin: auto;
+}
+
+.page-calculadora section.aprende {
+    padding-bottom: 64px;
+}
+
+.page-calculadora .aprende .videos {
+    padding: 32px 0 0 0;
+}
+
+.page-calculadora .aprende .videos .owl-theme .owl-dots {
+    position: absolute;
+    width: 100%;
+    margin: 0;
+    padding: 16px 0 0 0;
+}
+
+.page-calculadora .aprende .play-video {
+    position: relative;
+}
+
+.play-video i.icon-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    height: auto;
+    background: transparent;
+    color: #fff;
+    font-size: 100px;
+    cursor: pointer;
+}
+
+.page-calculadora .aprende .icon-play:before {
+    content: "\e929";
+    color: #fff;
+}
+
+.page-calculadora .mask-video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.2);
+    bottom: 0;
+    left: 0;
+}
+
+.page-calculadora .play-video{
+position:relative;
+}
+
+.page-calculadora .play-video i.icon-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -75%);
+    width: auto;
+    height: auto;
+    background: transparent;
+    color: #fff;
+    font-size: 90px;
+    cursor: pointer;
+}
+
+.page-faq .main {
+    background-image: url(https://emprendimiento.yanbal.com/assets/images/faq-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 525px;
+}
+
+.page-faq .main .caption {
+    width: 426px;
+    margin: 65px 23px;
+    text-align: center;
+    float: right;
+}
+
+.main i.mob {
+    display: none;
+}
+.page-faq .main .caption [class^="icon-"], .page-faq .main .caption [class*=" icon-"] {
+    color: #000;
+}
+
+
+
+.page-faq section.faqs .wrap, .page-faq section.faqs {
+    padding-bottom: 0;
+}
+
+.faqs h2 {
+    color: #1C1F28;
+    font-family: "Maison Neue";
+    text-transform: uppercase;
+}
+
+/*
+.faqs .yanbal-tabs {
+    padding: 0;
+}
+
+.faqs .nav-tabs {
+    display: flex;
+    border-bottom: 0;
+    position: relative;
+    width: 100%;
+    margin: auto;
+}
+
+.faqs .nav-tabs .nav-item {
+    margin-right: 30px;
+    width: 370px;
+    border: 1px solid #DC582A;
+}
+
+.faqs .nav-tabs .nav-item:last-child {
+    margin-right: 0;
+}
+
+.faqs .nav-tabs  .nav-item.show .nav-link, .faqs .nav-tabs .nav-link.active {
+    background-color: #DC582A;
+    color: #fff;
+}
+
+.faqs  .nav-tabs .nav-link {
+    height: 120px;
+    padding: 28px;
+    color: #DC582A;
+    font-family: "Maison Neue Light";
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 0.2px;
+    line-height: 32px;
+    text-align: center;
+    text-transform: uppercase
+}*/
+
+.page-faq .faqs .accodion .card {
+    margin-bottom: 20px;
+    border-bottom: 2px dotted #c0c0c0;
+}
+
+.page-faq .accordion {
+    margin-bottom: 64px;
+}
+
+.faq-3 .accordion {
+    margin-bottom: 0;
+}
+
+.page-faq .accordion>.card>.card-header {
+    border: 0;
+    background: #fff;
+    padding: 0;
+}
+
+.page-faq .accordion .card {
+    border: 0;
+    margin-bottom: 12px;
+    border-bottom: 2px dotted #c0c0c0 !important;
+    padding-right: 26px;
+    padding-bottom: 12px;
+}
+
+.page-faq .accordion>.card>.card-header button {
+    padding: 0;
+    margin: 0;
+    color: #1C1F28;
+    font-family: "Maison Neue";
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 20px;
+    white-space: initial;
+}
+
+.page-faq .accordion>.card>.card-header button:hover {
+    color: #0056b3;
+    text-decoration: none;
+    color: #1C1F28;
+}
+
+.page-faq .accordion>.card>.card-header button.btn.focus, .page-faq .accordion>.card>.card-header button.btn:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+.page-faq .accordion>.card.active>.card-header button:hover, .page-faq .accordion>.card.active>.card-header h2, .page-faq .accordion>.card.active>.card-header button {
+    color: #DC582A;
+}
+
+.page-faq .accordion>.card>.card-header button:after {
+    content: '\e902';
+    font-family: 'yanbal-icons' !important;
+    font-size: 25px;
+    position: absolute;
+    top: 9px;
+    right: 0;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.page-faq .accordion>.card.active>.card-header button:after {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.page-faq .accordion>.card>.card-header button.focus, .page-faq .accordion>.card>.card-header button:focus {
+    text-decoration: none;
+}
+
+.page-faq .accordion .card .card-body {
+    padding: 0;
+    padding-top: 16px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 20px;
+    font-family: Maison Neue Light;
+}
+
+.c-modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    opacity: 0;
+    visibility: hidden;
+    z-index: 100;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.c-modal.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.c-modal.active .c-modal__content {
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.c-modal__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -70%);
+    transform: translate(-50%, -70%);
+    max-width: 600px;
+    width: 100%;
+    background: white;
+    color: black;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.c-modal i.icon-close {
+    color: #fff;
+}
+
+@media(max-width:992px) {
+    .c-modal__content {
+        width: 90%;
+    }
+}
+
+.c-modal__body {
+    padding: 20px;
+}
+
+.c-modal__video {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+
+.c-modal__video iframe, .c-modal__video object, .c-modal__video embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.c-modal__btn-close {
+    position: absolute;
+    top: -53px;
+    right: -10px;
+    font-size: 50px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.c-modal.active .c-modal__content {
+    -webkit-transform: initial;
+    transform: initial;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    background: transparent;
+}
+
+.c-modal__btn-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 20px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.c-modal__body {
+    width: 1115px;
+    max-width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+button.navbar-toggler {
+    display: none;
+}
+
+button.btn-close {
+    display: none;
+}
+
+footer .container.desk {
+    display: flex;
+    position: relative;
+}
+
+footer .container.desk .nav-footer ul.nav {
+    justify-content: flex-end;
+   
+}
+
+footer .container.desk>div>div {
+    padding-left: 40px;
+    width: 300px;
+
+}
+
+footer .container.desk>div>div span.logo {
+    position: absolute;
+    top: 15px;
+    left: 0;
+}
+
+footer .container.mob {
+    display: none;
+    padding: 20px 20px 150px 20px;
+}
+
+.hide{
+    display: none !important;
+}
+  
+
+@media (max-width: 390px) {
+    .nav-main ul.nav li.nav-item a {
+        font-family: "Maison Neue Light";
+        font-size: 14px;
+        font-weight: 300;
+        letter-spacing: 0.2px;
+        line-height: 16px;
+        margin-right: 30px;
+    }
+}
+
+@media (max-width: 450px) {
+    
+    h5 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    a {
+        font-size: 14px;
+        font-weight: 300;
+        letter-spacing: 0.2px;
+        line-height: 20px;
+    }
+
+    h1 {
+        font-size: 32px;
+        font-weight: bold;
+        letter-spacing: 0;
+        line-height: 40px;
+        margin-bottom: 32px;
+    }
+    
+    h2 {
+        font-family: Ogg;
+        font-size: 24px;
+        font-weight: bold;
+        letter-spacing: 0.2px;
+        line-height: 32px;
+    }
+    
+    nav.nav-main ul.nav {
+   
+        overflow: scroll;
+    }
+
+    .btn-sticky-show {
+        display: block !important;
+    }
+    .container {
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .owl-carousel .owl-item img.desk, .desk {
+        display: none !important;
+    }
+    .owl-carousel .owl-item img.mob, .mob {
+        display: block !important;
+    }
+    .owl-carousel.owl-theme button.owl-next {
+        right: -20px;
+    }
+    .owl-carousel.owl-theme button.owl-prev {
+        left: -20px;
+    }
+    .owl-theme .owl-dots, .owl-theme .owl-nav {
+        margin: 0;
+        margin-bottom: 16px;
+    }
+    
+    .owl-theme .owl-nav [class*=owl-] {
+        color: #FFF;
+        font-size: 14px;
+        margin: 5px;
+        padding: 4px 7px;
+        background: #D6D6D6;
+        display: inline-block;
+        cursor: pointer;
+        border-radius: 3px;
+        overflow: hidden;
+        height: 70px;
+    }
+    
+    .btn.large {
+        font-size: 16px;
+        letter-spacing: 0.2px;
+        line-height: 24px;
+        text-align: center;
+        min-width: 240px;
+        width: 240px;
+        margin: auto;
+    }
+    .yanbal-tabs .tab-pane img.mob {
+        width: 100% !important;
+        max-width: 100%;
+    }
+    .yanbal-tabs .tab-pane .caption {
+        width: 100%;
+        margin: auto;
+    }
+    .yanbal-tabs .tab-pane .opciones {
+        margin: auto;
+    }
+    .yanbal-tabs .tab-pane.apoyamos img.mob {
+        margin-bottom: 32px;
+        width: 100%;
+    }
+    .yanbal-tabs .tab-pane.capacitamos .opciones img {
+        min-height: 59px;
+    }
+    section {
+        padding: 32px 20px;
+    }
+    /*
+    .size1 {
+        font-size: 18px;
+        font-weight: 500;
+        letter-spacing: 0;
+        line-height: 28px;
+    }
+    .size2 {
+        font-size: 16px;
+        font-weight: 300;
+        letter-spacing: 0.2px;
+        line-height: 24px;
+    }
+    .size3 {
+        font-size: 14px;
+        letter-spacing: 0;
+        line-height: 20px;
+    }
+    .size4 {
+        font-size: 12px;
+        font-weight: 300;
+        letter-spacing: 0.2px;
+        line-height: 16px;
+    }*/
+    img {
+        max-width: 100%;
+    }
+    .yanbal-tabs {
+        padding: 0;
+    }
+    .nav-tabs {
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        overflow: scroll;
+        overscroll-behavior: none;
+    }
+
+    .nav-tabs .nav-item {
+        
+        width: auto;
+        border: 0;
+    }
+
+    header .top-nav img.logo {
+        padding: 0;
+        position: absolute;
+        left: 50%;
+        top: -5px;
+        transform: translate(-50%, 0);
+        display: none;
+    }
+
+    header .hidden-md {
+        display: block!important;
+    }
+    header {
+      
+        position: relative;
+        top: 0;
+        z-index: 100;
+        padding: 0;
+        background-color: #fff;
+        -webkit-transition: top 0.5s;
+        transition: top 0.5s;
+        box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+    }
+    header .top-nav {
+        padding: 12px 20px;
+    }
+
+   
+
+
+
+    header .container {
+        position: relative;
+    }
+    header .logo {
+        padding: 0;
+        width: 100%;
+        border-bottom: 1px solid #E8E8E9;
+        text-align: center;
+    }
+    header .logo a{
+       
+        margin:0 auto;
+    }
+    header .logo img {
+        width: 120px;
+        margin: 0 auto;
+        padding: 10px 0;
+    }
+    
+
+    nav.nav-main .container {
+      
+        padding: 0;
+        
+    }
+    
+    nav.nav-main .container a img {
+        margin-top: 8px;
+    }
+    
+    nav.nav-main.sticky .logo {
+        display: none;
+    }
+    .nav-main ul.nav li.nav-item a {
+        font-family: "Maison Neue Light";
+        font-size: 14px;
+        font-weight: 300;
+        letter-spacing: 0.2px;
+        line-height: 16px;
+        margin-left: 20px;
+        margin-right: auto;
+        display: inline-table;
+    }
+    nav.nav-main .link {
+        display: none;
+    }
+    nav.nav-main.sticky ul.nav {
+        padding-left: 0;
+    }
+    nav.nav-main ul.nav {
+        width: auto;
+        padding: 16px 0;
+    }
+
+
+    .nav-main ul.nav li.nav-item:nth-child(7){
+        padding-right: 20px;
+    }
+ 
+
+
+    .p-left {
+        position: absolute;
+        left: 0;
+        top: 1px;
+        width: 20px;
+        height: 40px;
+        z-index: 1;
+        background-color: transparent;
+        
+          }
+
+    .p-right {
+        position: absolute;
+        right: 0;
+        top: 1px;
+        width: 20px;
+        height: 40px;
+        z-index: 1;
+      
+background: -moz-linear-gradient(left,  rgba(255,255,255,0) 0%, rgba(255,255,255,0.5) 50%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.5) 50%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.5) 50%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+
+    }
+    .mask {
+        position: absolute;
+        width: 100%;
+        height: 70%;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+        bottom: 0;
+        left: 0;
+    }
+    .d-flex {
+        display: block !important;
+    }
+    /*home*/
+    .main-slider .wrap, .main-slider {
+        padding: 0;
+        height: calc(100vh - 88px);
+        background: none;
+    }
+    .main-slider {
+        padding: 0;
+        height: calc(100vh - 88px);
+        background: none;
+        margin: 0;
+        margin-bottom: -32px;
+    }
+    .main-slider .owl-carousel .slide {
+        height: calc(100vh - 140px);
+    }
+    .main-slider .image {
+        height: calc(100% - 140px);
+    }
+    .main-slider .image img.mob {
+        object-fit: fill;
+        max-width: none;
+        height: 100vh;
+        width: initial;
+    }
+    #main-slider .owl-theme .owl-nav [class*=owl-] i {
+        font-size: 48px;
+    }
+    
+
+    
+
+    .main-slider .col-12, .main-slider .col-md-6 {
+        position: initial;
+    }
+    .main-slider .caption {
+        position: absolute;
+        bottom: 32px;
+        width: 100%;
+        padding-left: 0;
+        display: block !important;
+        height: auto;
+        padding: 0 20px;
+    }
+    .main-slider .caption h1 {
+        color: #fff;
+    }
+    .main-slider .owl-carousel.owl-theme button.owl-prev {
+        left: 0;
+    }
+    .main-slider .owl-carousel.owl-theme button.owl-next {
+        right: 0;
+    }
+    .main-slider .owl-carousel.owl-theme button [class^="icon-"], .main-slider .owl-carousel.owl-theme button [class*=" icon-"] {
+     
+        display: inline-block;
+    }
+    .main-slider .owl-dots {
+        bottom: -43px;
+    }
+    
+    section#porque-emprender .wrap .container {
+        margin-bottom: -30px;
+    }
+    section.emprender .yanbal-tabs .tab-pane .caption,
+    section .yanbal-tabs .tab-pane .caption {
+        width: auto;
+        padding: 0 20px;
+    }
+    .caracteristicas .item i {
+        bottom: -3px;
+        position: relative;
+        margin-left: -5px;
+    }
+    
+    
+    .caracteristicas .item {
+        max-width: 100%;
+        min-height: 224px;
+        padding: 32px 5px;
+        margin-bottom: 30px;
+    }
+
+    
+    section.como-ganar .wrap .container {
+        padding: 32px 20px;
+    }
+    section.como-ganar .yanbal-tabs .tab-pane .opciones {
+        padding-top: 0;
+    }
+    section.como-ganar .yanbal-tabs .tab-pane .opciones .item {
+        margin: 32px 0 24px 0;
+    }
+    .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+        font-size: 12px;
+        font-weight: 500;
+        letter-spacing: 0.2px;
+        line-height: 16px;
+    }
+    .nav-tabs .nav-link {
+        border-radius: 0;
+        font-family: "Maison Neue Light";
+        font-size: 12px;
+        font-weight: 300;
+        letter-spacing: 0.2px;
+        line-height: 16px;
+        text-align: center;
+        white-space: nowrap !important;
+        padding: 11px 13px;
+        white-space: nowrap;
+    }
+    section.como-ganar .yanbal-tabs img {
+        margin: auto !important;
+        height: auto !important;
+    }
+    .como-ganar .yanbal-tabs .tab-pane.apoyamos .caption {
+        padding: 0;
+        position: initial;
+        top: unset;
+        transform: initial;
+        margin-top: 32px;
+    }
+    .como-ganar .yanbal-tabs .tab-pane.como-ganar {
+        margin-bottom: -32px;
+    }
+    section.como-ganar .yanbal-tabs .tab-content p {
+        margin-bottom: 32px;
+        text-align: center;
+    }
+    section.como-ganar .yanbal-tabs .tab-content p:nth-child(2) {
+        color: #494B53;
+        margin: 0 0 32px 0;
+    }
+    section.como-ganar .yanbal-tabs .tab-content .row p:nth-child(1) {
+        margin: 8px 0;
+    }
+    .beneficios {
+        margin-bottom: 0;
+    }
+    .beneficios .item .icon img {
+        width: auto;
+        margin: auto;
+    }
+    .beneficios .item {
+        margin-top: 32px;
+        padding: 0 20px;
+    }
+    .cerca {
+        background-image: url(https://emprendimiento.yanbal.com/assets/images/girl2-mob.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 32px 20px;
+        min-height: 665px;
+    }
+    .cerca .wrap {
+        padding: 32px 0;
+    }
+    .cerca .caption {
+        width: auto;
+        margin: auto;
+        padding: 53px 0 77px 0;
+    }
+    .cerca.bg-arcilla .btn.yanbal-btn-default {
+        border: 1px solid #DC582A;
+        ;
+    }
+    .belleza .caption {
+        width: auto;
+        margin: auto;
+    }
+    .belleza .image {
+        margin-top: 64px;
+        width: auto;
+    }
+    section.emprender .wrap .container {
+        background-color: #fff;
+        padding: 32px 20px;
+    }
+
+    .emprender li.nav-item {
+        width: 33.33%;
+    }
+
+    section.emprender .yanbal-tabs .tab-content .caption, section.emprender .yanbal-tabs .tab-content .content {
+        width: auto;
+        margin: auto;
+    }
+    section.emprender .yanbal-tabs #paso2.tab-pane .caption, section.emprender .yanbal-tabs #paso3.tab-pane .caption {
+        position: initial;
+        top: initial;
+        transform: none;
+        width: auto;
+    }
+    section.emprender .yanbal-tabs .tab-content .caption p:nth-child(1), section.emprender .yanbal-tabs .tab-content .content p:nth-child(1) {
+        margin: 32px 0 8px 0;
+    }
+    .comunidad .wrap {
+        width: auto;
+        margin: auto;
+    }
+    .comunidad .wrap .caption {
+        margin-bottom: 32px;
+        width: auto;
+    }
+    .data .row .col-4 {
+        padding: 2px !important;
+        text-align: center;
+    }
+    .comunidad .wrap .data img {
+        width: 60%;
+    }
+    .comunidad .wrap .data .stats img {
+        margin-bottom: 32px;
+    }
+    .comunidad .wrap .data-item {
+        display: inline-block;
+    }
+    .comunidad .wrap .data .data-item {
+        margin-bottom: 0;
+        margin-top: 32px;
+        margin-bottom: 0;
+        margin-top: 32px;
+        display: block;
+      
+        display: table;
+        padding: 12px;
+        margin: auto;
+        width: 200px;
+    }
+    .comunidad .wrap .data .data-item * {
+        margin: 0;
+    }
+    .comunidad .wrap .data .data-item h2 {
+        margin: 0;
+        
+        font-size: 24px;
+        font-weight: 500;
+        letter-spacing: 0.2px;
+        line-height: 32px;
+    }
+    .testimonio {
+        padding: 32px 0 0 0;
+    }
+    .testimonio {
+        margin-bottom: -32px;
+    }
+    .testimonio .caption {
+        padding: 0 20px;
+    }
+    
+    .testimonios .item {
+        position: relative;
+        width: 100% !important;
+    }
+    .testimonios .item .caption {
+        padding: 32px 64px;
+    }
+    .testimonio .owl-carousel.owl-theme button.owl-prev {
+        left: 0;
+    }
+    .testimonio .owl-carousel.owl-theme button.owl-next {
+        right: 0;
+    }
+
+    .testimonio .owl-theme .owl-dots {
+        margin: 0;
+        padding-bottom: 64px;
+        padding-top: 32px;
+        background: #fff;
+    }
+    /*kit*/
+    .page-kit section.main .caption {
+        text-align: center;
+        width: auto;
+        margin: 0;
+    }
+
+    
+    .page-kit section.main {
+        background-image: url(https://emprendimiento.yanbal.com/assets/images/kit-bg-mob.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 564px;
+    }
+    
+    .page-kit.usa section.main {
+        background-image: url(https://emprendimiento.yanbal.com/assets/images/banner-empieza-tu-negocio-kit-bienvenida-us-mob.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 564px;
+    }
+    
+    .page-kit section.productos .caption {
+        width: auto;
+        margin: 0;
+    }
+    .page-kit section.main .caption h1 {
+        
+        font-size: 28px;
+        font-weight: bold;
+        letter-spacing: 0;
+        line-height: 42px;
+        text-align: center;
+        margin-top: -32px;
+    }
+    .page-kit section.beneficios {
+        background: url(https://emprendimiento.yanbal.com/assets/images/kit-beneficios-bg-mob.png);
+        background-position: center;
+        background-repeat: repeat;
+        background-size: cover;
+    }
+    .page-kit section.productos .kit-bienvenida .producto {
+        text-align: center;
+        padding-bottom: 24px;
+        max-width: 100%;
+    }
+    .page-kit section.productos .kit-bienvenida .producto img{
+        height: auto;
+    }
+    .kit-bienvenida .row {
+        margin: 0;
+    }
+    .kit-bienvenida .row .col-md-3.slide {
+        padding: 0;
+    }
+    .page-kit section.productos .kit-bienvenida .header {
+        text-align: center;
+    }
+    .kit-bienvenida:last-child .body {
+        padding-bottom: 88px;
+    }
+    .page-kit section.productos .kit-bienvenida .owl-carousel.owl-theme .owl-nav {
+        position: absolute;
+        margin-top: 0;
+        top: 35%;
+        right: 0;
+        width: 100%;
+        transform: none;
+        display: table;
+        margin: 0;
+        left: auto;
+    }
+    .page-kit section.video .play-video {
+        width: auto;
+    }
+    .page-kit section.video .play-video img {
+        width: 100%;
+    }
+    .page-kit section.video .play-video [class^="icon-"], [class*=" icon-"] {
+        font-size: 80px;
+    }
+    .page-kit section.productos .kit-bienvenida .header p span {
+        display: block;
+    }
+    /*end kit*/
+    /*page faq*/
+
+    .page-faq .main {
+        background-image: url(https://emprendimiento.yanbal.com/assets/images/faq-bg-mob.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: calc(100vh - 90px);
+        position: relative;
+    }
+    .page-faq .main .wrap {
+        padding: 0 !important;
+    }
+    .page-faq .main .caption {
+        width: auto;
+        margin: auto;
+        text-align: center;
+        float: none;
+        border: 0;
+        position: absolute;
+        bottom: 0;
+        height: auto;
+        left: 0;
+        padding: 0 20px;
+    }
+    
+    .page-faq .main .caption  h1{
+        color:#fff;
+    }
+    
+    
+    .page-faq .main .caption [class^="icon-"], .page-faq .main .caption [class*=" icon-"] {
+        color: #fff;
+    }
+    .page-faq section .caption h2 {
+        margin-bottom: 8px;
+        color: #fff;
+        font-size: 21px;
+        letter-spacing: 0px;
+        line-height: 22px;
+        text-align: center;
+    }
+    .page-faq .main .caption p {
+        /* font-size: 20px; */
+        /* letter-spacing: 0; */
+        /* line-height: 30px; */
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 0;
+        line-height: 21px;
+        text-align: center;
+        color: #FFF;
+    }
+    .page-faq .nav-tabs {
+        display: initial;
+        border-bottom: 1px solid #CFCFD0;
+        position: relative;
+        display: flex;
+        flex-wrap: nowrap;
+        overflow: scroll;
+        overscroll-behavior: none;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        margin: 0;
+        padding: 0;
+        max-width: var(--page-width);
+        transform: translateZ(0);
+        transition: transform var(--ease) var(--duration);
+        -webkit-overflow-scrolling: touch;
+    }
+    .nav-tabs::-webkit-scrollbar {
+        width: 0 !important;
+        height: 0 !important;
+    }
+    .page-faq .nav-tabs .nav-item {
+        display: inline-block;
+        width: auto;
+    }
+    .page-faq ul.nav-tabs li.nav-item a {
+        text-decoration: none;
+        margin: 0;
+        display: block;
+        text-decoration: none;
+        padding: 12px 20px;
+        display: block;
+        border: 1px solid transparent;
+    }
+    .page-faq .nav-tabs::-webkit-scrollbar {
+        width: 0 !important;
+    }
+    /*end faq*/
+    /*calculadora*/
+    .page-calculadora .main {
+        background-image: url(https://emprendimiento.yanbal.com/assets/images/calculadora-bg-mob.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: calc(100vh - 90px);
+        padding: 32px 20px;
+        background-position: center;
+        position: relative;
+    }
+    .page-calculadora .main .caption {
+        width: auto;
+        margin: 0;
+        float: none;
+        text-align: center;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        /* transform: translate(-50%, 0); */
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .page-calculadora .yanbal-tabs .tab-pane .images .row {
+        margin-right: -3px;
+        margin-left: -3px;
+    }
+    .page-calculadora .yanbal-tabs .tab-pane .images .row .col-6 {
+            padding-right: 3px;
+            padding-left: 3px;
+    }
+
+    .page-calculadora .yanbal-tabs .tab-pane .images .row .col-6 img{
+        margin-bottom: 6px;
+    }
+
+    .page-calculadora .yanbal-tabs .tab-pane .caption {
+        width: auto;
+        margin: auto;
+    }
+    .page-calculadora .cuanto-ganar .caption {
+        width: auto;
+        margin: auto;
+    }
+    
+    .page-calculadora .main .caption h1{
+        color: #fff; 
+    }
+    .page-calculadora .main .caption p {
+        font-size: 14px;
+        letter-spacing: 0;
+        letter-spacing: 0;
+        line-height: 21px;
+        color: #fff;
+    }
+    .page-calculadora .main .caption h2 {
+        color: #fff;
+        font-size: 28px;
+        font-weight: bold;
+        letter-spacing: 0;
+        line-height: 42px;
+        text-align: center;
+    }
+    .page-calculadora .main .caption [class^="icon-"], .page-calculadora .main .caption [class*=" icon-"] {
+        color: #fff;
+    }
+    .page-calculadora .crece .wrap,
+    .page-calculadora .crece{
+        padding-bottom: 0;
+    }
+
+    .page-calculadora .crece .caption p {
+        width: auto;
+    }
+
+    .page-calculadora .crece .image{
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+
+    .page-calculadora .crece .image .text {
+        position: absolute;
+        left: 50%;
+        bottom: 20px;
+        transform: translate(-50%, 0);
+        width: 100;
+        width: 100%;
+        padding: 0 46px;
+    }
+    .page-calculadora .crece .image .text p:nth-child(1) {
+        font-family: "Maison Neue Light", sans-serif;
+        font-size: 15px;
+        line-height: 2.2rem;
+        margin-bottom: 0px;
+    }
+
+    .page-calculadora .crece .image .text p:nth-child(2) {
+        font-size: 23px;
+        line-height: 2.0rem;
+       
+    }
+
+    .page-calculadora .encuesta .opciones .item {
+        display: flex;
+        padding: 16px;
+    }
+    .page-calculadora .encuesta .opciones .item {
+        display: flex;
+        padding: 16px;
+        margin: 0;
+        width: 100%;
+        height: 86px;
+        margin-bottom: 16px;
+        align-items: center;
+    }
+    .page-calculadora .encuesta .opciones .item p {
+        margin: auto 16px;
+        text-align: left;
+    }
+    .page-calculadora .encuesta .opciones .item .icon {
+        max-width: initial;
+        margin: 0;
+        width: 56px;
+        display: block;
+    }
+    .page-calculadora .encuesta .opciones .item i {
+        font-size: 56px;
+        margin-bottom: 0;
+    }
+    .page-calculadora .gana .caption {
+        width: auto;
+        margin: auto;
+    }
+    .page-calculadora .emprende .container .caption h2 {
+        width: auto;
+        margin: auto auto 32px auto;
+    }
+    .page-calculadora .emprende .item {
+        margin: 32px 0;
+        width: auto;
+        margin: 32px auto;
+    }
+
+    .page-calculadora .emprende .container .caption p:nth-child(4) {
+        width: auto;
+    }
+    .page-calculadora .limite {
+        background-image: url(https://emprendimiento.yanbal.com/assets/images/calculadora-result-bg-mob.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .page-calculadora .limite .caption {
+        width: auto;
+        background-color: #FDEEE0;
+        margin: auto;
+        padding: 32px 20px 32px 20px;
+        margin-bottom: 32px;
+    }
+    .page-calculadora .limite .caption h2 {
+        font-size: 24px;
+        font-weight: bold;
+        letter-spacing: 0.2px;
+        line-height: 32px;
+    }
+    .page-calculadora .limite .caption p.size2 {
+        font-size: 12px;
+        font-weight: 300;
+        letter-spacing: 0.2px;
+        line-height: 16px;
+    }
+    .page-calculadora .limite .caption .mensaje {
+        padding: 20px;
+    }
+    .page-calculadora .limite .caption .mensaje p:nth-child(1) {
+        font-size: 14px;
+        font-weight: 300;
+        letter-spacing: 0.2px;
+        line-height: 20px;
+    }
+    .page-calculadora .limite .caption .mensaje p:nth-child(2) {
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: 0.2px;
+        line-height: 24px;
+    }
+    .page-calculadora .yanbal-tabs .tab-pane .images {
+        width: auto;
+        margin: auto;
+        margin-bottom: -32px;
+    }
+    .page-calculadora .yanbal-tabs .tab-pane .images img {
+        margin-bottom: 32px;
+    }
+    .page-calculadora .bars .row .col-md-4,
+    .page-calculadora .bars .row .col-md-2 {
+        display:none;
+
+    }
+    .page-calculadora .bars .row .col-md-4:last-child,
+    .page-calculadora .bars .row .col-md-4:first-child,
+    .page-calculadora .bars .row .col-md-2:last-child,
+    .page-calculadora .bars .row .col-md-2:first-child {
+        display:block;
+        
+    }
+    .page-calculadora .bars .row .col-md-4:last-child,
+    .page-calculadora .bars .row .col-md-2:last-child {
+        margin-top: 32px;
+    }
+    
+    
+
+    .page-calculadora .aprende .play-video {
+        position: relative;
+        width: auto;
+        margin: 0 20px;
+    }
+
+    .page-calculadora .play-video i.icon-play{
+        font-size: 45px;
+    }
+
+    
+    .page-calculadora .aprende .videos .owl-theme .owl-dots {
+        position: absolute;
+        width: 100%;
+        margin: 0;
+        padding: 24px 0 0 0;
+        bottom: -44px;
+    }
+    .page-calculadora section.aprende {
+        padding-bottom: 79px;
+    }
+    /*end calculadora*/
+    .preguntas {
+        background-image: url(https://emprendimiento.yanbal.com/assets/images/preguntas-bg-mob.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 600px;
+        position: relative;
+    }
+    .preguntas .caption {
+        margin: 0;
+        text-align: center;
+        float: none;
+        float: none;
+        bottom: 0;
+        position: absolute;
+        bottom: 32px;
+        padding: 32px;
+        color: #fff;
+        width: 100%;
+        left: 0;
+    }
+    .preguntas .caption [class^="icon-"], .preguntas .caption [class*=" icon-"] {
+        color: #DC582A;
+    }
+    .actions .wrap {
+        padding: 0px;
+    }
+    .actions .caption {
+        width: auto;
+        margin: 32px 0;
+    }
+    footer .container.desk {
+        display: none;
+    }
+    footer .container.mob {
+        display: block;
+        padding: 20px 20px 150px 20px;
+        text-align: center;
+    }
+    footer .container.mob .logo {
+        margin-bottom: 9px;
+    }
+    footer .nav {
+        display: block;
+        padding-left: 0;
+        list-style: none;
+        text-align: center;
+    }
+    footer .nav-footer ul li.nav-item {
+        margin-left: 20px;
+        display: block;
+    }
+    footer .nav-footer ul li.nav-item a {
+        margin-bottom: 24px;
+        display: block;
+    }
+}

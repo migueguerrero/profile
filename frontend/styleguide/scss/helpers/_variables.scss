@@ -1,0 +1,40 @@
+//******************** variables ********************
+$breakpoints: (movil-s: 350px,
+  movil: 450px,
+  movil-h: 569px,
+  tablet: 992px,
+  tablet-h: 1025px,
+  laptop: 1367px,
+);
+
+// brand primary
+$Orange: #DC582A;
+$OrangeDark: #C34E25;
+$Orange30: #F4CCBF;
+$Dark: #1C1F28;
+$White: #FFFFFF;
+$Beige: #FDEEE0;
+$Beige50: #FEF6EF;
+$Orange30: #F4CCBF;
+
+
+// Gray
+$Gray10: #E8E8E9;
+$Gray30: #D1D2D4;
+$Gray50: #A4A5A9;
+$Gray80: #494B53;
+
+// ui colors
+$Green: #00BFA5;
+$Yellow: #FFC107;
+$Red: #E5554F;
+
+// Others
+
+$Hover: #C34E25;
+
+//rutas
+$path: "../assets";
+$path-fonts: "../fonts";
+//$path: "../assets";
+//$path-fonts: "../fonts";

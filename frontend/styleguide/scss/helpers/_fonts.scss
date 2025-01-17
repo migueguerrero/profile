@@ -1,0 +1,904 @@
+//TIPOGRAPHY
+@font-face {
+  font-family: 'MaisonNeue-Thin';
+  src: url('../fonts/MaisonNeueWEB-Thin.woff') format("woff"), url('../fonts/MaisonNeueWEB-Thin.woff2') format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MaisonNeue-Light';
+  src: url('../fonts/MaisonNeueWEB-Light.woff') format("woff"), url('../fonts/MaisonNeueWEB-Light.woff2') format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MaisonNeue-Book';
+  src: url('../fonts/MaisonNeueWEB-Book.woff') format("woff"), url('../fonts/MaisonNeueWEB-Book.woff2') format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MaisonNeue-Demi';
+  src: url('../fonts/MaisonNeueWEB-Demi.woff') format("woff"), url('../fonts/MaisonNeueWEB-Demi.woff2') format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ogg-Bold';
+  src: url('../fonts/Ogg-Bold.woff') format("woff"), url('../fonts/Ogg-Bold.woff2') format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+//ICONS
+@font-face {
+  font-family: "yanbal-icons";
+  src: url("../fonts/icons/yanbal-icons.eot?zgcotw");
+  src: url("../fonts/icons/yanbal-icons.eot?zgcotw#iefix") format("embedded-opentype"), url("../fonts/icons/yanbal-icons.ttf?zgcotw") format("truetype"), url("../fonts/icons/yanbal-icons.woff?zgcotw") format("woff"), url("../fonts/icons/yanbal-icons.svg?zgcotw#yanbal-icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "yanbal-icons" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-add-file:before {
+  content: "\e900";
+}
+
+.icon-alert:before {
+  content: "\e901";
+}
+
+.icon-arrow-down:before {
+  content: "\e902";
+}
+
+.icon-arrow-left:before {
+  content: "\e903";
+}
+
+.icon-arrow-right:before {
+  content: "\e904";
+}
+
+.icon-arrow-top:before {
+  content: "\e905";
+}
+
+.icon-ask:before {
+  content: "\e906";
+}
+
+.icon-attach:before {
+  content: "\e907";
+}
+
+.icon-bag:before {
+  content: "\e908";
+}
+
+.icon-book:before {
+  content: "\e909";
+}
+
+.icon-box:before {
+  content: "\e90a";
+}
+
+.icon-card:before {
+  content: "\e90b";
+}
+
+.icon-cash:before {
+  content: "\e90c";
+}
+
+.icon-check:before {
+  content: "\e90d";
+}
+
+.icon-close:before {
+  content: "\e90e";
+}
+
+.icon-cream:before {
+  content: "\e90f";
+}
+
+.icon-delete:before {
+  content: "\e910";
+}
+
+.icon-download:before {
+  content: "\e911";
+}
+
+.icon-eye-press:before {
+  content: "\e912";
+}
+
+.icon-eye:before {
+  content: "\e913";
+}
+
+.icon-fill-facebook:before {
+  content: "\e914";
+}
+
+.icon-fill-instagram:before {
+  content: "\e915";
+}
+
+.icon-fill-star:before {
+  content: "\e916";
+}
+
+.icon-fill-twitter:before {
+  content: "\e917";
+}
+
+.icon-fill-wishlist:before {
+  content: "\e918";
+}
+
+.icon-fill-youtube:before {
+  content: "\e919";
+}
+
+.icon-fragance:before {
+  content: "\e91a";
+}
+
+.icon-gift:before {
+  content: "\e91b";
+}
+
+.icon-isotipo:before {
+  content: "\e91c";
+}
+
+.icon-laptop:before {
+  content: "\e91d";
+}
+
+.icon-link-arrow:before {
+  content: "\e91e";
+}
+
+.icon-link:before {
+  content: "\e91f";
+}
+
+.icon-lipstick:before {
+  content: "\e920";
+}
+
+.icon-log-out:before {
+  content: "\e921";
+}
+
+.icon-logo-unique:before {
+  content: "\e922";
+}
+
+.icon-logo-yanbal:before {
+  content: "\e923";
+}
+
+.icon-message:before {
+  content: "\e924";
+}
+
+.icon-mobile:before {
+  content: "\e925";
+}
+
+.icon-negative:before {
+  content: "\e926";
+}
+
+.icon-pen:before {
+  content: "\e927";
+}
+
+.icon-phone:before {
+  content: "\e928";
+}
+
+.icon-play:before {
+  content: "\e929";
+}
+
+.icon-positive:before {
+  content: "\e92a";
+}
+
+.icon-profile:before {
+  content: "\e92b";
+}
+
+.icon-search:before {
+  content: "\e92c";
+}
+
+.icon-send-wishlist:before {
+  content: "\e92d";
+}
+
+.icon-shooping:before {
+  content: "\e92e";
+}
+
+.icon-style-advisor:before {
+  content: "\e92f";
+}
+
+.icon-support:before {
+  content: "\e930";
+}
+
+.icon-top:before {
+  content: "\e931";
+}
+
+.icon-update:before {
+  content: "\e932";
+}
+
+.icon-web:before {
+  content: "\e933";
+}
+
+.icon-whatsapp:before {
+  content: "\e934";
+}
+
+.icon-wishlist:before {
+  content: "\e935";
+}
+
+.icon-clock:before {
+  content: "\e936";
+}
+
+.icon-cuenta-ahorros:before {
+  content: "\e937";
+}
+
+.icon-empresa:before {
+  content: "\e938";
+}
+
+.icon-star:before {
+  content: "\e939";
+}
+
+.icon-sun:before {
+  content: "\e93a";
+}
+
+.icon-moon:before {
+  content: "\e93b";
+}
+
+.icon-bulb:before {
+  content: "\e93c";
+}
+
+.icon-messenger:before {
+  content: "\e93d";
+}
+
+.icon-quickorder:before {
+  content: "\e93e";
+}
+
+.icon-truck:before {
+  content: "\e93f";
+}
+
+.icon-order:before {
+  content: "\e940";
+}
+
+.icon-empty-bag:before {
+  content: "\e941";
+}
+
+.icon-navigation:before {
+  content: "\e942";
+}
+
+.icon-home:before {
+  content: "\e943";
+}
+
+.icon-filter:before {
+  content: "\e944";
+}
+
+.icon-group:before {
+  content: "\e945";
+}
+
+.icon-info:before {
+  content: "\e946";
+}
+
+.icon-calendar:before {
+  content: "\e947";
+}
+
+.icon-businesssetings:before {
+  content: "\e948";
+}
+
+.icon-businessportal:before {
+  content: "\e949";
+}
+
+.icon-like:before {
+  content: "\e94a";
+}
+
+.icon-unlike:before {
+  content: "\e94b";
+}
+
+.icon-fill-linkedin:before {
+  content: "\e94c";
+}
+
+.icon-check-circle:before {
+  content: "\e94d";
+}
+
+.icon-apple:before {
+  content: "\e94e";
+}
+
+.icon-archive:before {
+  content: "\e94f";
+}
+
+.icon-award:before {
+  content: "\e950";
+}
+
+.icon-awards:before {
+  content: "\e951";
+}
+
+.icon-banking:before {
+  content: "\e952";
+}
+
+.icon-bell:before {
+  content: "\e953";
+}
+
+.icon-bookmark:before {
+  content: "\e954";
+}
+
+.icon-bottle:before {
+  content: "\e955";
+}
+
+.icon-briefcase:before {
+  content: "\e956";
+}
+
+.icon-bycicle:before {
+  content: "\e957";
+}
+
+.icon-cancel:before {
+  content: "\e958";
+}
+
+.icon-car:before {
+  content: "\e959";
+}
+
+.icon-chart:before {
+  content: "\e95a";
+}
+
+.icon-chemical:before {
+  content: "\e95b";
+}
+
+.icon-comunications:before {
+  content: "\e95c";
+}
+
+.icon-config:before {
+  content: "\e95d";
+}
+
+.icon-cream-tube:before {
+  content: "\e95e";
+}
+
+.icon-diamond:before {
+  content: "\e95f";
+}
+
+.icon-edit:before {
+  content: "\e960";
+}
+
+.icon-energy:before {
+  content: "\e961";
+}
+
+.icon-fabric:before {
+  content: "\e962";
+}
+
+.icon-file:before {
+  content: "\e963";
+}
+
+.icon-folder:before {
+  content: "\e964";
+}
+
+.icon-fullscreen:before {
+  content: "\e965";
+}
+
+.icon-funnel:before {
+  content: "\e966";
+}
+
+.icon-graduate:before {
+  content: "\e967";
+}
+
+.icon-historic:before {
+  content: "\e968";
+}
+
+.icon-hot-tea:before {
+  content: "\e969";
+}
+
+.icon-hotel:before {
+  content: "\e96a";
+}
+
+.icon-labs:before {
+  content: "\e96b";
+}
+
+.icon-lamp:before {
+  content: "\e96c";
+}
+
+.icon-lift-truck:before {
+  content: "\e96d";
+}
+
+.icon-make-up:before {
+  content: "\e96e";
+}
+
+.icon-minus:before {
+  content: "\e96f";
+}
+
+.icon-off:before {
+  content: "\e970";
+}
+
+.icon-open-cream:before {
+  content: "\e971";
+}
+
+.icon-open-dolder:before {
+  content: "\e972";
+}
+
+.icon-organigram:before {
+  content: "\e973";
+}
+
+.icon-padlock:before {
+  content: "\e974";
+}
+
+.icon-person:before {
+  content: "\e975";
+}
+
+.icon-photo:before {
+  content: "\e976";
+}
+
+.icon-picture:before {
+  content: "\e977";
+}
+
+.icon-plug:before {
+  content: "\e978";
+}
+
+.icon-plus:before {
+  content: "\e979";
+}
+
+.icon-pointer:before {
+  content: "\e97a";
+}
+
+.icon-pray:before {
+  content: "\e97b";
+}
+
+.icon-printer:before {
+  content: "\e97c";
+}
+
+.icon-radio:before {
+  content: "\e97d";
+}
+
+.icon-recyclable:before {
+  content: "\e97e";
+}
+
+.icon-recycle:before {
+  content: "\e97f";
+}
+
+.icon-relax:before {
+  content: "\e980";
+}
+
+.icon-right:before {
+  content: "\e981";
+}
+
+.icon-sa-message:before {
+  content: "\e982";
+}
+
+.icon-save:before {
+  content: "\e983";
+}
+
+.icon-saving-bulb:before {
+  content: "\e984";
+}
+
+.icon-share:before {
+  content: "\e985";
+}
+
+.icon-shower:before {
+  content: "\e986";
+}
+
+.icon-sound:before {
+  content: "\e987";
+}
+
+.icon-stapler:before {
+  content: "\e988";
+}
+
+.icon-statistics:before {
+  content: "\e989";
+}
+
+.icon-stethoscope:before {
+  content: "\e98a";
+}
+
+.icon-target:before {
+  content: "\e98b";
+}
+
+.icon-thermometer:before {
+  content: "\e98c";
+}
+
+.icon-tree:before {
+  content: "\e98d";
+}
+
+.icon-travel:before {
+  content: "\e98e";
+}
+
+.icon-tv:before {
+  content: "\e98f";
+}
+
+.icon-upload:before {
+  content: "\e990";
+}
+
+.icon-website:before {
+  content: "\e991";
+}
+
+.icon-maya:before {
+  content: "\e992";
+}
+
+.icon-scooter:before {
+  content: "\e993";
+}
+
+.icon-giftbag:before {
+  content: "\e994";
+}
+
+.icon-vitamin:before {
+  content: "\e995";
+}
+
+.icon-waterproof:before {
+  content: "\e996";
+}
+
+.icon-notears:before {
+  content: "\e997";
+}
+
+.icon-ninefree:before {
+  content: "\e998";
+}
+
+.icon-skintested:before {
+  content: "\e999";
+}
+
+.icon-kidstested:before {
+  content: "\e99a";
+}
+
+.icon-naturalingredients:before {
+  content: "\e99b";
+}
+
+.icon-twohours:before {
+  content: "\e99c";
+}
+
+.icon-tenhours:before {
+  content: "\e99d";
+}
+
+.icon-dermtested:before {
+  content: "\e99e";
+}
+
+.icon-hipoalergenic:before {
+  content: "\e99f";
+}
+
+.icon-parabensfree:before {
+  content: "\e9a0";
+}
+
+.icon-reguledmaterials:before {
+  content: "\e9a1";
+}
+
+.icon-noanimaltested:before {
+  content: "\e9a2";
+}
+
+.icon-visiontest:before {
+  content: "\e9a3";
+}
+
+.icon-hyaluronicacid:before {
+  content: "\e9a4";
+}
+
+.icon-cleansafe:before {
+  content: "\e9a5";
+}
+
+.icon-new:before {
+  content: "\e9a6";
+}
+
+.icon-change:before {
+  content: "\e9a7";
+}
+
+.icon-temporal:before {
+  content: "\e9a8";
+}
+
+.icon-clap:before {
+  content: "\e9a9";
+}
+
+.icon-flag:before {
+  content: "\e9aa";
+}
+
+.icon-fill-flag:before {
+  content: "\e9ab";
+}
+
+.icon-rhombus:before {
+  content: "\e9ac";
+}
+
+.icon-fill-rhombus:before {
+  content: "\e9ad";
+}
+
+.icon-smile:before {
+  content: "\e9ae";
+}
+
+.icon-fill-smile:before {
+  content: "\e9af";
+}
+
+.icon-gout:before {
+  content: "\e9b0";
+}
+
+.icon-fill-gout:before {
+  content: "\e9b1";
+}
+
+.icon-leaf:before {
+  content: "\e9b2";
+}
+
+.icon-fill-leaf:before {
+  content: "\e9b3";
+}
+
+.icon-glasses:before {
+  content: "\e9b4";
+}
+
+.icon-fill-glasses:before {
+  content: "\e9b5";
+}
+
+.icon-lips:before {
+  content: "\e9b6";
+}
+
+.icon-fill-lips:before {
+  content: "\e9b7";
+}
+
+.icon-milk-shake:before {
+  content: "\e9b8";
+}
+
+.icon-fill-milk-shake:before {
+  content: "\e9b9";
+}
+
+.icon-fingers:before {
+  content: "\e9ba";
+}
+
+.icon-fill-fingers:before {
+  content: "\e9bb";
+}
+
+.icon-couch:before {
+  content: "\e9bc";
+}
+
+.icon-fill-couch:before {
+  content: "\e9bd";
+}
+
+.icon-rabbit:before {
+  content: "\e9be";
+}
+
+.icon-fill-rabbit:before {
+  content: "\e9bf";
+}
+
+.icon-fill-ask:before {
+  content: "\e9c0";
+}
+
+.icon-fill-energy:before {
+  content: "\e9c1";
+}
+
+.icon-fill-check-circle:before {
+  content: "\e9c2";
+}
+
+.icon-fill-comunications:before {
+  content: "\e9c3";
+}
+
+.icon-fill-play:before {
+  content: "\e9c4";
+}
+
+.icon-fill-person:before {
+  content: "\e9c5";
+}
+
+.icon-fill-bookmark:before {
+  content: "\e9c6";
+}
+
+.icon-fill-travel:before {
+  content: "\e9c7";
+}
+
+.icon-fill-apple:before {
+  content: "\e9c8";
+}
+
+.icon-fill-diamond:before {
+  content: "\e9c9";
+}
+
+.icon-fill-pointer:before {
+  content: "\e9ca";
+}
+
+.icon-fill-lipstick:before {
+  content: "\e9cb";
+}
+
+.icon-fill-chemical:before {
+  content: "\e9cc";
+}
+
+.icon-fill-box:before {
+  content: "\e9cd";
+}
+
+.icon-commission:before {
+  content: "\e9ce";
+}
+
+.icon-gridx4:before {
+  content: "\e9cf";
+}
+
+.icon-gridx3:before {
+  content: "\e9d0";
+}
+
+.icon-copy:before {
+  content: "\e9d1";
+}
+
+.icon-fill-tiktok:before {
+  content: "\e9d2";
+}

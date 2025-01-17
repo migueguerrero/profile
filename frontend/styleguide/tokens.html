@@ -1,0 +1,1115 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+	<title>Guide Objectives - Yanbal Style Guide</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
+</head>
+
+<body>
+	<div class="wrapper">
+		<!-- Sidebar  -->
+		<nav id="sidebar">
+			<div class="margen menu-dsk">
+				<div id="close" class="close-dsk">
+					<div class="group">
+						<i class="icon-close"> </i> <span>Close</span>
+					</div>
+				</div>
+				<div class="accordion-menu menu-dsk">
+					<ul>
+						<li><a href="index.html" title="Yanbal Style Guide">Yanbal Style Guide</a></li>
+						<li><a href="#" title="Define">Define</a>
+							<ul>
+								<li><a href="guide-objectives.html" title="Guide Objectives">Guide Objectives</a></li>
+							</ul>
+						</li>
+						<li><a href="#" title="Foundation">Foundation</a>
+							<ul>
+								<li><a href="tokens.html" title="Tokens">Tokens</a></li>
+								<li><a href="colors.html" title="Colors">Colors</a></li>
+								<li><a href="typography.html" title="Typography">Typography</a></li>
+								<li><a href="icons.html" title="Icons">Icons</a></li>
+								<li><a href="logo.html" title="Logo">Logo</a></li>
+							</ul>
+						</li>
+						<li><a href="#" title="Components">Components</a>
+							<ul>
+								<li><a href="buttons.html" title="Buttons">Buttons</a></li>
+								<li><a href="input.html" title="Input">Input</a></li>
+								<li><a href="select.html" title="Select">Select</a></li>
+								<li><a href="check.html" title="Check">Check</a></li>
+								<li><a href="radio.html" title="Radio">Radio</a></li>
+								<li><a href="tabs.html" title="Tabs">Tabs</a></li>
+								<li><a href="steppers.html" title="Steppers">Steppers</a></li>
+								<li><a href="switch.html" title="Switch">Switch</a></li>
+								<li><a href="segment.html" title="Segment">Segment</a></li>
+								<li><a href="pagination.html" title="Pagination">Pagination</a></li>
+								<li><a href="breadcrumb.html" title="Breadcrumb">Breadcrumb</a></li>
+
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="margen menu-mob">
+				<nav class="slide-menu" id="test-menu-right">
+					<div class="controls">
+						<div id="close" class="close-mob">
+							<div class="group">
+								<i class="icon-close"> </i> <span>Close</span>
+							</div>
+						</div>
+					</div>
+					<ul>
+						<li><a href="index.html" title="Yanbal Style Guide">Yanbal Style Guide</a></li>
+						<li><a href="#" title="Define">Define</a>
+							<ul>
+								<li><a href="guide-objectives.html" title="Guide Objectives">Guide Objectives</a></li>
+							</ul>
+						</li>
+						<li><a href="#" title="Foundation">Foundation</a>
+							<ul>
+								<li><a href="tokens.html" title="Tokens">Tokens</a></li>
+								<li><a href="colors.html" title="Colors">Colors</a></li>
+								<li><a href="typography.html" title="Typography">Typography</a></li>
+								<li><a href="icons.html" title="Icons">Icons</a></li>
+								<li><a href="logo.html" title="Logo">Logo</a></li>
+							</ul>
+						</li>
+						<li><a href="#" title="Components">Components</a>
+							<ul>
+								<li><a href="buttons.html" title="Buttons">Buttons</a></li>
+								<li><a href="input.html" title="Input">Input</a></li>
+								<li><a href="select.html" title="Select">Select</a></li>
+								<li><a href="check.html" title="Check">Check</a></li>
+								<li><a href="radio.html" title="Radio">Radio</a></li>
+								<li><a href="tabs.html" title="Tabs">Tabs</a></li>
+								<li><a href="steppers.html" title="Steppers">Steppers</a></li>
+								<li><a href="switch.html" title="Switch">Switch</a></li>
+								<li><a href="segment.html" title="Segment">Segment</a></li>
+								<li><a href="pagination.html" title="Pagination">Pagination</a></li>
+								<li><a href="breadcrumb.html" title="Breadcrumb">Breadcrumb</a></li>
+
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</nav>
+		<!-- Sidebar  // -->
+		<div id="content">
+			<!-- Cabecera -->
+			<nav class="navbar navbar-default">
+				<button type="button" id="sidebarCollapse" class="menu pull-left">
+					<i class="icon-navigation"></i>
+					<span>Yanbal Style Guide</span>
+				</button>
+				<div class="isotype pull-right">
+					<i class="icon-isotipo"></i>
+				</div>
+			</nav>
+			<!-- Cabecera //. -->
+			<!-- Cuerpo -->
+			<div class="layout layout_sg pg-tokens">
+				<section class="content_sg">
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="row-sg">
+								<div class="back-home">
+									<i class="icon-arrow-left"> </i><a href="index.html" title="back to home">
+										<span>back to home</span></a>
+								</div>
+								<h1>Tokens</h1>
+								<p class="p-big">Design tokens are the visual design atoms of the design system — specifically, they are
+									named entities that store visual
+									design attributes. We use them in place of hard-coded values (such as hex values for color or pixel
+									values for spacing)
+									in order to maintain a scalable and consistent visual system for UI development.
+								</p>
+								<h4>Colors</h4>
+								<p class="p-normal">Generic colors to use within a Salesforce application. Tokens that have the prefix
+									of "BRAND" are brandable tokens and
+									are subject to change when a customer applies theming to their org. .
+								</p>
+								<div class="tokens">
+									<table width=100%>
+										<tr>
+											<th>Token</th>
+											<th>Example</th>
+										</tr>
+										<tr>
+											<td>
+												<span>Orange</span>
+												<br>
+												$color-orange <br>
+												var(—color-orange)
+											</td>
+											<td>
+												<div class="color color-orange"></div>
+												rgb(1, 118, 211) <br>
+												#0176d3 <br>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<span>Orange Dark</span>
+												<br>
+												$color-orange-dark <br>
+												var(—color-orange-dark)
+											</td>
+											<td>
+												<div class="color color-orange-dark"></div>
+												rgb(195, 78, 37) <br>
+												#C34E25 <br>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<span>Orange 30</span>
+												<br>
+												$color-orange-30 <br>
+												var(—color-orange-30)
+											</td>
+											<td>
+												<div class="color color-orange-30"></div>
+												rgb(244, 204, 191) <br>
+												#F4CCBF <br>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<span>Dark</span>
+												<br>
+												$color-dark <br>
+												var(—color-dark)
+											</td>
+											<td>
+												<div class="color color-dark"></div>
+												rgb(28, 31, 40) <br>
+												#1C1F28 <br>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<span>Beige</span>
+												<br>
+												$color-beige <br>
+												var(—color-beige)
+											</td>
+											<td>
+												<div class="color color-beige"></div>
+												rgb(253, 238, 224) <br>
+												#FDEEE0 <br>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<span>Beige 50</span>
+												<br>
+												$color-beige-50 <br>
+												var(—color-beige-50)
+											</td>
+											<td>
+												<div class="color color-beige-50"></div>
+												rgb(254, 246, 239) <br>
+												#FEF6EF <br>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<span>White</span>
+												<br>
+												$color-white <br>
+												var(—color-white)
+											</td>
+											<td>
+												<div class="color color-white"></div>
+												rgb(255, 255, 255) <br>
+												#FFFFFF <br>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<span>Gray 80</span>
+												<br>
+												$color-gray-80 <br>
+												var(—color-gray-80)
+											</td>
+											<td>
+												<div class="color color-gray-80"></div>
+												rgb(73, 75, 83) <br>
+												#494B53 <br>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<span>Gray 50</span>
+												<br>
+												$color-gray-50 <br>
+												var(—color-gray-50)
+											</td>
+											<td>
+												<div class="color color-gray-50"></div>
+												rgb(164, 165, 169) <br>
+												#A4A5A9 <br>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<span>Gray 30</span>
+												<br>
+												$color-gray-30 <br>
+												var(—color-gray-30)
+											</td>
+											<td>
+												<div class="color color-gray-30"></div>
+												rgb(209, 210, 212) <br>
+												#D1D2D4 <br>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<span>Gray 10</span>
+												<br>
+												$color-gray-10 <br>
+												var(—color-gray-10)
+											</td>
+											<td>
+												<div class="color color-gray-10"></div>
+												rgb(232, 232, 233) <br>
+												#E8E8E9 <br>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<span>Green</span>
+												<br>
+												$color-green <br>
+												var(—color-green)
+											</td>
+											<td>
+												<div class="color color-green"></div>
+												rgb(0, 191, 165) <br>
+												#00BFA5 <br>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<span>Yellow</span>
+												<br>
+												$color-yellow <br>
+												var(—color-yellow)
+											</td>
+											<td>
+												<div class="color color-yellow"></div>
+												rgb(255, 193, 7) <br>
+												#FFC107 <br>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<span>Red</span>
+												<br>
+												$color-red <br>
+												var(—color-red)
+											</td>
+											<td>
+												<div class="color color-red"></div>
+												rgb(229, 85, 175) <br>
+												#E555AF <br>
+											</td>
+										</tr>
+									</table>
+								</div>
+								<h4>Background Colors</h4>
+								<p class="p-normal">Generic colors to use within a Salesforce application. Tokens that have the prefix
+									of "BRAND" are brandable tokens and
+									are subject to change when a customer applies theming to their org. .
+								</p>
+								<div class="tokens">
+									<table width=100%>
+										<tr>
+											<th>Token</th>
+											<th>Example</th>
+										</tr>
+										<tr>
+											<td>
+												<span>Background Orange</span>
+												<br>
+												$color-background-orange <br>
+												var(—color-background-orange)
+											</td>
+											<td>
+												<div class="color color-background-orange"></div>
+												rgb(220, 88, 42) <br>
+												#DC582A <br>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<span>Background Dark</span>
+												<br>
+												$color-background-dark <br>
+												var(—color-background-dark)
+											</td>
+											<td>
+												<div class="color color-background-dark"></div>
+												rgb(28, 31, 40) <br>
+												#1C1F28 <br>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<span>Background White</span>
+												<br>
+												$color-background-white <br>
+												var(—color-background-white)
+											</td>
+											<td>
+												<div class="color color-background-white"></div>
+												rgb(255, 255, 255) <br>
+												#FFFFFF <br>
+											</td>
+										</tr>
+									</table>
+								</div>
+								<h4>Text Colors</h4>
+								<p class="p-normal">Generic colors to use within a Salesforce application. Tokens that have the prefix
+									of "BRAND" are brandable tokens and
+									are subject to change when a customer applies theming to their org. .
+								</p>
+								<div class="tokens">
+									<table width=100%>
+										<tr>
+											<th>Token</th>
+											<th>Example</th>
+										</tr>
+										<tr>
+											<td>
+												<span>Text Color: Orange</span>
+												<br>
+												$text-color-orange <br>
+												var(—text-color-orange)
+											</td>
+											<td>
+												<div class="text-color text-color-orange">
+													This has been the commitment since our company started
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<span>Text Color: Dark</span>
+												<br>
+												$text-color-dark <br>
+												var(—text-color-dark)
+											</td>
+											<td>
+												<div class="text-color text-color-dark">
+													This has been the commitment since our company started
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<span>Text Color: Gray</span>
+												<br>
+												$text-color-gray <br>
+												var(—text-color-gray)
+											</td>
+											<td>
+												<div class="text-color text-color-gray">
+													This has been the commitment since our company started
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<span>Text Color: White</span>
+												<br>
+												$text-color-white <br>
+												var(—text-color-white)
+											</td>
+											<td>
+												<div class="text-color text-color-white">
+													This has been the commitment since our company started
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<span>Button Primary: Button Primary Font Color</span>
+												<br>
+												$button-primary-font-color<br>
+												var(—button-primary-font-color)
+											</td>
+											<td>
+												<div class="button button-primary-font-color">
+													This has been the commitment since our company started
+												</div>
+											</td>
+										</tr>
+									</table>
+								</div>
+								<h4>Border</h4>
+								<p class="p-normal">Generic colors to use within a Salesforce application. Tokens that have the prefix
+									of "BRAND" are brandable tokens and
+									are subject to change when a customer applies theming to their org. .
+								</p>
+								<div class="tokens">
+									<table width=100%>
+										<tr>
+											<th>Token</th>
+											<th>Example</th>
+										</tr>
+										<tr>
+											<td>
+												<span>Border: Small </span>
+												<br>
+												$border-small <br>
+												var(border-small)
+											</td>
+											<td>
+												<div class="border border-small"> </div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<span>Border: Medium </span>
+												<br>
+												$border-medium <br>
+												var(border-medium)
+											</td>
+											<td>
+												<div class="border border-medium"> </div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<span>Border: Large </span>
+												<br>
+												$border-large <br>
+												var(border-large)
+											</td>
+											<td>
+												<div class="border border-large"> </div>
+											</td>
+										</tr>
+									</table>
+								</div>
+								<h4>Font</h4>
+								<p class="p-normal">Generic colors to use within a Salesforce application. Tokens that have the prefix
+									of "BRAND" are brandable tokens and
+									are subject to change when a customer applies theming to their org. .
+								</p>
+								<div class="tokens">
+									<table width=100%>
+										<tr>
+											<th>Token</th>
+											<th>Example</th>
+										</tr>
+										<tr>
+											<td>
+												<span>Font Family: Heading</span>
+												<br>
+												$font-family-heading <br>
+												var(—font-family-heading)
+											</td>
+											<td>
+												<div class="font-family font-family-heading">
+													This has been the commitment since our company started
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<span>Font Family: Text Light</span>
+												<br>
+												$font-family-text-light <br>
+												var(—font-family-text-light)
+											</td>
+											<td>
+												<div class="font-family font-family-text-light">
+													This has been the commitment since our company started
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<span>Font Family: Text Normal</span>
+												<br>
+												$font-family-text-normal <br>
+												var(—font-family-text-normal)
+											</td>
+											<td>
+												<div class="font-family font-family-text-normal">
+													This has been the commitment since our company started
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<span>Font Family: Text Bold</span>
+												<br>
+												$font-family-text-bold <br>
+												var(—font-family-text-bold)
+											</td>
+											<td>
+												<div class="font-family font-family-text-bold">
+													This has been the commitment since our company started
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<span>Font Family: Button Font Text</span>
+												<br>
+												$button-font-text<br>
+												var(—button-font-text)
+											</td>
+											<td>
+												<div class="button button-font-text">
+													This has been the commitment since our company started
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<span>Letter Spacing: Default</span>
+												<br>
+												$letter-spacing-default <br>
+												var(—letter-spacing-default)
+											</td>
+											<td>
+												<div class="letter-spacing">
+													-0.3
+												</div>
+											</td>
+										</tr>
+									</table>
+								</div>
+								<h4>Font Size</h4>
+								<p class="p-normal">Generic colors to use within a Salesforce application. Tokens that have the prefix
+									of "BRAND" are brandable tokens and
+									are subject to change when a customer applies theming to their org. .
+								</p>
+								<div class="tokens">
+									<table width=100%>
+										<tr>
+											<th>Token</th>
+											<th>Example</th>
+										</tr>
+										<tr>
+											<td>
+												<span>Font Size: Small</span>
+												<br>
+												$font-size-small <br>
+												var(—font-size-small)
+											</td>
+											<td>
+												<div class="font-size font-size-small">
+													Small
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<span>Font Size: X-Small</span>
+												<br>
+												$font-size-x-small <br>
+												var(—font-size-x-small)
+											</td>
+											<td>
+												<div class="font-size font-size-x-small">
+													X Samall
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<span>Font Size: Medium</span>
+												<br>
+												$font-size-medium <br>
+												var(—font-size-medium)
+											</td>
+											<td>
+												<div class="font-size font-size-medium">
+													Medium
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<span>Font Size: X-Medium</span>
+												<br>
+												$font-size-x-medium <br>
+												var(—font-size-x-medium)
+											</td>
+											<td>
+												<div class="font-size font-size-x-medium">
+													X Medium
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<span>Font Size: XX-Medium</span>
+												<br>
+												$font-size-xx-medium <br>
+												var(—font-size-xx-medium)
+											</td>
+											<td>
+												<div class="font-size font-size-xx-medium">
+													XX Medium
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<span>Font Size: XXX-Medium</span>
+												<br>
+												$font-size-xxx-medium <br>
+												var(—font-size-xxx-medium)
+											</td>
+											<td>
+												<div class="font-size font-size-xxx-medium">
+													XXX Medium
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<span>Font Size: Large</span>
+												<br>
+												$font-size-large <br>
+												var(—font-size-large)
+											</td>
+											<td>
+												<div class="font-size font-size-large">
+													Large
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<span>Font Size: X-Large</span>
+												<br>
+												$font-size-x-large <br>
+												var(—font-size-x-large)
+											</td>
+											<td>
+												<div class="font-size font-size-x-large">
+													X Large
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<span>Font Size: XX-Large</span>
+												<br>
+												$font-size-xx-large <br>
+												var(—font-size-xx-large)
+											</td>
+											<td>
+												<div class="font-size font-size-xx-large">
+													XX Large
+												</div>
+											</td>
+										</tr>
+									</table>
+								</div>
+								<h4>Opacity</h4>
+								<p class="p-normal">Generic colors to use within a Salesforce application. Tokens that have the prefix
+									of "BRAND" are brandable tokens and
+									are subject to change when a customer applies theming to their org. .
+								</p>
+								<div>
+									<table class="tokens" width=100%>
+										<tr>
+											<th>Token</th>
+											<th>Example</th>
+										</tr>
+										<tr>
+											<td>
+												<span>Opacity: 80 </span>
+												<br>
+												$opacity-80 <br>
+												var(—opacity-80)
+											</td>
+											<td>
+												<div class="img-opacity">
+													<div class="opacity opacity-80"> </div>
+													<div class="img"></div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<span>Opacity: 50 </span>
+												<br>
+												$opacity-50 <br>
+												var(—opacity-50)
+											</td>
+											<td>
+												<div class="img-opacity">
+													<div class="opacity opacity-50"> </div>
+													<div class="img"></div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<span>Opacity: 30 </span>
+												<br>
+												$opacity-30 <br>
+												var(—opacity-30)
+											</td>
+											<td>
+												<div class="img-opacity">
+													<div class="opacity opacity-30"> </div>
+													<div class="img"></div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<span>Opacity: 10 </span>
+												<br>
+												$opacity-10 <br>
+												var(—opacity-10)
+											</td>
+											<td>
+												<div class="img-opacity">
+													<div class="opacity opacity-10"> </div>
+													<div class="img"></div>
+												</div>
+											</td>
+										</tr>
+									</table>
+								</div>
+								<h4>Line Height</h4>
+								<p class="p-normal">Generic colors to use within a Salesforce application. Tokens that have the prefix
+									of "BRAND" are brandable tokens and
+									are subject to change when a customer applies theming to their org. .
+								</p>
+								<div>
+									<table class="tokens" width=100%>
+										<tr>
+											<th>Token</th>
+											<th>Example</th>
+										</tr>
+										<tr>
+											<td>
+												<span>Line Height: Default</span>
+												<br>
+												$line-height-default <br>
+												var(—line-height-default)
+											</td>
+											<td>
+												<div class="line-height-default">
+													Font Size *1.5
+												</div>
+											</td>
+										</tr>
+									</table>
+								</div>
+								<h4>Spacing</h4>
+								<p class="p-normal">Generic colors to use within a Salesforce application. Tokens that have the prefix
+									of "BRAND" are brandable tokens and
+									are subject to change when a customer applies theming to their org. .
+								</p>
+								<div class="tokens">
+									<table width=100%>
+										<tr>
+											<th>Token</th>
+											<th>Example</th>
+										</tr>
+										<tr>
+											<td>
+												<span>Space: Small </span>
+												<br>
+												$space-small <br>
+												var(—space-small)
+											</td>
+											<td>
+												<div class="space space-small"> </div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<span>Space: X Small </span>
+												<br>
+												$space-x-small <br>
+												var(—space-x-small)
+											</td>
+											<td>
+												<div class="space space-x-small"> </div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<span>Space: Medium </span>
+												<br>
+												$space-medium <br>
+												var(—space-medium)
+											</td>
+											<td>
+												<div class="space space-medium"> </div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<span>Space: X Medium </span>
+												<br>
+												$space-x-medium <br>
+												var(—space-x-medium)
+											</td>
+											<td>
+												<div class="space space-x-medium"> </div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<span>Space: Large </span>
+												<br>
+												$space-large <br>
+												var(—space-large)
+											</td>
+											<td>
+												<div class="space space-large"> </div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<span>Space: X Large </span>
+												<br>
+												$space-x-large <br>
+												var(—space-x-large)
+											</td>
+											<td>
+												<div class="space space-x-large"> </div>
+											</td>
+										</tr>
+									</table>
+								</div>
+								<h4>Radius</h4>
+								<p class="p-normal">Generic colors to use within a Salesforce application. Tokens that have the prefix
+									of "BRAND" are brandable tokens and
+									are subject to change when a customer applies theming to their org. .
+								</p>
+								<div class="tokens">
+									<table width=100%>
+										<tr>
+											<th>Token</th>
+											<th>Example</th>
+										</tr>
+										<tr>
+											<td>
+												<span>Radius: Sharp </span>
+												<br>
+												$radius-sharp <br>
+												var(radius-sharp)
+											</td>
+											<td>
+												<div class="radius radius-sharp"> </div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<span>Radius: Default </span>
+												<br>
+												$radius-default <br>
+												var(radius-default)
+											</td>
+											<td>
+												<div class="radius radius-default"> </div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<span>Radius: Rounded </span>
+												<br>
+												$radius-rounded <br>
+												var(radius-rounded)
+											</td>
+											<td>
+												<div class="radius radius-rounded"> </div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<span>Radius: Pill </span>
+												<br>
+												$radius-pill <br>
+												var(radius-pill)
+											</td>
+											<td>
+												<div class="radius radius-pill"> </div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<span>Radius: Circle </span>
+												<br>
+												$radius-circle <br>
+												var(radius-circle)
+											</td>
+											<td>
+												<div class="radius radius-circle"> </div>
+											</td>
+										</tr>
+									</table>
+								</div>
+								<h4>Shadow</h4>
+								<p class="p-normal">Generic colors to use within a Salesforce application. Tokens that have the prefix
+									of "BRAND" are brandable tokens and
+									are subject to change when a customer applies theming to their org. .
+								</p>
+								<div class="tokens">
+									<table width=100%>
+										<tr>
+											<th>Token</th>
+											<th>Example</th>
+										</tr>
+										<tr>
+											<td>
+												<span>Shadow: Level1 </span>
+												<br>
+												$shadow-level1 <br>
+												var(shadow-level1)
+											</td>
+											<td>
+												<div class="shadow shadow-level1"> </div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<span>Shadow: Level2 </span>
+												<br>
+												$shadow-level2 <br>
+												var(shadow-level2)
+											</td>
+											<td>
+												<div class="shadow shadow-level2"> </div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<span>Shadow: Level3 </span>
+												<br>
+												$shadow-level3 <br>
+												var(shadow-level3)
+											</td>
+											<td>
+												<div class="shadow shadow-level3"> </div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<span>Shadow: Level4 </span>
+												<br>
+												$shadow-level4 <br>
+												var(shadow-level4)
+											</td>
+											<td>
+												<div class="shadow shadow-level4"> </div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<span>Shadow: Button Primary Focus </span>
+												<br>
+												$button-primary-focus <br>
+												var(button-primary-focus)
+											</td>
+											<td>
+												<div class="shadow shadow-button-primary-focus"> </div>
+											</td>
+										</tr>
+									</table>
+								</div>
+								<h4>Media Query</h4>
+								<p class="p-normal">Generic colors to use within a Salesforce application. Tokens that have the prefix
+									of "BRAND" are brandable tokens and
+									are subject to change when a customer applies theming to their org. .
+								</p>
+								<div class="tokens">
+									<table width=100%>
+										<tr>
+											<th>Token</th>
+											<th>Example</th>
+										</tr>
+										<tr>
+											<td>
+												<span>Media Query: Small </span>
+												<br>
+												$mq-small <br>
+												var(mq-small)
+											</td>
+											<td>
+												only screen and (max-width: 400px)
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<span>Media Query: Medium </span>
+												<br>
+												$mq-medium <br>
+												var(mq-medium)
+											</td>
+											<td>
+												only screen and (max-width: 920px)
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<span>Media Query: Large </span>
+												<br>
+												$mq-large <br>
+												var(mq-large)
+											</td>
+											<td>
+												only screen and (max-width: 1200px)
+											</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+			<!-- Cuerpo //. -->
+			<!-- Footer  -->
+			<footer> </footer>
+			<!-- Footer //. -->
+		</div>
+	</div>
+	<div class="overlay"></div>
+	<script src="js/jquery-1.12.0.min.js" type="text/javascript"></script>
+	<script src="js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="js/jquery.mCustomScrollbar.concat.min.js" type="text/javascript"></script>
+	<script src="js/main.js" type="text/javascript"></script>
+	<script>
+		new AccordionMenu('.accordion-menu');
+	</script>
+	<script defer>(function ($) {
+			$(document).ready(function () {
+				var menuRight = $('#test-menu-right').slideMenu({
+					submenuLinkAfter: '<i class="icon-arrow-right"> </i>',
+					backLinkBefore: '<i class="icon-arrow-left"> </i>'
+				});
+				if ($(window).width() > 768) {
+					menuRight.open(false);
+				}
+			});
+		})(jQuery);
+	</script>
+</body>
+
+</html>

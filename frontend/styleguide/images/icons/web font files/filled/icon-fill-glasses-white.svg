@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="7px" viewBox="0 0 20 7" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>3. icons/fill/icon-fill-glasses-white</title>
+    <defs>
+        <path d="M0,0 L0,0.758266111 L0,2.91268505 C0,5.16080135 1.74281178,7 3.87252308,7 L5.35720586,7 C7.48750514,7 9.23031693,5.16080135 9.23031693,2.91268505 L9.23031693,1.79017818 L10.7702711,1.79017818 L10.7702711,2.91268505 C10.7702711,5.16080135 12.5130828,7 14.6427941,7 L16.1274769,7 C18.2577762,7 20,5.16080135 20,2.91268505 L20,0.758266111 L20,0 L0,0 Z" id="path-1"></path>
+    </defs>
+    <g id="Yanbal-UI-Visual-Kit" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="yanbal-styleguide-pag2" transform="translate(-778.000000, -5001.000000)">
+            <g id="Group" transform="translate(776.000000, 4992.000000)">
+                <g id="elements" transform="translate(2.000000, 9.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="icon4" fill="#1C1F28" xlink:href="#path-1"></use>
+                    <g id="Group" mask="url(#mask-2)">
+                        <g transform="translate(-2.000000, -9.000000)" id="color/primary">
+                            <rect id="box" fill="#FFFFFF" fill-rule="nonzero" x="0" y="0" width="24" height="24"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Ogg-Bold';
+    src: url('ogg/Ogg-Bold.eot');
+    src: local('☺'), url('ogg/Ogg-Bold.woff') format('woff'), url('ogg/Ogg-Bold.ttf') format('truetype');
+    font-style: Bold;
+  }
+  
+  @font-face {
+    font-family: 'MaisonNeue-Medium';
+    src: local('☺'), url('maison-neue/MaisonNeue-Medium.woff') format('woff'), url('maison-neue/MaisonNeue-Medium.woff2') format('woff');
+  }
+  
+  @font-face {
+    font-family: 'MaisonNeue-Light';
+    src: local('☺'), url('maison-neue/MaisonNeueWEB-Light.woff') format('woff'), url('maison-neue/MaisonNeueWEB-Light.woff2') format('woff');
+  }
+  
+  @font-face {
+    font-family: 'MaisonNeue-Demi';
+    src: local('☺'), url('maison-neue/MaisonNeueWEB-Demi.woff') format('woff'), url('maison-neue/MaisonNeueWEB-Demi.woff2') format('woff');
+  }
+  
+  @font-face {
+    font-family: 'MaisonNeue-Book';
+    src: local('☺'), url('maison-neue/MaisonNeueWEB-Book.woff') format('woff'), url('maison-neue/MaisonNeueWEB-Book.woff2') format('woff');
+  }
+  

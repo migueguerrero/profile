@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Extranet - intro</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./assets/vendor/bootstrap-4.6.0-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/fonts/yanbal-fonts.css" />
+    <link rel="stylesheet" href="./assets/yanbal-icons/yanbal-icons.css" />
+    <link rel="stylesheet" href="./assets/yanbal-kit/forms/css/forms.css" />
+    <link rel="stylesheet" href="./assets/yanbal-kit/forms/css/buttons.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body class="page intro">
+
+    <header>
+        <div class="top-bar desk">
+            <div class="yanbal-container">
+                <a href="https://www.yanbal.com.pe">www.yanbal.com</a>
+            </div>
+        </div>
+        <div class="yanbal-container">
+            <div class="brand">
+                <img src="./assets/img/imgs/yanbal-logo-dark.svg" alt="" />
+            </div>
+        </div>
+    </header>
+    <div class="content text-center">
+        <div class="yanbal-container">
+            
+            <ul class="steps desk">
+                <li class="steps__item is-active"><span class="step__number">1</span><span class="steps__text">Identificación</span></li>
+                <li class="steps__item"><span class="step__number">2</span><span class="steps__text">Datos Personales</span></li>
+                <li class="steps__item"><span class="step__number">3</span><span class="steps__text">Dirección</span></li>
+                <li class="steps__item"><span class="step__number">4</span><span class="steps__text">Recomendante</span></li>
+                <li class="steps__item"><span class="step__number">5</span><span class="steps__text">Finalizar</span></li>
+                <div class="bar"></div>
+            </ul>
+
+            <div class="steps-mob mob m-b3">
+                <div class="progress-circle" data-percentage="20">
+                    <span class="progress-left">
+                        <span class="progress-bar-circle"></span>
+                    </span>
+                    <span class="progress-right">
+                        <span class="progress-bar-circle"></span>
+                    </span>
+                    <div class="progress-value">
+                        <div>
+                            1 de 5<br>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h1>Identificación</h1>
+                    <div class="gray">Paso 2: Datos personales</div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 offset-md-3">
+                    <h1 class="m-b1">¡Gracias Andrea!</h1>
+                    <p class="m-b4 sub-title">Completa la siguiente información que usaré para comprobar tus datos.</p>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-4 offset-md-4">
+                    <div class="form">
+                        <form method="post" >
+						
+                            <div class="form-field select m-b2">
+                                <input type="text"  class="form-control m-b1" id="input1" name="tipo_documento" value="Carné de Extranjería" required />
+                                <label class="placeholder" for="input1">Tipo de documento</label>
+                                <select>
+                                    <option value=""></option>
+                                    <option value="01">DNI</option>
+                                    <option value="02">Carné de Extranjería</option>
+                                </select>	
+                                
+                            </div>
+
+                            <div class="form-field m-b4 ok">
+                                <input type="text" class="form-control m-b1" id="codigo" name="codigo" value="97762452"
+                                    required="">
+                                <label class="placeholder" for="codigo">Número de documento</label>
+                                <div class="form-help-text">Ejemplo: E3456S2352</div>
+                                <i class="icon-validated icon-check"></i>
+                            </div>
+
+                            <div class="rc-box m-b4" >
+                                
+                                    <div class="c-spinner m-b3" role="status">
+                                      <img width="80px" src="assets/img/imgs/load.svg"/>
+                                    </div>
+                                    <p class="bold">Estamos validando tus datos</p>
+                                    <p>
+                                        Solo te pedimos unos segundos…
+                                    </p>
+                                
+                                
+                            </div>
+						    <div class="row m-b5">
+                                <div class="col-6 col-md-6">
+                                    <input type="submit" class="btn secondary large " value="Regresar">
+                                </div>
+                                <div class="col-6 col-md-6">
+                                    <input type="submit" class="btn primary large " value="Continuar">
+                                </div>
+                            </div>
+							
+						
+							
+							
+						</form>
+                    </div>
+                </div>
+            </div>
+
+           
+            
+        </div>
+
+    </div>
+    <footer>
+        <div class="yanbal-container">
+            <div class="footer-brand">
+                <img width="13px" src="assets/img/imgs/yanbal-isotype.svg" alt="" /> © 2021 Yanbal
+            </div>
+            <div class="nav-footer desk">
+
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Protección de Datos Personales</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Términos y Condiciones</a>
+                    </li>
+
+                </ul>
+
+
+                <a href=""></a>
+            </div>
+        </div>
+    </footer>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true"><i class="icon-close"></i></span>
+              </button>
+            </div>
+            <div class="modal-body text-center">
+                <p class="m-b2">Al reverso de tu cédula de identidad podrás ubicar tu código
+                    dactilar: </p>
+                <div class="text-center">
+                    <img src="assets/img/imgs/cedula.png" style="margin:auto" />
+                </div>
+            </div>
+           
+          </div>
+        </div>
+      </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <script src="./assets/yanbal-kit/forms/js/forms.js"></script>
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>

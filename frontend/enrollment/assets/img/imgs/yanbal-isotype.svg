@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>04241C35-21AD-44B5-BDE3-0255C7F70108</title>
+    <g id="Yanbal-UI-Visual-Kit" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="yanbal-styleguide-pag2" transform="translate(-1222.000000, -7604.000000)" fill-rule="nonzero">
+            <g id="1.-brand/logo/isotype-dark" transform="translate(1222.000000, 7604.000000)">
+                <rect id="area" fill="#FFFFFF" opacity="0" x="0" y="0" width="24" height="24"></rect>
+                <path d="M17.9527654,6.04709744 L17.9538374,6.04709744 L19.8075776,4.1933474 L19.8059696,4.1933474 L24,0 C21.1994238,0.643821391 18.5368664,2.03905805 16.3382131,4.1933474 L5.08579277,4.1933474 C4.48614787,4.1933474 4,4.67959669 4,5.27879945 L4,18.914548 C4,19.5138847 4.48614787,20 5.08579277,20 L18.7216509,20 C19.3215638,20 19.8075776,19.5138847 19.8075776,18.914548 L19.8075776,7.66703514 L17.9538374,9.52091917 L17.9538374,18.14625 L5.85387424,18.14625 L5.85387424,6.04709744 L14.711601,6.04709744 C13.3320827,7.8847687 12.3961006,9.95035675 11.9028508,12.0967407 L17.9527654,6.04709744 Z" id="swoosh" fill="#1C1F28"></path>
+            </g>
+        </g>
+    </g>
+</svg>

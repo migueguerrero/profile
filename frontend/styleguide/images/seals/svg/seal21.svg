@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>3. icons/seal/bloque2/seal21</title>
+    <defs>
+        <path d="M30,0 C37.295,0 44.326,2.649 49.8,7.461 C50.347,7.942 50.86,8.464 51.373,8.985 L51.373,8.985 L58.675,0.27 L59.825,1.232 L52.404,10.091 C52.872,10.617 53.342,11.141 53.771,11.697 C57.847,16.981 60,23.31 60,30 C60,46.542 46.542,60 30,60 C13.458,60 0,46.542 0,30 C0,13.458 13.458,0 30,0 Z M30,1.5 C14.285,1.5 1.5,14.285 1.5,30 C1.5,45.715 14.285,58.5 30,58.5 C45.715,58.5 58.5,45.715 58.5,30 C58.5,23.645 56.454,17.632 52.584,12.613 C52.221,12.143 51.82,11.703 51.428,11.256 L51.428,11.256 L29.964,36.878 L21.549,25.534 L22.754,24.64 L30.036,34.456 L50.408,10.137 C49.89,9.604 49.366,9.077 48.81,8.588 C43.61,4.018 36.93,1.5 30,1.5 Z M30.75,44.489 L30.75,53.329 L29.25,53.329 L29.25,44.489 L30.75,44.489 Z M53.33,29.25 L53.33,30.75 L44.49,30.75 L44.49,29.25 L53.33,29.25 Z M15.51,29.25 L15.51,30.75 L6.672,30.75 L6.672,29.25 L15.51,29.25 Z M30.75,6.671 L30.75,15.509 L29.25,15.509 L29.25,6.671 L30.75,6.671 Z" id="path-1"></path>
+    </defs>
+    <g id="Yanbal-UI-Visual-Kit" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="yanbal-styleguide-pag2" transform="translate(-826.000000, -5597.000000)">
+            <g id="Group" transform="translate(824.000000, 5595.000000)">
+                <g id="elements" transform="translate(2.000000, 2.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="icon" fill="#1C1F28" xlink:href="#path-1"></use>
+                    <g id="Group" mask="url(#mask-2)">
+                        <g transform="translate(-2.000000, -2.000000)" id="color">
+                            <rect id="box" fill="#1C1F28" fill-rule="nonzero" x="0" y="0" width="64" height="64"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

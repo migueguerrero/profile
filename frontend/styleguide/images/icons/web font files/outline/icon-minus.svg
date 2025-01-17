@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>3. icons/outline/icon-minus</title>
+    <defs>
+        <path d="M10,0 C4.4771875,0 0,4.4771875 0,10 C0,15.5228125 4.4771875,20 10,20 C15.5228125,20 20,15.5228125 20,10 L20,10 C20,4.4771875 15.5228125,0 10,0 L10,0 Z M10,18.84375 C5.11575893,18.84375 1.15625,14.8842634 1.15625,10 C1.15625,5.11573661 5.11573661,1.15625 10,1.15625 C14.8842411,1.15625 18.84375,5.11573661 18.84375,10 L18.84375,10 C18.8366295,14.8814286 14.8814286,18.8366295 10.000692,18.84375 L10,18.84375 L10,18.84375 Z M13.7125,9.3375 L6.28125,9.3375 C5.9440625,9.37136161 5.68301339,9.65359375 5.68301339,9.996875 C5.68301339,10.3401562 5.94404018,10.6224107 6.27845982,10.6560045 L6.28127232,10.65625 L13.7125223,10.65625 C13.7317857,10.6582589 13.7541295,10.659375 13.7767857,10.659375 C14.1427232,10.659375 14.4392857,10.3628125 14.4392857,9.996875 C14.4392857,9.6309375 14.1427232,9.334375 13.7767857,9.334375 C13.7541295,9.334375 13.7317857,9.33551339 13.7096875,9.33776786 L13.7125,9.33752232 L13.7125,9.3375 Z" id="path-1"></path>
+    </defs>
+    <g id="Yanbal-UI-Visual-Kit" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="yanbal-styleguide-pag2" transform="translate(-650.000000, -4636.000000)">
+            <g id="Group" transform="translate(648.000000, 4634.000000)">
+                <g id="colors/brand-secondary" transform="translate(2.000000, 2.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#000000" fill-rule="nonzero" xlink:href="#path-1"></use>
+                    <g id="Group" mask="url(#mask-2)">
+                        <g transform="translate(-4.000000, -3.000000)" id="colors/brand-secondary">
+                            <rect id="box" fill="#1C1F28" fill-rule="nonzero" x="0" y="0" width="26.4058266" height="25.7456809"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

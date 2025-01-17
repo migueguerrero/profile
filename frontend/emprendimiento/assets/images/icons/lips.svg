@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="11px" viewBox="0 0 21 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>E9E3FFB9-FF2C-4CAB-AE39-DA64B1C256EA@2x</title>
+    <defs>
+        <path d="M10.2396,6.62944303 C6.8376,6.62944303 6.408,4.90384303 6.408,4.90384303 L8.3046,4.33804303 C8.7252,4.21264303 9.1728,4.21144303 9.5934,4.33444303 L10.2396,4.52344303 L10.8852,4.33444303 C11.3064,4.21144303 11.754,4.21264303 12.1746,4.33804303 L14.0712,4.90384303 C14.0712,4.90384303 13.5264,6.62944303 10.2396,6.62944303 L10.2396,6.62944303 Z M16.044,0.688243028 C14.6034,-0.221956972 12.7704,-0.229756972 11.322,0.667243028 L10.2396,1.33804303 L9.1566,0.667243028 C7.7088,-0.229756972 5.8758,-0.221956972 4.4352,0.688243028 L0,3.48964303 C0,3.48964303 1.1478,10.872643 10.2396,10.872643 C19.023,10.872643 20.4792,3.48964303 20.4792,3.48964303 L16.044,0.688243028 Z" id="path-1"></path>
+    </defs>
+    <g id="Yanbal-UI-Visual-Kit" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="yanbal-styleguide-pag2" transform="translate(-850.000000, -4865.000000)">
+            <g id="3.-icons/fill/lips" transform="translate(850.000000, 4865.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" fill="#1C1F28" xlink:href="#path-1"></use>
+                <g id="colors/brand-secondary" mask="url(#mask-2)" fill="#1C1F28" fill-rule="nonzero">
+                    <g transform="translate(-2.000000, -7.000000)" id="box">
+                        <rect x="0" y="0" width="26.4058266" height="25.7456809"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

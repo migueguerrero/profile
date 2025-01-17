@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="96px" height="96px" viewBox="0 0 96 96" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>83C7C9AF-F982-4455-B80A-33E5C7378C54</title>
+    <defs>
+        <path d="M0,0 L0,76 L3.57089719,76 L3.57089719,36.4381166 L64,36.4381166 L44.1600952,18.2223373 L64,0.00437196192 L0,0 Z M3.57089719,3.27897144 L55.3798542,3.28115742 L39.1108466,18.2223373 L55.3798542,33.1591452 L3.57089719,33.1591452 L3.57089719,3.27897144 Z" id="path-1"></path>
+    </defs>
+    <g id="Yanbal-UI-Visual-Kit" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="yanbal-styleguide-pag2" transform="translate(-480.000000, -6452.000000)">
+            <g id="3.-icons/decorative/encuesta4-copy" transform="translate(480.000000, 6452.000000)">
+                <g id="colors/brand-secondary" transform="translate(16.000000, 12.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#1C1F28" xlink:href="#path-1"></use>
+                    <g mask="url(#mask-2)" fill="#DC582A" fill-rule="nonzero" id="box">
+                        <g transform="translate(-24.000000, -16.000000)">
+                            <rect x="0" y="0" width="105.623306" height="102.982724"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>03EE6450-2158-42C7-AA44-D7101462507A@2x</title>
+    <defs>
+        <polygon id="path-1" points="0 10.0103437 10 20 20 10.0103437 10 0"></polygon>
+    </defs>
+    <g id="Yanbal-UI-Visual-Kit" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="yanbal-styleguide-pag2" transform="translate(-802.000000, -4968.000000)">
+            <g id="3.-icons/fill/icon5-copy" transform="translate(802.000000, 4968.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" fill="#1C1F28" xlink:href="#path-1"></use>
+                <g id="colors/brand-secondary" mask="url(#mask-2)" fill="#DC582A" fill-rule="nonzero">
+                    <g transform="translate(-2.000000, -2.000000)" id="box">
+                        <rect x="0" y="0" width="24" height="24"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

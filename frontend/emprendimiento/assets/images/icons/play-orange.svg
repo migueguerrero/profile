@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>70393714-1341-4748-B8F6-76502C6BA54F@2x</title>
+    <defs>
+        <path d="M10,-4.54747351e-13 C4.48609865,-4.54747351e-13 -2.27373675e-13,4.48589749 -2.27373675e-13,9.99955159 C-2.27373675e-13,15.5141025 4.48609865,20 10,20 C15.5139013,20 20,15.5141025 20,9.99955159 C20,4.48589749 15.5139013,-4.54747351e-13 10,-4.54747351e-13 M7.99746618,6.09532124 C7.79928273,5.97570105 7.54594444,5.96772638 7.33373858,6.07671365 C7.12620685,6.18747308 6.99907029,6.39392865 7,6.61810573 L7.02711512,13.3850637 C7.02711512,13.6083547 7.15612133,13.8139242 7.36271823,13.9229114 C7.4599403,13.9734177 7.56838031,14 7.67588548,14 C7.79647824,14 7.91520135,13.9672152 8.01990204,13.906076 L13.6933708,10.5513945 C13.8850105,10.4379768 14,10.2430402 14,10.0312682 C14.0009291,9.81772405 13.8878149,9.62190138 13.6971101,9.50759765 L7.99746618,6.09532124 Z" id="path-1"></path>
+    </defs>
+    <g id="Yanbal-UI-Visual-Kit" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="yanbal-styleguide-pag2" transform="translate(-896.000000, -4966.000000)">
+            <g id="3.-icons/fill/play-copy" transform="translate(896.000000, 4966.000000)">
+                <g id="Group" transform="translate(2.000000, 2.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#1E1210" xlink:href="#path-1"></use>
+                    <g id="color/primary" mask="url(#mask-2)" fill="#DC582A" fill-rule="nonzero">
+                        <g transform="translate(-2.000000, -2.000000)" id="box">
+                            <rect x="0" y="0" width="24" height="24"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

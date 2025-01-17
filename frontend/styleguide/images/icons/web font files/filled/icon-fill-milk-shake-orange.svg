@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="22px" viewBox="0 0 16 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>3. icons/fill/icon-fill-milk-shake-orange</title>
+    <defs>
+        <path d="M13.8952116,12.0148848 L12.9099023,22 L3.0288573,22 L2.043548,12.0148848 L13.8952116,12.0148848 Z M10.6840308,0 L12.4411975,0.815452147 L11.5549909,2.76547433 C13.1044231,3.82492003 14.1754943,5.54122207 14.3521004,7.52848537 L14.3521004,7.52848537 L16,7.52848537 L16,10.8943123 L0,10.8943123 L0,7.52848537 L1.60724212,7.52848537 C1.90010323,4.22943566 4.63940284,1.64310397 7.97967125,1.64310397 C8.6174859,1.64310397 9.22925435,1.74712228 9.80989439,1.92369656 L9.80989439,1.92369656 L10.6840308,0 Z" id="path-1"></path>
+    </defs>
+    <g id="Yanbal-UI-Visual-Kit" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="yanbal-styleguide-pag2" transform="translate(-684.000000, -5049.000000)">
+            <g id="Group" transform="translate(680.000000, 5048.000000)">
+                <g id="elements" transform="translate(4.000000, 1.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="icon2" fill="#1C1F28" xlink:href="#path-1"></use>
+                    <g id="Group" mask="url(#mask-2)">
+                        <g transform="translate(-4.000000, -1.000000)" id="color/primary">
+                            <rect id="box" fill="#DC582A" fill-rule="nonzero" x="0" y="0" width="24" height="24"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

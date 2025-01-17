@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>3. icons/social/icon-fill-youtube</title>
+    <defs>
+        <path d="M12.6099,17.248 L12.6099,11.752 L17.4399,14.5 L12.6099,17.248 Z M23.354,18.9766 C23.141,19.7776 22.515,20.4076 21.72,20.6216 C20.279,21.0096 14.5,21.0096 14.5,21.0096 C14.5,21.0096 8.721,21.0096 7.28,20.6216 C6.485,20.4076 5.859,19.7776 5.646,18.9766 C5.26,17.5266 5.26,14.4996 5.26,14.4996 C5.26,14.4996 5.26,11.4736 5.646,10.0236 C5.859,9.2226 6.485,8.5926 7.28,8.3786 C8.721,7.9906 14.5,7.9906 14.5,7.9906 C14.5,7.9906 20.279,7.9906 21.72,8.3786 C22.515,8.5926 23.141,9.2226 23.354,10.0236 C23.74,11.4736 23.74,14.4996 23.74,14.4996 C23.74,14.4996 23.74,17.5266 23.354,18.9766 M14.5,0.4996 C6.768,0.4996 0.5,6.7676 0.5,14.4996 C0.5,22.2326 6.768,28.4996 14.5,28.4996 C22.232,28.4996 28.5,22.2326 28.5,14.4996 C28.5,6.7676 22.232,0.4996 14.5,0.4996" id="path-1"></path>
+    </defs>
+    <g id="Yanbal-UI-Visual-Kit" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="yanbal-styleguide-pag2" transform="translate(-442.000000, -5214.000000)">
+            <g id="Group" transform="translate(440.000000, 5212.000000)">
+                <g id="elements" transform="translate(1.500000, 1.500000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="icon" fill="#000000" xlink:href="#path-1"></use>
+                    <g id="Group" mask="url(#mask-2)">
+                        <g transform="translate(-1.500000, -1.500000)" id="color/primary">
+                            <rect id="box" fill="#1C1F28" fill-rule="nonzero" x="0" y="0" width="32" height="32"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

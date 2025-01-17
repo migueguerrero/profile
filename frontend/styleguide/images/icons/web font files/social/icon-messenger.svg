@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>3. icons/social/icon-messenger </title>
+    <defs>
+        <path d="M22.4053,10.4512 L18.2933,16.9742 C17.6393,18.0122 16.2363,18.2702 15.2563,17.5352 L11.9863,15.0822 C11.6843,14.8562 11.2733,14.8592 10.9743,15.0852 L6.5573,18.4362 C5.9683,18.8852 5.1973,18.1782 5.5943,17.5532 L9.7073,11.0282 C10.3603,9.9912 11.7633,9.7322 12.7443,10.4682 L16.0133,12.9212 C16.3153,13.1462 16.7263,13.1432 17.0253,12.9192 L21.4423,9.5662 C22.0313,9.1182 22.8023,9.8252 22.4053,10.4512 M14.0003,0.0002 C6.1123,0.0002 0.0003,5.7772 0.0003,13.5802 C0.0003,17.6622 1.6733,21.1892 4.3973,23.6262 C4.6253,23.8312 4.7633,24.1162 4.7743,24.4232 L4.8503,26.9132 C4.8763,27.7072 5.6953,28.2222 6.4233,27.9042 L9.2003,26.6802 C9.4363,26.5752 9.6983,26.5562 9.9463,26.6232 C11.2223,26.9742 12.5833,27.1612 14.0003,27.1612 C21.8873,27.1612 28.0003,21.3842 28.0003,13.5802 C28.0003,5.7772 21.8873,0.0002 14.0003,0.0002" id="path-1"></path>
+    </defs>
+    <g id="Yanbal-UI-Visual-Kit" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="yanbal-styleguide-pag2" transform="translate(-314.000000, -5214.000000)">
+            <g id="Group" transform="translate(312.000000, 5212.000000)">
+                <g id="elements" transform="translate(1.500000, 1.500000)">
+                    <g id="color/primary" transform="translate(0.500000, 0.500000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Mask" fill="#000000" xlink:href="#path-1"></use>
+                        <g id="Group" mask="url(#mask-2)">
+                            <g transform="translate(-2.000000, -2.000000)" id="color/primary">
+                                <rect id="box" fill="#1C1F28" fill-rule="nonzero" x="0" y="0" width="32" height="32"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

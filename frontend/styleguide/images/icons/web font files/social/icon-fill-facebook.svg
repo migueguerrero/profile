@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>3. icons/social/icon-fill-facebook </title>
+    <defs>
+        <path d="M28,14.0859 C28,6.3069 21.732,-0.0001 14,-0.0001 C6.268,-0.0001 0,6.3069 0,14.0859 C0,21.1159 5.12,26.9429 11.813,27.9999 L11.813,18.1569 L8.258,18.1569 L8.258,14.0859 L11.813,14.0859 L11.813,10.9819 C11.813,7.4519 13.903,5.5019 17.101,5.5019 C18.632,5.5019 20.234,5.7769 20.234,5.7769 L20.234,9.2439 L18.469,9.2439 C16.73,9.2439 16.187,10.3289 16.187,11.4429 L16.187,14.0859 L20.07,14.0859 L19.45,18.1569 L16.187,18.1569 L16.187,27.9999 C22.88,26.9429 28,21.1159 28,14.0859" id="path-1"></path>
+    </defs>
+    <g id="Yanbal-UI-Visual-Kit" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="yanbal-styleguide-pag2" transform="translate(-122.000000, -5214.000000)">
+            <g id="Group" transform="translate(120.000000, 5212.000000)">
+                <g id="elements" transform="translate(2.000000, 2.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="icon" fill="#000000" xlink:href="#path-1"></use>
+                    <g id="Group" mask="url(#mask-2)">
+                        <g transform="translate(-2.000000, -2.000000)" id="color/primary">
+                            <rect id="box" fill="#1C1F28" fill-rule="nonzero" x="0" y="0" width="32" height="32"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="18px" viewBox="0 0 20 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>3. icons/outline/icon-box </title>
+    <defs>
+        <path d="M0.5,0 L0.5,6.84609375 L1.91714543,6.84609375 L1.91714543,18 L19.0806016,18 L19.0806016,6.8484375 L20.5,6.8484375 L20.5,0 L0.5,0 Z M18.0149262,16.875 L2.99183283,16.875 L2.99183283,6.8484375 L18.0149262,6.8484375 L18.0149262,16.875 Z M19.4275656,5.728125 L1.57243438,5.728125 L1.57243438,1.125 L19.4298186,1.125 L19.4298186,5.728125 L19.4275656,5.728125 Z M6.4502084,9 L14.5542976,9 L14.5542976,10.3898437 L6.4502084,10.3898437 L6.4502084,9 L6.4502084,9 Z" id="path-1"></path>
+    </defs>
+    <g id="Yanbal-UI-Visual-Kit" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="yanbal-styleguide-pag2" transform="translate(-650.000000, -4493.000000)">
+            <g id="Group" transform="translate(648.000000, 4490.000000)">
+                <g id="elements" transform="translate(1.500000, 3.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="icon" fill="#000000" fill-rule="nonzero" xlink:href="#path-1"></use>
+                    <g id="Group" mask="url(#mask-2)">
+                        <g transform="translate(-1.500000, -3.000000)" id="color">
+                            <rect id="box" fill="#1C1F28" fill-rule="nonzero" x="0" y="0" width="24" height="24"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

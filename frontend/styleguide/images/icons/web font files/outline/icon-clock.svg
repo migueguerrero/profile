@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>3. icons/outline/icon-clock</title>
+    <defs>
+        <path d="M10,0 C15.5141667,0 20,4.48583333 20,10 C20,15.5141667 15.5141667,20 10,20 C4.48583333,20 0,15.5141667 0,10 C0,4.48583333 4.48583333,0 10,0 Z M10,1.11916667 C5.10333333,1.11916667 1.11833333,5.1025 1.11833333,10 C1.11833333,14.8975 5.10333333,18.8816667 10,18.8816667 C14.8983333,18.8816667 18.8825,14.8975 18.8825,10 C18.8825,5.1025 14.8983333,1.11916667 10,1.11916667 Z M10.0495833,1.95416667 C10.3579167,1.95416667 10.60875,2.205 10.60875,2.5125 L10.60875,2.5125 L10.60875,9.76666667 L15.25875,9.76666667 C15.5670833,9.76666667 15.81875,10.0175 15.81875,10.3258333 C15.81875,10.635 15.5670833,10.885 15.25875,10.885 L15.25875,10.885 L10.0495833,10.885 C9.74125,10.885 9.49041667,10.635 9.49041667,10.3258333 L9.49041667,10.3258333 L9.49041667,2.5125 C9.49041667,2.205 9.74125,1.95416667 10.0495833,1.95416667 Z" id="path-1"></path>
+    </defs>
+    <g id="Yanbal-UI-Visual-Kit" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="yanbal-styleguide-pag2" transform="translate(-842.000000, -4540.000000)">
+            <g id="Group" transform="translate(840.000000, 4538.000000)">
+                <g id="elements" transform="translate(2.000000, 2.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#1F1410" xlink:href="#path-1"></use>
+                    <g id="Group" mask="url(#mask-2)">
+                        <g transform="translate(-2.000000, -2.000000)" id="colors/brand-secondary">
+                            <rect id="box" fill="#1C1F28" fill-rule="nonzero" x="0" y="0" width="24" height="24"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

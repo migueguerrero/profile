@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="6px" height="12px" viewBox="0 0 6 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>3. icons/outline/icon-arrow-right </title>
+    <defs>
+        <path d="M8.09133355,3.14149672 L3.00000021,7.87803146 L-2.08999979,3.14149672 C-2.29066645,2.9528353 -2.64266645,2.95350195 -2.84266645,3.14149672 C-2.94399979,3.23616075 -2.99999979,3.36282388 -2.99999979,3.49815345 C-2.99999979,3.63281636 -2.94399979,3.7594795 -2.84199979,3.85414353 L2.53266688,8.79992731 C2.65600021,8.91459078 2.76561894,9.00016715 3.00000021,9.00000021 C3.23438149,8.99983328 3.36866688,8.89325804 3.46866688,8.79992731 L8.84200021,3.85414353 C8.94400021,3.7594795 9.00000021,3.63281636 9.00000021,3.4974868 C9.00000021,3.36282388 8.94400021,3.23616075 8.84266688,3.14149672 C8.64466688,2.95350195 8.29200021,2.95216866 8.09133355,3.14149672 Z" id="path-1"></path>
+    </defs>
+    <g id="Yanbal-UI-Visual-Kit" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="yanbal-styleguide-pag2" transform="translate(-369.000000, -4496.000000)">
+            <g id="Group" transform="translate(360.000000, 4490.000000)">
+                <g id="elements" transform="translate(9.000000, 6.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="icon" transform="translate(3.000000, 6.000000) scale(-1, -1) rotate(-270.000000) translate(-3.000000, -6.000000) "></g>
+                    <g id="Group" mask="url(#mask-2)">
+                        <g transform="translate(-9.000000, -6.000000)" id="color">
+                            <rect id="box" fill="#1C1F28" fill-rule="nonzero" x="0" y="0" width="24" height="24"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
